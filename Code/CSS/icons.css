@@ -192,23 +192,23 @@ button:active {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Medias/Souncloud/Orange%20-%201%20-%20Comp.png');
 }
 
-.apple-media-file .close.grey::before {
+.application .close.grey::before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/App%20Design%20References/Mac%20OS/Icons/Close/Grey%20-%201%20-%20Comp.png');
 }
 
-.apple-media-file .close.white::before {
+.application .close.white::before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/App%20Design%20References/Mac%20OS/Icons/Close/White%20-%201%20-%20Comp.png');
 }
 
-.apple-media-file .search.white::before {
+.application .search.white::before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Search/White%20-%201%20-%20Comp.png');
 }
 
-.apple-media-file .share.white::before {
+.application .share.white::before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/App%20Design%20References/Mac%20OS/Icons/Share/White%20-%201%20-%20Comp.png');
 }
 
-.apple-media-file .video.icons-b:before {
+.application .video.icons-b:before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Souncloud%20Play%20-%20Pause%20Button/Play%20White%20-%204.png');
 }
 
@@ -360,15 +360,15 @@ button:active {
 }
 
 .amf-controls.minimize.icons:before,
-.apple-media-file .main-controls .minimize.icons-b::before,
-.apple-media-file .main-controls .minimize.icons-a::after {
+.application .main-controls .minimize.icons-b::before,
+.application .main-controls .minimize.icons-a::after {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/AMF%20-%20Minimize%20Icon/Minimize%20-%20Black%201.png");
   background-size: 8.5px;
 }
 
 .amf-controls.full-screen.icons:before,
-.apple-media-file .main-controls .full-screen.icons-b::before,
-.apple-media-file .main-controls .full-screen.icons-a::after {
+.application .main-controls .full-screen.icons-b::before,
+.application .main-controls .full-screen.icons-a::after {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/AMF%20-%20Full%20Screen%20Icon/Full%20Screen%20-%20Black%201.png");
 }
 
