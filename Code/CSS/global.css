@@ -66,3 +66,17 @@ a {
     transform: translate(0%, -110%);
   }
 }
+
+@-webkit-keyframes title-overflow {
+  0%, 20%, 100% { 
+    transform: translateX(0%); 
+  }
+  
+  70% {
+    transform: translateX(-135%);
+  }
+
+  70.00001% {
+    transform: translateX(0%); 
+  }
+}
