@@ -456,12 +456,14 @@ function worldClock() {
     }
     twelveHour();
 
-    hour = hour % 12 / 12 * 360 + (date.getMinutes() * 6 / 12);
     hour_hand = $(this).find('.hour');
+    hour_hand.text(hour);
+    hour = hour % 12 / 12 * 360 + (date.getMinutes() * 6 / 12);
     hour_hand.css('transform', 'rotate(' + hour + 'deg)');
-    
-    minute = date.getMinutes() * 6;
+      
     minute_hand = $(this).find('.minute');
+    minute_hand.text(minute);
+    minute = date.getMinutes() * 6;
     minute_hand.css('transform', 'rotate(' + minute + 'deg)');
     
     second = date.getSeconds() * 6;
