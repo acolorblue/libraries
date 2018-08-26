@@ -26,6 +26,10 @@ body {
   object-fit: cover;
 }
 
+button {
+  transition: unset;
+}
+
 a {
   color: unset;
 }
