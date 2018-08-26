@@ -462,7 +462,7 @@ function worldClock() {
     hour_hand.css('transform', 'rotate(' + hour + 'deg)');
       
     minute_hand = $(this).find('.minute');
-    minute_hand.text(minute);
+    minute_hand.text(date.getMinutes());
     minute = date.getMinutes() * 6;
     minute_hand.css('transform', 'rotate(' + minute + 'deg)');
     
