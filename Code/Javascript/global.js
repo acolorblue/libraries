@@ -380,6 +380,7 @@ function clockConversions() {
 function worldClock() {
   var date = new Date(),
       timezone_offset,
+      this_clock,
       hour,
       hour_hand
       minute,
@@ -389,9 +390,11 @@ function worldClock() {
 
   // TIMEZONE OFFSET   
   $('clock').each(function() {
+    this_clock = $(this);
+    
+    function hourContainer() {
     hour = date.getUTCHours() + parseInt($(this).attr('timezone-offset'));
             
-
     function timezoneOverflow() {
       if (hour == -1) {
         hour = 23;
@@ -455,14 +458,68 @@ function worldClock() {
       }
     }
     twelveHour();
+            
+            
 
-    hour_hand = $(this).find('.hour');
-    hour_hand.text(hour);
+    function hourHighlight() {
+      if (hour == 1) {
+        this_clock.find('.one.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 2) {
+        this_clock.find('.two.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 3) {
+        this_clock.find('.three.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 4) {
+        this_clock.find('.four.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 5) {
+        this_clock.find('.five.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 6) {
+        this_clock.find('.six.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 7) {
+        this_clock.find('.seven.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 8) {
+        this_clock.find('.eight.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 9) {
+        this_clock.find('.nine.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 10) {
+        this_clock.find('.ten.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 11) {
+        this_clock.find('.eleven.numeric-indicator').addClass('highlight');
+      }
+      
+      if (hour == 12) {
+        this_clock.find('.twelve.numeric-indicator').addClass('highlight');
+      }
+    }
+    hourHighlight();
+    
+    hour_hand = this_clock.find('.hour');
     hour = hour % 12 / 12 * 360 + (date.getMinutes() * 6 / 12);
     hour_hand.css('transform', 'rotate(' + hour + 'deg)');
+    
+  }
+   hourContainer();
       
     minute_hand = $(this).find('.minute');
-    minute_hand.text(date.getMinutes());
     minute = date.getMinutes() * 6;
     minute_hand.css('transform', 'rotate(' + minute + 'deg)');
     
