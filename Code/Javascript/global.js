@@ -391,8 +391,6 @@ function worldClock() {
   // TIMEZONE OFFSET   
   $('clock').each(function() {
     this_clock = $(this);
-    
-    function hourContainer() {
     hour = date.getUTCHours() + parseInt($(this).attr('timezone-offset'));
             
     function timezoneOverflow() {
@@ -512,12 +510,9 @@ function worldClock() {
     }
     hourHighlight();
     
-    hour_hand = this_clock.find('.hour');
+    hour_hand = $(this).find('.hour');
     hour = hour % 12 / 12 * 360 + (date.getMinutes() * 6 / 12);
     hour_hand.css('transform', 'rotate(' + hour + 'deg)');
-    
-  }
-   hourContainer();
       
     minute_hand = $(this).find('.minute');
     minute = date.getMinutes() * 6;
