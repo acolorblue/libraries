@@ -446,6 +446,7 @@ function worldClock() {
     }
     timezoneOverflow();
 
+            
     function twelveHour() {
       if (hour >= 12) {
         hour -= 12;
@@ -455,57 +456,68 @@ function worldClock() {
         hour = 12;
       }
     }
-    twelveHour();
-            
-            
+    twelveHour();     
 
+            
     function hourHighlight() {
       if (hour == 1) {
-        this_clock.find('.one.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .one').addClass('highlight');
       }
       
       if (hour == 2) {
-        this_clock.find('.two.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .two').addClass('highlight');
       }
       
       if (hour == 3) {
-        this_clock.find('.three.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .three').addClass('highlight');
       }
       
       if (hour == 4) {
-        this_clock.find('.four.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .four').addClass('highlight');
       }
       
       if (hour == 5) {
-        this_clock.find('.five.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .five').addClass('highlight');
       }
       
       if (hour == 6) {
-        this_clock.find('.six.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .six').addClass('highlight');
       }
       
       if (hour == 7) {
-        this_clock.find('.seven.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .seven').addClass('highlight');
       }
       
       if (hour == 8) {
-        this_clock.find('.eight.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .eight').addClass('highlight');
       }
       
       if (hour == 9) {
-        this_clock.find('.nine.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .nine').addClass('highlight');
       }
       
       if (hour == 10) {
-        this_clock.find('.ten.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .ten').addClass('highlight');
       }
       
       if (hour == 11) {
-        this_clock.find('.eleven.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .eleven').addClass('highlight');
       }
       
       if (hour == 12) {
-        this_clock.find('.twelve.numeric-indicator').addClass('highlight');
+        this_clock.find('.numeric-indicators div').removeClass('highlight');
+        this_clock.find('.numeric-indicators .twelve').addClass('highlight');
       }
     }
     hourHighlight();
