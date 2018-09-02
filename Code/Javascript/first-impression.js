@@ -82,10 +82,3 @@
     /* Return boolean */
     return checkUser();
   };
-  
-  
-  if (firstImpression()) {
-    console.log("New User");
-    $('.loader').addClass('new-user');
-    $('.loader .gta .skip-loader').remove();
-  }
