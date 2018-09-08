@@ -152,6 +152,13 @@ button:active {
   background-image: url("https://raw.githubusercontent.com/acolorblue/a-kanye-west-analysis/master/Images/Loader/Gta%20Loader/Kanye/Logo%20-%201.png");
 }
 
+/* BLONDED */
+.blonded.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Blonded/1.png");
+}
+
+
+
 
 /* MAC OS */
 .apple-logo.icons-b::before {
@@ -547,3 +554,8 @@ button:active {
 .tumblr-embed a.see-more.icons-a::after {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Tumblr%20White%20-%201.png");
 } 
+
+
+
+
+
