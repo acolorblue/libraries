@@ -92,5 +92,9 @@ function onFirstImpression() {
   if (firstImpression()) {
     console.log("New User");
   }
+  
+  if (firstImpression()) {
+    console.log("New User 2");
+  }
 }
 onFirstImpression();
