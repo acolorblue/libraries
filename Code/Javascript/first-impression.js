@@ -1,6 +1,6 @@
-/* firstImpression.js. Copyright (c) 2012 Rob Flaherty (@robflaherty). Licensed under the MIT and GPL licenses. */
-
+// FULL FIRST IMPRESSION CONTAINER
 function fullFirstImpressionContainer() {
+  /* firstImpression.js. Copyright (c) 2012 Rob Flaherty (@robflaherty). Licensed under the MIT and GPL licenses. */
   window.firstImpression = function(cookie, days) {
     var cookieMachine, getCookie, setCookie, checkUser;
 
