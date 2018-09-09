@@ -27,10 +27,10 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
 
 
 // CALL FIRST IMPRESSION
-var first_impression_script = document.createElement('script');
-    first_impression_script.type = 'text/javascript';
-    first_impression_script.src = "https://acolorblue.co/libraries/Code/Javascript/first-impression.js?10";
-$('body').append(first_impression_script);
+// var first_impression_script = document.createElement('script');
+//     first_impression_script.type = 'text/javascript';
+//     first_impression_script.src = "https://acolorblue.co/libraries/Code/Javascript/first-impression.js?10";
+// $('body').append(first_impression_script);
 
 
 
