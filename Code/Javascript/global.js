@@ -40,6 +40,7 @@ function checkDeviceLength() {
   device_width_longer = $('body').width() > $('body').height();
   device_height_longer = $('body').height() > $('body').width();
 }
+checkDeviceLength();
 
 
 
