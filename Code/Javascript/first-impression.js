@@ -83,14 +83,3 @@
     /* Return boolean */
     return checkUser();
   };
-
-
-
-
-// ON FIRST IMPRESSION
-function onFirstImpression() { 
-  if (firstImpression()) {
-    console.log("New User 2");
-  }
-}
-onFirstImpression();
