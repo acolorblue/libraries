@@ -42,6 +42,20 @@ function checkDeviceLength() {
 }
 checkDeviceLength();
 
+ 
+
+
+// USER ACTIVE STATUS
+function userActiveStatus() {    
+  $(window).focus(); 
+  
+  $(window).on('blur', function() {
+    if (mobile) {
+      // alert("The webpage was paused because you were offline.");
+    }
+  });
+}
+
 
 
 
