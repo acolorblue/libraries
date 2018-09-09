@@ -586,7 +586,7 @@ function arithmetic(targetElement, integer) {
 
 
 // MANUALLY CENTER ELEMENT
-function manuallyCenter(main_container, element) {
+function manuallyPosition(main_container, element) {
   var main_container_width = $(main_container).width(),
       main_container_height = $(main_container).height(),
       element_width = $(element).width(),
