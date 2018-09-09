@@ -101,6 +101,7 @@ device();
   }
   browser();
 }
+specifications();
 
 
 
@@ -612,3 +613,16 @@ function titleOverflow(title, titleScroll) {
     $(titleScroll).addClass('overflow');
   }
 } 
+
+
+
+
+// RANDOM COLOR GENERATOR
+function randomColorGeneratorContainer() {
+  var random_color_generator_interval = setInterval(randomColorGenerator, 400);
+  function randomColorGenerator() {
+    var color = Math.floor((Math.random() * 220) + 1);
+    console.log(color);
+    $('.random-color').css("background-color", "rgb(" + color + ", " +  color + ", " +  color + ")");
+  }
+}
