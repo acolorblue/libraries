@@ -1,4 +1,6 @@
 /* firstImpression.js. Copyright (c) 2012 Rob Flaherty (@robflaherty). Licensed under the MIT and GPL licenses. */
+
+function fullFirstImpressionContainer() {
   window.firstImpression = function(cookie, days) {
     var cookieMachine, getCookie, setCookie, checkUser;
 
@@ -82,3 +84,16 @@
     /* Return boolean */
     return checkUser();
   };
+
+
+
+
+// ON FIRST IMPRESSION
+function onFirstImpression() { 
+  if (firstImpression()) {
+    console.log("New User");
+  }
+}
+onFirstImpression();
+}
+fullFirstImpressionContainer();
