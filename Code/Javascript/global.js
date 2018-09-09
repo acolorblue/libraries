@@ -21,7 +21,8 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
     add,
     subtract,
     multiply,
-    divide;
+    divide,
+    random_color_generator_interval;
 
 
 
@@ -619,7 +620,7 @@ function titleOverflow(title, titleScroll) {
 
 // RANDOM COLOR GENERATOR
 function randomColorGeneratorContainer() {
-  var random_color_generator_interval = setInterval(randomColorGenerator, 400);
+  random_color_generator_interval = setInterval(randomColorGenerator, 400);
   function randomColorGenerator() {
     var color = Math.floor((Math.random() * 220) + 1);
     console.log(color);
