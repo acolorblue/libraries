@@ -26,6 +26,7 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
 
 
 
+
 // CALL FIRST IMPRESSION
 var first_impression_script = document.createElement('script');
     first_impression_script.type = 'text/javascript';
@@ -51,7 +52,7 @@ function userActiveStatus() {
   
   $(window).on('blur', function() {
     if (mobile) {
-      // alert("The webpage was paused because you were offline.");
+      alert("The webpage was paused because you were offline.");
     }
   });
 }
@@ -435,6 +436,93 @@ function manuallyPosition(main_container, element) {
 
   $(element).css('top', position_top);
   $(element).css('left', position_left);
+}
+
+
+
+ 
+// BACKGROUND IMAGE BLUR
+function backgroundImageBlur(container, element, blur, source) {
+  var container_image_source;
+  
+  if (source == 'background-image') {
+    container_image_source = $(container).css('background-image');
+  }
+  
+  if (source == 'image-tag') {
+    container_image_source = $(container).prop('src');
+  }
+  
+  var css_centered = $(element).css('top') == $(element).css('bottom') && $(element).css('right') == $(element).css('left');
+  var not_css_centered = $(element).css('top') != $(element).css('bottom') && $(element).css('right') != $(element).css('left');
+  
+  var container_width = $(container).width(),
+      container_height = $(container).height(),
+      blur_width = $(blur).width(),
+      blur_height = $(blur).height();
+      
+  var element_top_position,
+      element_right_position,
+      element_bottom_position,
+      element_left_position,
+      draggable = $(element).hasClass('ui-draggable'),
+      not_draggable = !draggable;
+
+  if (not_css_centered || draggable) {
+    element_top_position = $(element).css('top');
+    element_right_position = $(element).css('right');
+    element_bottom_position = $(element).css('bottom');
+    element_left_position = $(element).css('left');
+    
+    element_top_position = parseInt(element_top_position) + 'px';
+    element_right_position = parseInt(element_right_position) + 'px';
+    element_bottom_position = parseInt(element_bottom_position) + 'px';
+    element_left_position = parseInt(element_left_position) + 'px';
+  } 
+  
+  else if (css_centered || not_draggable) {
+    element_top_position = $(element).css('margin-top');
+    element_right_position = $(element).css('margin-right');
+    element_bottom_position = $(element).css('margin-bottom');
+    element_left_position = $(element).css('margin-left');
+    
+    element_top_position = parseInt(element_top_position) + 'px';
+    element_right_position = parseInt(element_right_position) + 'px';
+    element_bottom_position = parseInt(element_bottom_position) + 'px';
+    element_left_position = parseInt(element_left_position) + 'px';
+  }
+
+  var blur_top_position = '-' + element_top_position,
+      blur_left_position = '-' + element_left_position,
+      blur_background_image = $(blur).css('background-image');
+  
+  var centered = Math.round(element_top_position) == Math.round(element_bottom_position) && Math.round(element_right_position) == Math.round(element_left_position);
+  
+  var not_centered = Math.round(element_top_position) != Math.round(element_bottom_position) && Math.round(element_right_position) != Math.round(element_left_position);
+  
+  var not_same_image = blur_background_image != container_image_source,
+      not_same_size = blur_width != container_width || blur_height != container_height,
+      not_same_position = '+' + blur_top_position != element_top_position  || '+' + blur_left_position != element_left_position;
+  
+  if (not_same_image) {
+    if (source == 'background-image') {
+      $(blur).css('background-image', container_image_source);
+    }
+    
+    if (source == 'image-tag') {
+      $(blur).css('background-image', "url(" + container_image_source + ")");
+    }
+  }
+  
+  if (not_same_size) {
+    $(blur).css('width', container_width);
+    $(blur).css('height', container_height);
+  }
+  
+  if (not_same_position) {
+    $(blur).css('top', blur_top_position);
+    $(blur).css('left', blur_left_position);
+  }
 }
           
           
