@@ -22,7 +22,8 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
     subtract,
     multiply,
     divide,
-    random_color_generator_interval;
+    random_color_generator_interval,
+    manwtf;
 
 
 
