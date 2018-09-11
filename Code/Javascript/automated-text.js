@@ -1,16 +1,5 @@
-// MUTATE BACKUP CALL
-// function mutateBackUpCall() {
-// //   var mutate_doesnt_exist = !$('body script').has("https://acolorblue.co/libraries/Code/Javascript/mutate.js")
-  
-//   var mutate_doesnt_exist = $('body script').attr('src') != "https://acolorblue.co/libraries/Code/Javascript/mutate.js";
-//   if (mutate_doesnt_exist) {
-//     var mutate_script = document.createElement('script');
-//         mutate_script.type = 'text/javascript';
-//         mutate_script.src = "https://acolorblue.co/libraries/Code/Javascript/mutate.js";
-//     $('body').append(mutate_script);
-//   }
-// }
-// mutateBackUpCall();
+// MUTATE SCRIPT LINK
+// "https://acolorblue.co/libraries/Code/Javascript/mutate.js";
 
 
 
