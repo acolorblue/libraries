@@ -132,24 +132,6 @@ specifications();
 
 
 
-// ORIENTATION CHANGE
-function orientationCheck() {
-  portrait = $('body').width() < $('body').height();
-  landscape = $('body').width() > $('body').height();
-}
-
-
-
-
-// MUTATE SCRIPT LINK
-// var mutate_script = document.createElement('script');
-//     mutate_script.type = 'text/javascript';
-//     mutate_script.src = "https://acolorblue.co/libraries/Code/Javascript/mutate.js";
-// $('body').append(mutate_script);
-
-
-
-
 // CLOCK
 function clock() {
           
