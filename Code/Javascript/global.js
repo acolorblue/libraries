@@ -141,9 +141,9 @@ function orientationCheck() {
 
 
 // MUTATE SCRIPT LINK
-var mutate_script = document.createElement('script');
-    mutate_script.type = 'text/javascript';
-    mutate_script.src = "https://acolorblue.co/libraries/Code/Javascript/mutate.js";
+// var mutate_script = document.createElement('script');
+//     mutate_script.type = 'text/javascript';
+//     mutate_script.src = "https://acolorblue.co/libraries/Code/Javascript/mutate.js";
 // $('body').append(mutate_script);
 
 
