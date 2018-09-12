@@ -17,6 +17,7 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
     device_width_longer,
     device_height_longer,
     space = " ",
+    period = ".",
     comma = ",",
     add,
     subtract,
