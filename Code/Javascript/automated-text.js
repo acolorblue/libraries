@@ -10,7 +10,7 @@ var automated_text_interval,
 
 // AUTOMATED TEXT
 function automatedTextContainer(selector, timeBetweenText, exclude, timeBeforeStart, breakWord, breakTime) {
-  automated_text_interval = setInterval(automatedText, 1000000000);
+  automated_text_interval = setInterval(automatedText, 86400);
   function automatedText() {
       console.log("automatedText call")
   var booSkipAutomatedText = false;
@@ -414,7 +414,7 @@ function callTimedMediaContainer() {
     
   
     
-      setTimeout(function() {
+//       setTimeout(function() {
 //         if (typeof callTimedMedia === 'undefined') { 
 //           console.log("callTimedMedia is undefined");
 //         }
@@ -425,11 +425,10 @@ function callTimedMediaContainer() {
           
           console.log(typeof imageSlideContainer);
         
-//         if (typeof callTimedMedia === 'function') { 
-//           call_timed_media_interval = setInterval(callTimedMedia, 250);
-//           console.log("callTimedMedia is a function");
-//         }
-      }, 2000);
+        if (typeof callTimedMedia === 'function') { 
+          call_timed_media_interval = setInterval(callTimedMedia, 250);
+        }
+//       }, 2000);
     
 }
 
