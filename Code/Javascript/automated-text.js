@@ -410,12 +410,20 @@ detectHeightChange();
 
 // CALL TIMED MEDIA
 function callTimedMediaContainer() {
-    setTimeout(function() {
-        call_timed_media_interval = setInterval(callTimedMedia, 250);
-        console.log("callTimedMediaContainer()");
-    }, 2000);
+    
     
   
+    
+      setTimeout(function() {
+        if (typeof callTimedMedia.onChange === 'undefined') { 
+          console.log("callTimedMedia is undefined");
+        }
+        
+        if (typeof callTimedMedia.onChange === 'function') { 
+          call_timed_media_interval = setInterval(callTimedMedia, 250);
+          console.log("callTimedMedia is a function");
+        }
+      }, 2000);
     
 }
 
