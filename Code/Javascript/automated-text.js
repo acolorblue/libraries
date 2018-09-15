@@ -4,12 +4,6 @@
 
 
 
-// GLOBAL VARIABLES
-var call_timed_media_interval; 
-
-
-
-
 // AUTOMATED TEXT
 function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, breakWord, breakTime) {
   var booSkipAutomatedText = false;
@@ -400,14 +394,3 @@ function detectHeightChange() {
   });
 }
 detectHeightChange();
-
-
-
-
-// CALL TIMED MEDIA
-function callTimedMediaContainer() {
-  if (typeof callTimedMedia === 'function') { 
-    call_timed_media_interval = setInterval(callTimedMedia, 250);
-  }
-}
-
