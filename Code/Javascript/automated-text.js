@@ -1,18 +1,17 @@
 // MUTATE SCRIPT LINK
 // "https://acolorblue.co/libraries/Code/Javascript/mutate.js";
 
+
+
+
 // GLOBAL VARIABLES
-var automated_text_interval,
-    call_timed_media_interval; 
+var call_timed_media_interval; 
 
 
 
 
 // AUTOMATED TEXT
-function automatedTextContainer(selector, timeBetweenText, exclude, timeBeforeStart, breakWord, breakTime) {
-  automated_text_interval = setInterval(automatedText, 86400);
-  function automatedText() {
-      console.log("automatedText call")
+function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, breakWord, breakTime) {
   var booSkipAutomatedText = false;
 
   if (selector == null || selector.trim() == '') {
@@ -125,9 +124,6 @@ function automatedTextContainer(selector, timeBetweenText, exclude, timeBeforeSt
   $('button.skip').click(function() {
     booSkipAutomatedText = true;
   });
-    
-  }
-  automatedText();
 }
 
 
