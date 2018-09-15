@@ -1,11 +1,17 @@
 // MUTATE SCRIPT LINK
 // "https://acolorblue.co/libraries/Code/Javascript/mutate.js";
 
+// GLOBAL VARIABLES
+var automated_text_interval,
+    call_timed_media_interval;
+
 
 
 
 // AUTOMATED TEXT
-function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, breakWord, breakTime) {
+function automatedTextContainer(selector, timeBetweenText, exclude, timeBeforeStart, breakWord, breakTime) {
+  automated_text_interval = setInterval(automatedText, 1000);
+  function automatedText() {
   var booSkipAutomatedText = false;
 
   if (selector == null || selector.trim() == '') {
@@ -118,6 +124,9 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
   $('button.skip').click(function() {
     booSkipAutomatedText = true;
   });
+    
+  }
+  automatedText();
 }
 
 
@@ -394,3 +403,12 @@ function detectHeightChange() {
   });
 }
 detectHeightChange();
+
+
+
+
+// CALL TIMED MEDIA
+function callTimedMediaContainer() {
+  call_timed_media_interval = setInterval(callTimedMedia, 250);
+}
+callTimedMediaContainer();
