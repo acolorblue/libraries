@@ -412,4 +412,4 @@ detectHeightChange();
 function callTimedMediaContainer() {
   call_timed_media_interval = setInterval(callTimedMedia, 250);
 }
-callTimedMediaContainer();
+
