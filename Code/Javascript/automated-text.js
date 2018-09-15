@@ -12,6 +12,7 @@ var automated_text_interval,
 function automatedTextContainer(selector, timeBetweenText, exclude, timeBeforeStart, breakWord, breakTime) {
   automated_text_interval = setInterval(automatedText, 1000000000);
   function automatedText() {
+      console.log("automatedText call")
   var booSkipAutomatedText = false;
 
   if (selector == null || selector.trim() == '') {
