@@ -410,7 +410,7 @@ detectHeightChange();
 
 // CALL TIMED MEDIA
 function callTimedMediaContainer() {
-//   call_timed_media_interval = setInterval(callTimedMedia, 250);
+  call_timed_media_interval = setInterval(callTimedMedia, 250);
     console.log("callTimedMediaContainer()");
 }
 
