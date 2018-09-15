@@ -415,11 +415,11 @@ function callTimedMediaContainer() {
   
     
       setTimeout(function() {
-        if (typeof callTimedMedia.onChange === 'undefined') { 
+        if (typeof callTimedMedia === 'undefined') { 
           console.log("callTimedMedia is undefined");
         }
         
-        if (typeof callTimedMedia.onChange === 'function') { 
+        if (typeof callTimedMedia === 'function') { 
           call_timed_media_interval = setInterval(callTimedMedia, 250);
           console.log("callTimedMedia is a function");
         }
