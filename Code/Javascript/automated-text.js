@@ -3,7 +3,7 @@
 
 // GLOBAL VARIABLES
 var automated_text_interval,
-    call_timed_media_interval;
+    call_timed_media_interval; 
 
 
 
