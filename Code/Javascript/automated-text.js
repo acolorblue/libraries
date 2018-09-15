@@ -419,11 +419,6 @@ function callTimedMediaContainer() {
 //           console.log("callTimedMedia is undefined");
 //         }
           
-          console.log(typeof callTimedMedia);
-          
-          console.log(typeof videoPlayer);
-          
-          console.log(typeof imageSlideContainer);
         
         if (typeof callTimedMedia === 'function') { 
           call_timed_media_interval = setInterval(callTimedMedia, 250);
