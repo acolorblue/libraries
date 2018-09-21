@@ -133,6 +133,23 @@ specifications();
 
 
 
+// REPOSITION DRAGGABLE
+function repositionDraggable() {
+  var dragging = $('.ui-draggable').hasClass('ui-draggable-dragging'),
+      no_drag = !dragging;
+
+  if (dragging) {
+    return;
+  }
+
+  if (no_drag) {
+    $('.ui-draggable').css('width', '').css('height', '').css('top', '').css('right', '').css('bottom', '').css('left', '');
+  }
+}
+
+
+
+
 // CLOCK
 function clock() {
           
