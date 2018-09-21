@@ -489,7 +489,6 @@ function backgroundImageBlur(container, element, blur, source) {
   
   function retreiveAndPositionImage() {
     if (ab_mid_centered) {
-      console.log(element + " ab_mid_centered");
       element_top_position = $(element).css('margin-top');
       element_top_position = parseInt(element_top_position) + 'px';
       element_right_position = $(element).css('margin-right');
@@ -501,7 +500,6 @@ function backgroundImageBlur(container, element, blur, source) {
     }
     
     else if (ab_mid_not_centered) {
-      console.log(element + " ab_mid_not_centered");
       element_top_position = $(element).css('top');
       element_top_position = parseInt(element_top_position) + 'px';
       element_right_position = $(element).css('right');
