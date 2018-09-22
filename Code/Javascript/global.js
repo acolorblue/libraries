@@ -140,9 +140,9 @@ function repositionDraggable() {
       no_drag = been_dragged && !dragging;
 
   if (dragging) {
-    if (first_drag) {
+//     if (first_drag) {
       $('.ui-draggable').addClass('dragged');
-    }      
+//     }      
     return; 
   }
   
