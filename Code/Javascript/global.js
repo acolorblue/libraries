@@ -143,16 +143,25 @@ function repositionDraggable() {
 //     if (first_drag) {
       $('.ui-draggable').addClass('dragged');
 //     }      
-//     return; 
   }
   
-  if (no_drag) {
-    $('.ui-draggable').css('width', '').css('top', '').css('right', '').css('bottom', '').css('left', '');          
+  
+          
+          
+  function noDrag() {
+    if (no_drag) {
+      $('.ui-draggable').css('width', '').css('top', '').css('right', '').css('bottom', '').css('left', '');          
             
-    if (!$('.ui-draggable').hasClass('video-player')) {
-      $('.ui-draggable').css('height', '');
+      if (!$('.ui-draggable').hasClass('video-player')) {
+        $('.ui-draggable').css('height', '');
+      }
     }
   }
+  
+  setTimeout(function() {
+    noDrag();
+  }, 1000);
+  
 }
 
 
