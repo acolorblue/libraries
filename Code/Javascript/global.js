@@ -23,8 +23,7 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
     subtract,
     multiply,
     divide,
-    random_color_generator_interval,
-    manwtf;
+    random_color_generator_interval;
 
 
 
@@ -148,7 +147,12 @@ function repositionDraggable() {
   }
   
   if (no_drag) {
-    $('.ui-draggable').css('width', '').css('height', '').css('top', '').css('right', '').css('bottom', '').css('left', '');
+    $('.ui-draggable').css('width', '').css('top', '').css('right', '').css('bottom', '').css('left', '');
+            
+            
+    if (!$('.ui-draggable').hasClass('video-player')) {
+      $('.ui-draggable').css('height', '');
+    }
   }
 }
 
