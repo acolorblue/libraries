@@ -147,8 +147,7 @@ function repositionDraggable() {
   }
   
   if (no_drag) {
-    $('.ui-draggable').css('width', '').css('top', '').css('right', '').css('bottom', '').css('left', '');
-            
+    $('.ui-draggable').css('width', '').css('top', '').css('right', '').css('bottom', '').css('left', '');          
             
     if (!$('.ui-draggable').hasClass('video-player')) {
       $('.ui-draggable').css('height', '');
