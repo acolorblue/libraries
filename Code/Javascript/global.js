@@ -143,7 +143,7 @@ function repositionDraggable() {
 //     if (first_drag) {
       $('.ui-draggable').addClass('dragged');
 //     }      
-    return; 
+//     return; 
   }
   
   if (no_drag) {
