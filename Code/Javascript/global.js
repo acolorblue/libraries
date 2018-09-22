@@ -135,15 +135,15 @@ specifications();
 
 // REPOSITION DRAGGABLE
 function repositionDraggable() {
-  var first_drag = !$('.ui-draggable').hasClass('dragged'),
-      dragging = $('.ui-draggable').hasClass('ui-draggable-dragging'),
-      no_drag = !first_drag && !dragging;
+  var dragging = $('.ui-draggable').hasClass('ui-draggable-dragging'),
+      first_drag = !$('.ui-draggable').hasClass('dragged'),
+      been_dragged = $('.ui-draggable').hasClass('dragged'),
+      no_drag = been_dragged && !dragging;
 
   if (dragging) {
     if (first_drag) {
-      $('.ui-draggable').hasClass('dragged');
-    }
-            
+      $('.ui-draggable').addClass('dragged');
+    }      
     return; 
   }
   
