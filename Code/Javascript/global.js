@@ -132,41 +132,6 @@ specifications();
 
 
 
-// REPOSITION DRAGGABLE
-function repositionDraggable() {
-  var dragging = $('.ui-draggable').hasClass('ui-draggable-dragging'),
-      first_drag = !$('.ui-draggable').hasClass('dragged'),
-      been_dragged = $('.ui-draggable').hasClass('dragged'),
-      no_drag = been_dragged && !dragging;
-
-  if (dragging) {
-//     if (first_drag) {
-      $('.ui-draggable').addClass('dragged');
-//     }      
-  }
-  
-  
-          
-          
-  function noDrag() {
-    if (no_drag) {
-      $('.ui-draggable').css('width', '').css('top', '').css('right', '').css('bottom', '').css('left', '');          
-            
-      if (!$('.ui-draggable').hasClass('video-player')) {
-        $('.ui-draggable').css('height', '');
-      }
-    }
-  }
-  
-  setTimeout(function() {
-    noDrag();
-  }, 1000);
-  
-}
-
-
-
-
 // CLOCK
 function clock() {
           
@@ -384,7 +349,7 @@ function clockConversions() {
       } 
       
       if (digital_exists) {
-        $('.time.digital .text')[0].innerHTML = weekday_three_letters + space + full_numeric_time;
+        $('.time.digital .clock.text')[0].innerHTML = weekday_three_letters + space + full_numeric_time;
       }   
       
       if ($('.mac-os .menu-bar .full-date').length == 1) {
@@ -406,19 +371,10 @@ function clockConversions() {
         return;
       }
       
-//       if (analog_exists) {
-//         $('.menu-bar .time.analog .hour').css('transform', 'rotate(' + hour + 'deg)');
-//         $('.time.analog .minute').css('transform', 'rotate(' + minute + 'deg)');
-        
-//         if ($('.time.analog .second').length > 0) {
-//           $('.time.analog .second').css('transform', 'rotate(' + second + 'deg)');
-//         }
-//       } 
-      
-      
       if (analog_exists) {
-        $('.menu-bar .time.analog .clock-border .hour').css('transform', 'rotate(' + hour + 'deg)');
-        $('.menu-bar .time.analog .clock-border .minute').css('transform', 'rotate(' + minute + 'deg)');
+        $('.time.analog .clock.border .hour').css('transform', 'rotate(' + hour + 'deg)');
+        $('.time.analog .clock.border .minute').css('transform', 'rotate(' + minute + 'deg)');
+      } 
       } 
     }
     analog();
@@ -430,8 +386,41 @@ function clockConversions() {
 
 
 
+// REPOSITION DRAGGABLE
+function repositionDraggable() {
+  var dragging = $('.ui-draggable').hasClass('ui-draggable-dragging'),
+      first_drag = !$('.ui-draggable').hasClass('dragged'),
+      been_dragged = $('.ui-draggable').hasClass('dragged'),
+      no_drag = been_dragged && !dragging;
 
+  if (dragging) {
+//     if (first_drag) {
+      $('.ui-draggable').addClass('dragged');
+//     }      
+  }
+  
+  
           
+          
+  function noDrag() {
+    if (no_drag) {
+      $('.ui-draggable').css('width', '').css('top', '').css('right', '').css('bottom', '').css('left', '');          
+            
+      if (!$('.ui-draggable').hasClass('video-player')) {
+        $('.ui-draggable').css('height', '');
+      }
+    }
+  }
+  
+  setTimeout(function() {
+    noDrag();
+  }, 1000);
+  
+}
+
+
+
+         
 // ADD CLASSES 'scale-down hide' TO ELEMENT 
 function addScaleDownAndHide(targetElement) {
   $(targetElement).addClass('scale-down hide');
