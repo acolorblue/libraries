@@ -375,7 +375,6 @@ function clockConversions() {
         $('.time.analog .clock.border .hour').css('transform', 'rotate(' + hour + 'deg)');
         $('.time.analog .clock.border .minute').css('transform', 'rotate(' + minute + 'deg)');
       } 
-      } 
     }
     analog();
   }
