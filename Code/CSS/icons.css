@@ -162,6 +162,10 @@ button:active {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Blonded/1.png");
 }
 
+/* GUN */
+.gun.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Gun/1.png");
+}
 
 
 
