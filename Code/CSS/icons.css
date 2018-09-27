@@ -167,6 +167,10 @@ button:active {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Gun/1.png");
 }
 
+.gun-2.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Gun/2.png");
+}
+
 
 
 /* MAC OS */
