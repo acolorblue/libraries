@@ -398,9 +398,7 @@ function repositionDraggable() {
 //     }      
   }
   
-  
-          
-          
+     
   function noDrag() {
     if (no_drag) {
       $('.ui-draggable').css('width', '').css('top', '').css('right', '').css('bottom', '').css('left', '');          
@@ -580,3 +578,13 @@ function randomColorGeneratorContainer() {
     $('.random-color').css("background-color", "rgb(" + color + ", " +  color + ", " +  color + ")");
   }
 }
+
+
+
+
+// PRIMARY COLOR GENERATOR
+function primaryColor(image, element, opacity) {
+    image.primaryColor(function(color) {
+      element.css('background-color', 'rgb(' + color + ', ' + opacity + ')');
+    });
+  }
