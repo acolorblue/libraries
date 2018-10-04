@@ -455,7 +455,7 @@ function manuallyPosition(main_container, element) {
 
  
 // BACKGROUND IMAGE BLUR
-function backgroundImageBlur(container, element, blur, source) {
+function imageBlur(container, element, blur, source) {
   var container_image_source,
       ab_mid_centered = $(element).hasClass('ab-mid') && $(element).css('top') == $(element).css('bottom') && $(element).css('right') == $(element).css('left'),
       ab_mid_not_centered = $(element).hasClass('ab-mid') && $(element).css('top') != $(element).css('bottom') && $(element).css('right') != $(element).css('left'),
