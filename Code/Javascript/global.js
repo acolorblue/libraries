@@ -454,7 +454,7 @@ function manuallyPosition(main_container, element) {
 
 
  
-// BACKGROUND IMAGE BLUR
+// IMAGE BLUR
 function imageBlur(container, element, blur, source) {
   var container_image_source,
       ab_mid_centered = $(element).hasClass('ab-mid') && $(element).css('top') == $(element).css('bottom') && $(element).css('right') == $(element).css('left'),
@@ -539,6 +539,16 @@ function imageBlur(container, element, blur, source) {
     }
   } 
   retreiveAndPositionImage();
+}
+
+
+
+
+// IMAGE BLUR REPOSITION
+function imageBlurReposition(container, element, blur, source) {
+  $(container).mutate('width height', function(el, info) {
+    imageBlur(container, element, blur, source);
+  });
 }
           
           
