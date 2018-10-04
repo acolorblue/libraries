@@ -540,9 +540,12 @@ function imageBlur(container, element, blur, source) {
   }
   retreiveAndPositionImage();
   
+  
   function reposition() {
-    $(thumbnail).mutate('width height', function(el, info) {
-      imageBlur(thumbnail, content_controls, blur, 'image-tag');
+    $(container).mutate('width height', function(el, info) {
+//       imageBlur(thumbnail, content_controls, blur, 'image-tag');
+      duplicateSize();
+      retreiveAndPositionImage();
     });
   }
   reposition();
