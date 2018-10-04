@@ -537,7 +537,7 @@ function imageBlur(container, element, blur, source) {
       $(blur).css('top', blur_top_position);
       $(blur).css('left', blur_left_position);
     }
-  }
+  } 
   retreiveAndPositionImage();
 }
           
