@@ -28,6 +28,19 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
 
 
 
+// NODES
+var div = document.createElement('div'),
+    button = document.createElement('button'),
+    image = document.createElement('img'),
+    paragraph = document.createElement('p'),
+    span = document.createElement('span'),
+    input = document.createElement('input'),
+    link = document.createElement('a');
+    link.target = '_blank';
+
+
+
+
 // FIRST IMPRESSION SCRIPT LINK
 var first_impression_script = document.createElement('script');
     first_impression_script.type = 'text/javascript';
@@ -598,3 +611,15 @@ function primaryColor(image, element, opacity) {
       element.css('background-color', 'rgb(' + color + ', ' + opacity + ')');
     });
   }
+
+
+
+
+
+// MEDIA BUFFER LOADER
+function videoLoader(container) {
+  image.className = 'video-loader ab-mid hide';
+  image.src = "https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Video%20Loader/1.gif";
+
+  container.prepend(image);
+}
