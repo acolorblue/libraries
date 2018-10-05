@@ -29,7 +29,8 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
 
 
 // NODES
-var div = document.createElement('div'),
+var body = $('body'),
+    div = document.createElement('div'),
     button = document.createElement('button'),
     image = document.createElement('img'),
     paragraph = document.createElement('p'),
