@@ -467,6 +467,14 @@ function manuallyPosition(main_container, element) {
 
 
 
+
+// HEIGHT FROM WIDTH RATIO
+function heightFromWidthRatio(element, retrieve, ratio) {
+  $(element).css('height', $(retrieve).width() * ratio);
+}
+
+
+
  
 // IMAGE BLUR
 function imageBlur(container, element, blur, source) {
