@@ -618,7 +618,7 @@ function primaryColor(image, element, opacity) {
 
 
 // MEDIA BUFFER
-function mediaBuffer(container) {
+function bufferingIndicator(container) {
   image.className = 'buffering ab-mid hide';
   image.src = "https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Video%20Loader/1.gif";
 
