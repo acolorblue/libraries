@@ -19,6 +19,7 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
     space = " ",
     period = ".",
     comma = ",",
+    class_retrieved,
     add,
     subtract,
     multiply,
@@ -442,7 +443,7 @@ function addScaleDownAndHide(targetElement) {
 
 // CLASS RETRIEVER
 function classRetriever(element, array) {
-  var class_retrieved = $(element).attr('class').split(' ')[array];
+  class_retrieved = $(element).attr('class').split(' ')[array];
 }
 
 
