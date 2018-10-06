@@ -440,6 +440,14 @@ function addScaleDownAndHide(targetElement) {
 
 
 
+// CLASS RETRIEVER
+function classRetriever(element, array) {
+  var class_retrieved = $(element).attr('class').split(' ')[array];
+}
+
+
+
+
 // SUBTRACT OR ADD 1
 function arithmetic(targetElement, integer) {
   add = parseInt($(targetElement).height()) + integer,
@@ -616,11 +624,10 @@ function randomColorGeneratorContainer() {
 
 // PRIMARY COLOR GENERATOR
 function primaryColor(image, element, opacity) {
-    image.primaryColor(function(color) {
-      element.css('background-color', 'rgb(' + color + ', ' + opacity + ')');
-    });
-  }
-
+  image.primaryColor(function(color) {
+    element.css('background-color', 'rgb(' + color + ', ' + opacity + ')');
+  });
+}
 
 
 
