@@ -81,7 +81,10 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
       else {
         content = '' + content + '';
         element.appendChild(document.createTextNode(' '));
-        element.className += ' active opened';
+//         element.className += ' active opened';
+        
+        $(element).removeClass('unread')
+        element.className += ' reading';
         typeChar();
       }
 
@@ -103,7 +106,8 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
               typeChar();
             }
             else { 
-              $(element).removeClass('active unread').addClass('read');
+//               $(element).removeClass('active unread').addClass('read');
+              $(element).removeClass('reading').addClass('read');
               
               setTimeout(function () {
                 typeLine(++idx);
