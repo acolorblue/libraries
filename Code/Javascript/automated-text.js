@@ -40,8 +40,8 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
     for (var i = 0; i < lineCount; i++) {  
       lineContents[i] = $($lines[i]).text(); 
       $($lines[i]).text('');
-      $($lines[i]).css('visibility', 'visible');
-      $($lines[i]).css('display', 'block');
+//       $($lines[i]).css('visibility', 'visible');
+//       $($lines[i]).css('display', 'block');
     }
     typeLine();
 
