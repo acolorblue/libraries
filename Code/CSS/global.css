@@ -18,15 +18,6 @@ body {
   margin: 0px;
 }
 
-.opened {
-  visibility: visible;
-  display: block;
-}
-
-.active::after {
-  content: "|";
-}
-
 * img {
   object-fit: cover;
 }
@@ -56,6 +47,29 @@ a {
 
 .scale-down {
   transform: scale(.002);
+}
+
+
+
+
+/* AUTOMATED TEXT */
+.unread {
+  visibility: hidden;
+  display: none;
+}
+
+.reading {
+  visibility: visible;
+  display: block;
+}
+
+.reading::after {
+  content: "|";
+}
+
+.read {
+  visibility: visible;
+  display: block;
 }
 
 
