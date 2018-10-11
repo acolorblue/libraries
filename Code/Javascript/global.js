@@ -641,3 +641,17 @@ function bufferingIndicator(container) {
 
   container.prepend(image);
 }
+
+
+
+
+
+// PAUSE ALL PLAYING VIDEOS
+function pauseAnyVideosPlaying(parentContainer) {
+  $(parentContainer + ' .media').each(function() {
+    if (!$(this).find('video')[0].paused) {
+      $(this).find('video')[0].pause(); 
+      $(this).find('.play-pause').removeClass('pause').addClass('play');
+    }
+  });
+}
