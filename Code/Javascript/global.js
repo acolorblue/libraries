@@ -646,7 +646,7 @@ function bufferingIndicator(container) {
 
 
 
-// PAUSE ALL PLAYING VIDEOS
+// PAUSE ANY VIDEOS PLAYING
 function pauseAnyVideosPlaying(parentContainer) {
   $(parentContainer + ' .media').each(function() {
     if (!$(this).find('video')[0].paused) {
