@@ -65,15 +65,15 @@ button:active {
 
 /* BRAND */
 /* TWITTER */
-.twitter-b {
+.twitter {
   background: #00C3F3;
 }
 
-.twitter-b.icons-b:before {
+.twitter.icons-b:before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Medias/Twitter/White%20-%201%20-%20Comp.png");
 }
 
-.twitter-black.icons:before {
+.twitter.black.icons:before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Logo/Twitter%20-%20Black%20-%201.png");
 }
 
@@ -86,15 +86,15 @@ button:active {
 
 
 /* INSTAGRAM */
-.instagram-b {
+.instagram.icons-b {
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
 
-.instagram-b.icons-b:before {
+.instagram.icons-b:before {
    background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Medias/Instagram/White%20-%201%20-%20Comp.png");
 }
 
-.instagram-black.icons:before {
+.instagram.black.icons:before {
    background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Instagram%20Icons/Logo/Instagram%20-%20Icon%20-%20Black%20-%201.png");
 }
 
@@ -102,11 +102,11 @@ button:active {
 
 
 /* YOUTUBE */
-.youtube-b.white.icons-b::before {
+.youtube.white.icons-b::before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Medias/Youtube/White%20-%201%20-%20Comp.png');
 }
 
-.youtube-b.red.icons-b::before {
+.youtube.red.icons-b::before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Youtube/Youtube%20-%20Red%20-%205.png');
 }
 
@@ -115,11 +115,11 @@ button:active {
 
 
 /* EMAIL */
-.email-b {
+.email.icons-b {
   background: -webkit-linear-gradient(top, #1a51f0 0%, #03e4fe 100%);
 }
 
-.email-b.icons-b:before {
+.email.icons-b:before {
    background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Email%20-%20White%201.png");
 }
 
@@ -127,15 +127,15 @@ button:active {
 
 
 /* TUMBLR */
-.tumblr-b {
+.tumblr.icons-b {
   background-color: #35465c;
 }
 
-.tumblr-b.icons-b:before {
+.tumblr.icons-b:before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Medias/Tumblr/White%20-%201%20-%20Comp.png");
 }
 
-.tumblr-black.icons:before {
+.tumblr.black.icons:before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Tumblr%20Icons/Logo/Tumblr%20-%20Black%20-%201.png");
 }
 
