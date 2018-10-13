@@ -377,15 +377,15 @@ button:active {
 }
 
 .amf-controls.minimize.icons:before,
-.application .main-controls .minimize.icons-b::before,
-.application .main-controls .minimize.icons-a::after {
+.application .window-controls .minimize.icons-b::before,
+.application .window-controls .minimize.icons-a::after {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/AMF%20-%20Minimize%20Icon/Minimize%20-%20Black%201.png");
   background-size: 8.5px;
 }
 
 .amf-controls.full-screen.icons:before,
-.application .main-controls .full-screen.icons-b::before,
-.application .main-controls .full-screen.icons-a::after {
+.application .window-controls .full-screen.icons-b::before,
+.application .window-controls .full-screen.icons-a::after {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/AMF%20-%20Full%20Screen%20Icon/Full%20Screen%20-%20Black%201.png");
 }
 
