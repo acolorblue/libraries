@@ -655,3 +655,23 @@ function pauseAnyVideosPlaying(parentContainer) {
     }
   });
 }
+
+
+
+
+// IMAGE SLIDER
+function imageSlider(imageClass, imageLink, container, removalTimer) {
+  if ($('img.' + imageClass).length == 0 && $('.scroll-container').is(':visible')) {
+    image.className = 'image-slider ab-mid ' + imageClass;
+    image.src = imageLink;
+    $(container).append(image.cloneNode());
+
+    setTimeout(function() { 
+      $('img.' + imageClass).addClass('show');
+    }, 500);  
+
+    setTimeout(function() { 
+      $('img.' + imageClass).removeClass('show');
+    }, removalTimer);
+  }
+}
