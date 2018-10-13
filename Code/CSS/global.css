@@ -124,7 +124,39 @@ a {
 
 
 
-/* KEYFRAMES */
+/* IMAGE SLIDER */
+.image-slider {
+  width: 74%;
+  border-radius: 5px;
+  right: 100%; 
+  left: auto;
+  display: none;
+}
+
+.image-slider.show {
+  display: inline;
+  z-index: 10;
+  -webkit-animation: image-slider-transition 4.5s ease-in-out;
+}
+
+@-webkit-keyframes image-slider-transition {
+  0% {
+    right: -74%;
+  }
+  
+  30%, 70% {
+    right: 5%;
+  }
+  
+  100% {
+    right: 100%;
+  }
+}
+
+
+
+
+/* SLIDE UP */
 @-webkit-keyframes slide-up {  
   0% {
     transform: translate(0%, 0%);
@@ -135,6 +167,10 @@ a {
   }
 }
 
+
+
+
+/* TITLE OVERFLOW */
 @-webkit-keyframes title-overflow {
   0%, 20%, 100% { 
     transform: translateX(0%); 
