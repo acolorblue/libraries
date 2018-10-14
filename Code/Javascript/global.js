@@ -15,7 +15,7 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
     device_width_longer,
     twitter_in_app = navigator.userAgent.includes("Twitter"),
     instagram_in_app = navigator.userAgent.includes("Instagram"),
-    safari = navigator.userAgent.includes("Safari") && navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("Macintosh"),
+    safari = navigator.userAgent.includes("Safari") && navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("Safari") && navigator.userAgent.includes("Macintosh"),
     chrome = navigator.userAgent.includes("Chrome"),
     firefox = navigator.userAgent.includes("Firefox"),
     this_button,
