@@ -7,6 +7,8 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
     webOS = navigator.userAgent.match(/webOS/i),
     mobile = ios || android || blackberry || webOS,
     computer = !mobile,
+    macintosh = navigator.userAgent.includes("Macintosh") || navigator.userAgent.includes("Mac OS"),
+    windows = navigator.userAgent.includes("Windows") || navigator.userAgent.includes("Win64") || navigator.userAgent.includes("Win32"),
     portrait = window.orientation == 0,
     device_height_longer,
     landscape = window.orientation == -90 || window.orientation == 90,
