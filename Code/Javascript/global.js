@@ -95,6 +95,14 @@ function specifications() {
   // COMPUTER
   if (computer) {
     $('body').addClass('computer');
+    
+    if (macintosh) {
+      $('body').addClass('macintosh');
+    }
+    
+    if (windows) {
+      $('body').addClass('windows');
+    }
   }       
             
   // MOBILE       
