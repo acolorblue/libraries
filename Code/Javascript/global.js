@@ -34,7 +34,8 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
 
 
 // NODES
-var body = $('body'),
+var html = $('html'),
+    body = $('body'),
     div = document.createElement('div'),
     button = document.createElement('button'),
     image = document.createElement('img'),
