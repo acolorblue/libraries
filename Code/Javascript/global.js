@@ -58,8 +58,8 @@ $('body').append(first_impression_script);
 
 // CHECK DEVICE LENGTH
 function checkDeviceLength() {
-  device_width_longer = $('body').width() > $('body').height();
-  device_height_longer = $('body').height() > $('body').width();
+  device_width_longer = $('html').width() > $('html').height();
+  device_height_longer = $('html').height() > $('html').width();
 }
 checkDeviceLength();
 
@@ -85,46 +85,46 @@ function specifications() {
   checkDeviceLength();
           
   if (device_width_longer) {
-   $('body').addClass('width-longer');
+   $('html').addClass('width-longer');
   }        
    
   if (device_height_longer) {
-   $('body').addClass('height-longer');
+   $('html').addClass('height-longer');
   }
           
   function device() {
   // COMPUTER
   if (computer) {
-    $('body').addClass('computer');
+    $('html').addClass('computer');
     
     if (macintosh) {
-      $('body').addClass('macintosh');
+      $('html').addClass('macintosh');
     }
     
     if (windows) {
-      $('body').addClass('windows');
+      $('html').addClass('windows');
     }
   }       
             
   // MOBILE       
   if (mobile) {
-    $('body').addClass('mobile');
+    $('html').addClass('mobile');
 
     if (ios) {
-      $('body').addClass(' ios');
+      $('html').addClass(' ios');
     }
 
     if (android) {
-      $('body').addClass(' android');
+      $('html').addClass(' android');
     }
 
     function portraitOrLandscape() {
       if (window.orientation == 0) {
-        $('body').removeClass('landscape').addClass('portrait');
+        $('html').removeClass('landscape').addClass('portrait');
       }
 
       else if (window.orientation == -90 || 90) {
-        $('body').removeClass('portrait').addClass('landscape');
+        $('html').removeClass('portrait').addClass('landscape');
       }
     }
     portraitOrLandscape();
@@ -141,15 +141,15 @@ device();
   // BROWSER        
   function browser() {
     if (safari) {
-      $('body').addClass(' safari');
+      $('html').addClass(' safari');
     }
 
     if (chrome) {
-      $('body').addClass(' chrome');
+      $('html').addClass(' chrome');
     }
 
     if (firefox) {
-      $('body').addClass(' firefox');
+      $('html').addClass(' firefox');
     }
   }
   browser();
