@@ -57,30 +57,6 @@ $('body').append(first_impression_script);
 
 
 
-// CHECK DEVICE LENGTH
-function checkDeviceLength() {
-  device_width_longer = $('html').width() > $('html').height();
-  device_height_longer = $('html').height() > $('html').width();
-}
-checkDeviceLength();
-
- 
-
-
-// USER ACTIVE STATUS
-function userActiveStatus() {    
-  $(window).focus(); 
-  
-  $(window).on('blur', function() {
-    if (mobile) {
-      alert("The webpage was paused because you were offline.");
-    }
-  });
-}
-
-
-
-
 // DEVICE SPECIFICATIONS
 function specifications() {  
   function device() {
@@ -159,6 +135,51 @@ function specifications() {
   screenLengths();
 }
 specifications();
+
+
+
+
+// CHECK DEVICE LENGTH
+function checkDeviceLength() {
+  device_width_longer = $('html').width() > $('html').height();
+  device_height_longer = $('html').height() > $('html').width();
+}
+
+
+
+
+// ROTATE TO LANDSCAPE
+function rotateToLandscape() {
+  if ($('body .rotate-to-landscape').length == 0) {
+    div.className = 'rotate-to-landscape ab-mid';
+    body.prepend(div.cloneNode());
+  }
+}
+
+
+
+
+// ROTATE TO PORTRAIT
+function rotateToPortrait() {
+  if ($('body .rotate-to-portrait').length == 0) {
+    div.className = 'rotate-to-portrait ab-mid';
+    body.prepend(div.cloneNode());
+  }
+}
+ 
+
+
+
+// USER ACTIVE STATUS
+function userActiveStatus() {    
+  $(window).focus(); 
+  
+  $(window).on('blur', function() {
+    if (mobile) {
+      alert("The webpage was paused because you were offline.");
+    }
+  });
+}
 
 
 
