@@ -83,62 +83,51 @@ function userActiveStatus() {
 
 // DEVICE SPECIFICATIONS
 function specifications() {  
-  checkDeviceLength();
-          
-  if (device_width_longer) {
-   $('html').addClass('width-longer');
-  }        
-   
-  if (device_height_longer) {
-   $('html').addClass('height-longer');
-  }
-          
   function device() {
-  // COMPUTER
-  if (computer) {
-    $('html').addClass('computer');
+    // COMPUTER
+    if (computer) {
+      $('html').addClass('computer');
     
-    if (macintosh) {
-      $('html').addClass('macintosh');
-    }
+      if (macintosh) {
+        $('html').addClass('macintosh');
+      }
     
-    if (windows) {
-      $('html').addClass('windows');
-    }
-  }       
+      if (windows) {
+        $('html').addClass('windows');
+      }
+    }       
             
-  // MOBILE       
-  if (mobile) {
-    $('html').addClass('mobile');
+    // MOBILE       
+    if (mobile) {
+      $('html').addClass('mobile');
 
-    if (ios) {
-      $('html').addClass(' ios');
-    }
-
-    if (android) {
-      $('html').addClass(' android');
-    }
-
-    function portraitOrLandscape() {
-      if (window.orientation == 0) {
-        $('html').removeClass('landscape').addClass('portrait');
+      if (ios) {
+        $('html').addClass(' ios');
       }
 
-      else if (window.orientation == -90 || 90) {
-        $('html').removeClass('portrait').addClass('landscape');
+      if (android) {
+        $('html').addClass(' android');
       }
-    }
-    portraitOrLandscape();
 
-    window.addEventListener('orientationchange', function() {
+      function portraitOrLandscape() {
+        if (window.orientation == 0) {
+          $('html').removeClass('landscape').addClass('portrait');
+        }
+
+        else if (window.orientation == -90 || 90) {
+          $('html').removeClass('portrait').addClass('landscape');
+        }
+      }
       portraitOrLandscape();
-    });
-    return;
+
+      $(window).on('orientationchange', function() {
+        portraitOrLandscape();
+      });
+    }
   }
-}
-device();
-             
-          
+  device();
+  
+  
   // BROWSER        
   function browser() {
     if (safari) {
@@ -154,6 +143,20 @@ device();
     }
   }
   browser();
+  
+
+  // SCREEN LENGTHS 
+  function screenLengths() {
+    checkDeviceLength();
+    if (device_width_longer) {
+      $('html').addClass('width-longer');
+    }        
+   
+    if (device_height_longer) {
+      $('html').addClass('height-longer');
+    }
+  }  
+  screenLengths();
 }
 specifications();
 
