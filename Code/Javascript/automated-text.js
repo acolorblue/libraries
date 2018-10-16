@@ -4,6 +4,28 @@
 
 
 
+// GLOBAL VARIABLES
+var current_paragraph,
+      next_block_class,
+      next_block_number,
+      next_paragraph,
+      next_block_paragraphs,
+      next_block_paragraphs_class,
+      first_block_interval, 
+      second_block_interval,
+      third_block_interval,
+      fourth_block_interval,
+      fifth_block_interval,
+      sixth_block_interval,
+      seventh_block_interval,
+      eighth_block_interval,
+      ninth_block_interval,
+      tenth_block_interval,
+      eleventh_block_interval;
+
+
+
+
 // AUTOMATED TEXT
 function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, breakWord, breakTime) {
   var booSkipAutomatedText = false;
