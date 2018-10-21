@@ -254,6 +254,12 @@ button:active {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Media%20Controls/Forward/White%20-%201%20-%20Comp.png');
 }
 
+.reload.icons-b::before,
+.reload.icons-a::after {
+  background-image: url('https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Reload/1.png');
+}
+
+
 
 
 /* USER AVI ICONS */
