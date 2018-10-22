@@ -614,7 +614,11 @@ function imageBlur(container, element, blur, source) {
 
 // IMAGE BLUR REPOSITION
 function imageBlurReposition(container, element, blur, source) {
-  $(container, element).mutate('width height', function(el, info) {
+  $(container).mutate('width height', function(el, info) {
+    imageBlur(container, element, blur, source);
+  });
+  
+  $(element).mutate('width height', function(el, info) {
     imageBlur(container, element, blur, source);
   });
 }
