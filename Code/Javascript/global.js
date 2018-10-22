@@ -607,13 +607,8 @@ function imageBlur(container, element, blur, source) {
     }
   } 
   retreiveAndPositionImage();
-}
-
-
-
-
-// IMAGE BLUR REPOSITION
-function imageBlurReposition(container, element, blur, source) {
+  
+  
   $(container).mutate('width height', function(el, info) {
     imageBlur(container, element, blur, source);
     console.log("container moved" + container);
@@ -623,6 +618,22 @@ function imageBlurReposition(container, element, blur, source) {
     imageBlur(container, element, blur, source);
     console.log("element moved" + element);
   });
+}
+
+
+
+
+// IMAGE BLUR REPOSITION
+function imageBlurReposition(container, element, blur, source) {
+//   $(container).mutate('width height', function(el, info) {
+//     imageBlur(container, element, blur, source);
+//     console.log("container moved" + container);
+//   });
+  
+//   $(element).mutate('width height', function(el, info) {
+//     imageBlur(container, element, blur, source);
+//     console.log("element moved" + element);
+//   });
 }
           
           
