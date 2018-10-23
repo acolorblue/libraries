@@ -107,15 +107,15 @@ function specifications() {
   // BROWSER        
   function browser() {
     if (safari) {
-      $('html').addClass(' safari');
+      $('html').addClass('safari');
     }
 
     if (chrome) {
-      $('html').addClass(' chrome');
+      $('html').addClass('chrome');
     }
 
     if (firefox) {
-      $('html').addClass(' firefox');
+      $('html').addClass('firefox');
     }
   }
   browser();
@@ -143,6 +143,20 @@ specifications();
 function checkDeviceLength() {
   device_width_longer = $('html').width() > $('html').height();
   device_height_longer = $('html').height() > $('html').width();
+}
+
+
+
+
+// LOADER COVER
+function removeLoaderCover() {
+  setTimeout(function() {
+    $('.loader').addClass('uncovered');
+  }, 3500);
+
+  setTimeout(function() {
+    $('.loader').removeClass('covered uncovered');
+  }, 4500);
 }
 
 
