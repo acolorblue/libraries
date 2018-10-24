@@ -42,8 +42,10 @@ var html = $('html'),
     paragraph = document.createElement('p'),
     span = document.createElement('span'),
     input = document.createElement('input'),
+    source = document.createElement('source'),
     link = document.createElement('a');
     link.target = '_blank';
+    
 
 
 
