@@ -43,6 +43,7 @@ var html = $('html'),
     span = document.createElement('span'),
     input = document.createElement('input'),
     source = document.createElement('source'),
+    source_link,
     link = document.createElement('a');
     link.target = '_blank';
     
