@@ -3,7 +3,7 @@
 
 
 
-// INLINE JQUERY
+// INLINE JQUERY IOS
 var enableInlineVideo = (function() {
   "use strict" /*! npm.im/intervalometer */;
   function e(e, i, n, r) {
@@ -227,3 +227,18 @@ var enableInlineVideo = (function() {
     T = 0;
   return y;
 })();
+
+
+
+
+// INLINE VIDEO CHANGE ANDROID
+function enableInlineVideoAndroid(element) {
+  $(element).each(function() {
+    video = $(this);
+    source_link = video.attr('src');
+    source = video.find('source');
+    
+    source.attr('src', source_link).attr('type', 'video/mp4');
+    video.append(source).removeAttr('src');
+  });
+}
