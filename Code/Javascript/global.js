@@ -697,6 +697,16 @@ function randomColorGeneratorContainer() {
 
 
 
+// MONOTONE BREATHER
+function monotoneBreather(element, waitTimer) {
+  setTimeout(function() {
+    $(element).addClass('monotone-breather')
+  }, waitTimer);
+}
+
+
+
+
 // PRIMARY COLOR GENERATOR
 function primaryColor(image, element, opacity) {
   image.primaryColor(function(color) {
