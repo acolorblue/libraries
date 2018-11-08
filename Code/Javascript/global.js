@@ -19,7 +19,7 @@ var ios = navigator.userAgent.match(/iPhone/i) ||
     twitter_in_app = navigator.userAgent.includes("Twitter"),
     instagram_in_app = navigator.userAgent.includes("Instagram"),
     native_browser,
-    this_button,
+    this_element,
     space = " ",
     period = ".",
     comma = ",",
