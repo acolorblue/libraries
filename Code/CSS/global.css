@@ -194,6 +194,24 @@ a {
 
 
 
+/* WORLD CLOCK */
+.world-clock .timezones clock .border { 
+  background-size: cover;
+  background-position: center;
+  transition: background-size 200ms ease-in-out;
+}
+
+.world-clock .timezones clock.zoom.regular .border {
+  background-size: auto 100%;
+}
+
+.world-clock .timezones clock.zoom.x2 .border { 
+  background-size: auto 200%;
+}
+
+
+
+
 /* SLIDE UP */
 @-webkit-keyframes slide-up {  
   0% {
