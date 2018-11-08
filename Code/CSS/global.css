@@ -46,11 +46,12 @@ a {
 
 .no-opacity {
   opacity: 0;
+  transition: opacity 400ms ease-in-out;
 }
 
 .slide-up {
-/*   -webkit-animation: slide-up 3s linear; */
-  
+  transform: translate(0%, -110%);
+  transition: transform 3s linear;
 }
 
 
