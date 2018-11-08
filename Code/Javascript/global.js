@@ -165,6 +165,16 @@ function removeLoaderCover() {
 
 
 
+// REMOVE LOADER
+function removeLoader(element, time) {
+  setTimeout(function() {
+    $(element).remove();
+  }, time);
+}
+
+
+
+
 // ROTATE TO LANDSCAPE
 function rotateToLandscape() {
   if ($('body .rotate-to-landscape').length == 0) {
