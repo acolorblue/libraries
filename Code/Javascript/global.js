@@ -165,11 +165,15 @@ function removeLoaderCover() {
 
 
 
-// REMOVE LOADER
-function removeLoader(element, time) {
+// HIDE THEN REMOVE LOADER
+function removeLoader(element, hideTimer, removeTimer) {
+  setTimeout(function() {
+    $(element).addClass('hide');
+  }, hideTimer);
+  
   setTimeout(function() {
     $(element).remove();
-  }, time);
+  }, removeTimer);
 }
 
 
