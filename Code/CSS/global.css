@@ -44,6 +44,14 @@ a {
   transform: scale(.002);
 }
 
+.no-opacity {
+  opacity: 0;
+}
+
+.slide-up {
+  -webkit-animation: slide-up 3s linear;
+}
+
 
 
 
