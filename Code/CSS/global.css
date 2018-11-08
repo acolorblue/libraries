@@ -237,7 +237,7 @@ a {
 
 
 /* MONOTONE BREATHING SIMULATOR */
-@-webkit-keyframes monotone-breathing-simulator {  
+@-webkit-keyframes monotone-breather {  
   0% {
     background-color: rgb(17, 17, 17);
   }
