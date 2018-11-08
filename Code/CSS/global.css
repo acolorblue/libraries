@@ -49,7 +49,8 @@ a {
 }
 
 .slide-up {
-  -webkit-animation: slide-up 3s linear;
+/*   -webkit-animation: slide-up 3s linear; */
+  
 }
 
 
