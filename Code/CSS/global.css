@@ -236,7 +236,11 @@ a {
 
 
 
-/* MONOTONE BREATHING SIMULATOR */
+/* MONOTONE BREATHER */
+.monotone-breather {
+  -webkit-animation: monotone-breather 3.5s ease-in-out infinite;
+} 
+
 @-webkit-keyframes monotone-breather {  
   0% {
     background-color: rgb(17, 17, 17);
