@@ -201,11 +201,11 @@ a {
   transition: background-size 200ms ease-in-out;
 }
 
-.world-clock .timezones clock.zoom.regular .border {
+.world-clock .timezones clock .border.zoom.regular {
   background-size: auto 100%;
 }
 
-.world-clock .timezones clock.zoom.x2 .border { 
+.world-clock .timezones clock .border.zoom.x2 { 
   background-size: auto 200%;
 }
 
