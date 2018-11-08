@@ -166,9 +166,9 @@ function removeLoaderCover() {
 
 
 // HIDE THEN REMOVE LOADER
-function removeLoader(element, hideTimer, removeTimer) {
+function removeLoader(element, hideType, hideTimer, removeTimer) {
   setTimeout(function() {
-    $(element).addClass('hide');
+    $(element).addClass(hideType);
   }, hideTimer);
   
   setTimeout(function() {
