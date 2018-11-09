@@ -655,6 +655,31 @@ function imageBlurReposition(container, element, blur, source) {
     console.log("element moved" + element);
   });
 }
+
+
+
+
+// COMPUTER IMAGE ZOOM
+function computerImageZoom(element) {
+  $(element)
+    .on('mouseover', function() {
+    this_element = $(this);
+
+    this_element.addClass('zoom regular');
+    setTimeout(function() {
+      this_element.addClass('x2');
+    }, 1);
+  })
+
+    .on('mouseleave', function() {
+    this_element = $(this);
+
+    this_element.removeClass('x2');
+    setTimeout(function() {
+      this_element.removeClass('regular');
+    }, 200);
+  })
+}
            
           
           
