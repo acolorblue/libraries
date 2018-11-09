@@ -204,11 +204,11 @@ a {
 
 /* BACKGROUND IMAGE ZOOM */
 .zoom.regular {
-  background-size: auto 100%;
+  background-size: auto 100% !important;
 }
 
 .zoom.x2 { 
-  background-size: auto 200%;
+  background-size: auto 200% !important;
 }
 
 
