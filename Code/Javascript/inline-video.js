@@ -235,10 +235,12 @@ var enableInlineVideo = (function() {
 function enableInlineVideoAndroid(element) {
   $(element).each(function() {
     video = $(this);
-    source_link = video.attr('src');
-    source = video.find('source');
+//     source_link = video.attr('src');
+//     source = video.find('source');
     
-    source.attr('src', source_link).attr('type', 'video/mp4');
-    video.append(source).removeAttr('src playsinline').attr('controls', ' ');
+//     source.attr('src', source_link).attr('type', 'video/mp4');
+//     video.append(source).removeAttr('src playsinline').attr('controls', ' ');
+    
+    video.removeAttr('playsinline').attr('controls', ' ');
   });
 }
