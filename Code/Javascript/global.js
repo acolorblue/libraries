@@ -90,6 +90,7 @@ function specifications() {
         
         if (ipad) {
           $('html').addClass('ipad');
+          $('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1.0');
         }
         
         if (ipod) {
