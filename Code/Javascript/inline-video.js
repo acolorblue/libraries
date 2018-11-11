@@ -241,6 +241,8 @@ function enableInlineVideoAndroid(element) {
 //     source.attr('src', source_link).attr('type', 'video/mp4');
 //     video.append(source).removeAttr('src playsinline').attr('controls', ' ');
     
-    video.removeAttr('playsinline').attr('controls', ' ');
+//     video.removeAttr('playsinline').attr('controls', ' ');
+    
+    video.removeAttr('playsinline');
   });
 }
