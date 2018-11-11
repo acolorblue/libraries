@@ -1,7 +1,8 @@
 // GLOBAL VARIABLES
-var ios = navigator.userAgent.match(/iPhone/i) ||
-          navigator.userAgent.match(/iPad/i) ||
-          navigator.userAgent.match(/iPod/i),
+var iphone = navigator.userAgent.match(/iPhone/i),
+    ipad = navigator.userAgent.match(/iPad/i),
+    ipod = navigator.userAgent.match(/iPod/i),
+    ios = iphone || ipad || ipod,
     android = navigator.userAgent.match(/Android/i),
     blackberry = navigator.userAgent.match(/BlackBerry/i),
     webOS = navigator.userAgent.match(/webOS/i),
@@ -81,11 +82,23 @@ function specifications() {
       $('html').addClass('mobile');
 
       if (ios) {
-        $('html').addClass(' ios');
+        $('html').addClass('ios');
+        
+        if (iphone) {
+          $('html').addClass('iphone');
+        }
+        
+        if (ipad) {
+          $('html').addClass('ipad');
+        }
+        
+        if (ipod) {
+          $('html').addClass('ipod');
+        }
       }
 
       if (android) {
-        $('html').addClass(' android');
+        $('html').addClass('android');
       }
 
       function portraitOrLandscape() {
