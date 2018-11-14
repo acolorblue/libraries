@@ -102,19 +102,9 @@ function specifications() {
         $('html').addClass('android');
       }
 
-      function portraitOrLandscape() {
-        if (window.orientation == 0) {
-          $('html').removeClass('landscape').addClass('portrait');
-        }
-
-        else if (window.orientation == -90 || 90) {
-          $('html').removeClass('portrait').addClass('landscape');
-        }
-      }
-      portraitOrLandscape();
-
+      mobileOrientation();
       $(window).on('orientationchange', function() {
-        portraitOrLandscape();
+        mobileOrientation();
       });
     }
   }
@@ -160,6 +150,20 @@ specifications();
 function checkDeviceLength() {
   device_width_longer = $('html').width() > $('html').height();
   device_height_longer = $('html').height() > $('html').width();
+}
+
+
+
+
+// MOBILE ORIENTATION
+function mobileOrientation() {
+  if (window.orientation == 0) {
+    $('html').removeClass('landscape').addClass('portrait');
+  }
+
+  else if (window.orientation == -90 || 90) {
+    $('html').removeClass('portrait').addClass('landscape');
+  }
 }
 
 
