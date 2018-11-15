@@ -61,8 +61,8 @@ $('body').append(first_impression_script);
 
 
 
-// DEVICE SPECIFICATIONS
-function specifications() {  
+// DEVICE INFO
+function deviceInfo() {  
   function device() {
     // COMPUTER
     if (computer) {
@@ -102,9 +102,9 @@ function specifications() {
         $('html').addClass('android');
       }
 
-      mobileOrientation();
+      checkMobileOrientation();
       $(window).on('orientationchange', function() {
-        mobileOrientation();
+        checkMobileOrientation();
       });
     }
   }
@@ -129,19 +129,12 @@ function specifications() {
   
 
   // SCREEN LENGTHS 
-  function screenLengths() {
+  checkDeviceLength();
+  $(window).on('orientationchange', function() {
     checkDeviceLength();
-    if (device_width_longer) {
-      $('html').addClass('width-longer');
-    }        
-   
-    if (device_height_longer) {
-      $('html').addClass('height-longer');
-    }
-  }  
-  screenLengths();
+  });
 }
-specifications();
+deviceInfo();
 
 
 
@@ -149,19 +142,29 @@ specifications();
 // CHECK DEVICE LENGTH
 function checkDeviceLength() {
   device_width_longer = $('html').width() > $('html').height();
+  if (device_width_longer) {
+    html.removeClass('height-longer').addClass('width-longer');
+  }
+      
+      
   device_height_longer = $('html').height() > $('html').width();
+  if (device_height_longer) {
+    html.removeClass('width-longer').addClass('height-longer');
+  }
 }
 
 
 
 
 // MOBILE ORIENTATION
-function mobileOrientation() {
-  if (window.orientation == 0) {
+function checkMobileOrientation() {
+  portrait = window.orientation == 0;
+  if (portrait) {
     $('html').removeClass('landscape').addClass('portrait');
   }
-
-  else if (window.orientation == -90 || 90) {
+  
+  landscape = window.orientation == -90 || window.orientation == 90;
+  if (landscape) {
     $('html').removeClass('portrait').addClass('landscape');
   }
 }
@@ -771,7 +774,6 @@ function bufferingIndicator(container) {
 
 
 
-
 // PAUSE ANY VIDEOS PLAYING
 function pauseAnyVideosPlaying(parentContainer) {
   $(parentContainer + ' .media').each(function() {
@@ -801,3 +803,9 @@ function imageSlider(imageClass, imageLink, container, removalTimer) {
     }, removalTimer);
   }
 }
+
+
+
+
+// TEXT INPUT
+function 
