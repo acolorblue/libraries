@@ -810,7 +810,7 @@ function imageSlider(imageClass, imageLink, container, removalTimer) {
 
 
 // KEYBOARD OUT
-function textInputActivation() {
+function keyboardOut() {
   $('input, textarea, *[contentEditable=true]').focus(function(){  
     body.addClass('keyboard-out');    
   });
@@ -819,3 +819,4 @@ function textInputActivation() {
     body.removeClass('keyboard-out');  
   });
 }
+keyboardOut();
