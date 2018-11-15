@@ -809,4 +809,13 @@ function imageSlider(imageClass, imageLink, container, removalTimer) {
 
 
 
-// TEXT INPUT
+// KEYBOARD OUT
+function textInputActivation() {
+  $('input, textarea, *[contentEditable=true]').focus(function(){  
+    body.addClass('keyboard-out');    
+  });
+  
+  $('input, textarea, *[contentEditable=true]').blur( function(){  
+    body.removeClass('keyboard-out');  
+  });
+}
