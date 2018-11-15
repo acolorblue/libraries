@@ -148,8 +148,7 @@ function checkDeviceLength() {
   if (device_width_longer) {
     html.removeClass('height-longer').addClass('width-longer');
   }
-      
-      
+    
   device_height_longer = $('html').height() > $('html').width();
   if (device_height_longer) {
     html.removeClass('width-longer').addClass('height-longer');
