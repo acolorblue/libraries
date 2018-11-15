@@ -90,22 +90,11 @@ function deviceInfo() {
 
       if (android) {
         $('html').addClass('android');
-      }
-
-      checkMobileOrientation();
-      $(window).on('orientationchange', function() {
-        checkMobileOrientation();
-      });
+      } 
     }
   }
   device();
   
-
-  // SCREEN LENGTHS 
-  checkDeviceLength();
-  $(window).on('orientationchange', function() {
-    checkDeviceLength();
-  });
   
   // BROWSER        
   function browser() {
@@ -122,7 +111,6 @@ function deviceInfo() {
     }
     
     function newUser() {
-      // FIRST IMPRESSION
       var first_impression_script = document.createElement('script');
           first_impression_script.type = 'text/javascript';
           first_impression_script.src = "https://acolorblue.co/libraries/Code/Javascript/first-impression.js?15";
@@ -131,6 +119,23 @@ function deviceInfo() {
     newUser();
   }
   browser();
+  
+  
+  // SCREEN VIEWPORT
+  function screenViewport() {
+    checkDeviceLength();
+    $(window).on('resize orientationchange', function() {
+      checkDeviceLength();
+    });
+    
+    if (mobile) {
+      checkMobileOrientation();
+      $(window).on('resize orientationchange', function() {
+        checkMobileOrientation();
+      });
+    }
+  }
+  screenViewport();
 }
 deviceInfo();
 
