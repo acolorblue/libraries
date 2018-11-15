@@ -812,11 +812,11 @@ function imageSlider(imageClass, imageLink, container, removalTimer) {
 // KEYBOARD OUT
 function keyboardOut() {
   $('input, textarea, *[contentEditable=true]').focus(function(){  
-    body.addClass('keyboard-out');    
+    html.addClass('keyboard-out');    
   });
   
   $('input, textarea, *[contentEditable=true]').blur( function(){  
-    body.removeClass('keyboard-out');  
+    html.removeClass('keyboard-out');  
   });
 }
 keyboardOut();
