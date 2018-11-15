@@ -11,9 +11,9 @@ var iphone = navigator.userAgent.match(/iPhone/i),
     macintosh = navigator.userAgent.includes("Macintosh") || navigator.userAgent.includes("Mac OS"),
     windows = navigator.userAgent.includes("Windows") || navigator.userAgent.includes("Win64") || navigator.userAgent.includes("Win32"),
     device_height_longer,
-    portrait = window.orientation == 0,
+    portrait,
     device_width_longer,
-    landscape = window.orientation == -90 || window.orientation == 90,
+    landscape,
     safari = navigator.userAgent.includes("Safari") && navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("Safari") && navigator.userAgent.includes("Macintosh"),
     chrome = navigator.userAgent.includes("Chrome"),
     firefox = navigator.userAgent.includes("Firefox"),
@@ -47,16 +47,6 @@ var html = $('html'),
     source_link,
     link = document.createElement('a');
     link.target = '_blank';
-    
-
-
-
-
-// FIRST IMPRESSION SCRIPT LINK
-var first_impression_script = document.createElement('script');
-    first_impression_script.type = 'text/javascript';
-    first_impression_script.src = "https://acolorblue.co/libraries/Code/Javascript/first-impression.js?15";
-$('body').append(first_impression_script);
 
 
 
@@ -110,6 +100,12 @@ function deviceInfo() {
   }
   device();
   
+
+  // SCREEN LENGTHS 
+  checkDeviceLength();
+  $(window).on('orientationchange', function() {
+    checkDeviceLength();
+  });
   
   // BROWSER        
   function browser() {
@@ -124,15 +120,17 @@ function deviceInfo() {
     if (firefox) {
       $('html').addClass('firefox');
     }
+    
+    function newUser() {
+      // FIRST IMPRESSION
+      var first_impression_script = document.createElement('script');
+          first_impression_script.type = 'text/javascript';
+          first_impression_script.src = "https://acolorblue.co/libraries/Code/Javascript/first-impression.js?15";
+      $('body').append(first_impression_script);
+    }
+    newUser();
   }
   browser();
-  
-
-  // SCREEN LENGTHS 
-  checkDeviceLength();
-  $(window).on('orientationchange', function() {
-    checkDeviceLength();
-  });
 }
 deviceInfo();
 
