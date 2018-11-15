@@ -808,4 +808,3 @@ function imageSlider(imageClass, imageLink, container, removalTimer) {
 
 
 // TEXT INPUT
-function 
