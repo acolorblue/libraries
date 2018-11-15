@@ -811,12 +811,14 @@ function imageSlider(imageClass, imageLink, container, removalTimer) {
 
 // KEYBOARD OUT
 function keyboardOut() {
-  $('input, textarea').focus(function(){  
-    html.addClass('keyboard-out');    
-  });
-  
-  $('input, textarea').blur( function(){  
-    html.removeClass('keyboard-out');  
-  });
+  if (mobile) {
+    $('input, textarea, *[contentEditable=true]').focus(function(){  
+      html.addClass('keyboard-out');    
+    });
+
+    $('input, textarea, *[contentEditable=true]').blur( function(){  
+      html.removeClass('keyboard-out');  
+    });
+  }
 }
 keyboardOut();
