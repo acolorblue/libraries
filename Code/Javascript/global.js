@@ -9,19 +9,19 @@ var user_agent_length = navigator.userAgent.length,
     webOS = navigator.userAgent.match(/webOS/i),
     mobile = ios || android || blackberry || webOS,
     computer = !mobile,
-    macintosh = navigator.userAgent.includes("Macintosh") || navigator.userAgent.includes("Mac OS"),
-    windows = navigator.userAgent.includes("Windows") || navigator.userAgent.includes("Win64") || navigator.userAgent.includes("Win32"),
+    macintosh = navigator.userAgent.match(/Macintosh/i) || navigator.userAgent.match(/Mac OS/i),
+    windows = navigator.userAgent.match(/Windows/i) || navigator.userAgent.match(/Win64/i) || navigator.userAgent.match(/Win32/i),
     device_height_longer,
     portrait,
     device_width_longer,
     landscape,
-    safari = navigator.userAgent.includes("Safari"),
+    safari = navigator.userAgent.match(/Safari/i),
     safari = safari && macintosh || safari && ios,
     chrome,
     index_of_chrome,
-    firefox = navigator.userAgent.includes("Firefox"),
-    twitter_in_app = navigator.userAgent.includes("Twitter"),
-    instagram_in_app = navigator.userAgent.includes("Instagram"),
+    firefox = navigator.userAgent.match(/Firefox/i),
+    twitter_in_app = navigator.userAgent.match(/Twitter/i),
+    instagram_in_app = navigator.userAgent.match(/Instagram/i),
     native_browser,
     this_element,
     space = " ",
@@ -109,7 +109,7 @@ function deviceInfo() {
       html.addClass('chrome');
     }
     
-    if (navigator.userAgent.includes("Chrome")) {
+    if (navigator.userAgent.match(/Chrome/i)) {
       index_of_chrome = navigator.userAgent.indexOf("Chrome");
       if (index_of_chrome < user_agent_length) {
         html.addClass('chrome');
