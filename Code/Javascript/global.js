@@ -15,11 +15,12 @@ var user_agent_length = navigator.userAgent.length,
     portrait,
     device_width_longer,
     landscape,
-    safari = navigator.userAgent.match(/Safari/i),
-    safari = safari && macintosh || safari && ios,
-    chrome,
+    chrome = navigator.userAgent.match(/Chrome/i),
     index_of_chrome,
     firefox = navigator.userAgent.match(/Firefox/i),
+    not_chrome_or_firefox = !chrome && !firefox,
+    safari = navigator.userAgent.match(/Safari/i),
+    safari = macintosh && safari && not_chrome_or_firefox || ios && safari && not_chrome_or_firefox,
     twitter_in_app = navigator.userAgent.match(/Twitter/i),
     instagram_in_app = navigator.userAgent.match(/Instagram/i),
     native_browser,
@@ -106,10 +107,6 @@ function deviceInfo() {
     }
 
     if (chrome) {
-      html.addClass('chrome');
-    }
-    
-    if (navigator.userAgent.match(/Chrome/i)) {
       index_of_chrome = navigator.userAgent.indexOf("Chrome");
       if (index_of_chrome < user_agent_length) {
         html.addClass('chrome');
