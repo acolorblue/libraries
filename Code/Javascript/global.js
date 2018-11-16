@@ -1,5 +1,6 @@
 // GLOBAL VARIABLES
-var iphone = navigator.userAgent.match(/iPhone/i),
+var user_agent_length = navigator.userAgent.length,
+    iphone = navigator.userAgent.match(/iPhone/i),
     ipad = navigator.userAgent.match(/iPad/i),
     ipod = navigator.userAgent.match(/iPod/i),
     ios = iphone || ipad || ipod,
@@ -15,7 +16,8 @@ var iphone = navigator.userAgent.match(/iPhone/i),
     device_width_longer,
     landscape,
     safari = navigator.userAgent.includes("Safari") && navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("Safari") && navigator.userAgent.includes("Macintosh"),
-    chrome = navigator.userAgent.includes("Chrome"),
+    chrome,
+    index_of_chrome,
     firefox = navigator.userAgent.includes("Firefox"),
     twitter_in_app = navigator.userAgent.includes("Twitter"),
     instagram_in_app = navigator.userAgent.includes("Instagram"),
@@ -56,40 +58,40 @@ function deviceInfo() {
   function device() {
     // COMPUTER
     if (computer) {
-      $('html').addClass('computer');
+      html.addClass('computer');
     
       if (macintosh) {
-        $('html').addClass('macintosh');
+        html.addClass('macintosh');
       }
     
       if (windows) {
-        $('html').addClass('windows');
+        html.addClass('windows');
       }
     }       
             
     // MOBILE       
     if (mobile) {
-      $('html').addClass('mobile');
+      html.addClass('mobile');
 
       if (ios) {
-        $('html').addClass('ios');
+        html.addClass('ios');
         
         if (iphone) {
-          $('html').addClass('iphone');
+          html.addClass('iphone');
         }
         
         if (ipad) {
-          $('html').addClass('ipad');
+          html.addClass('ipad');
           $('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1.0');
         }
         
         if (ipod) {
-          $('html').addClass('ipod');
+          html.addClass('ipod');
         }
       }
 
       if (android) {
-        $('html').addClass('android');
+        html.addClass('android');
       } 
     }
   }
@@ -99,15 +101,22 @@ function deviceInfo() {
   // BROWSER        
   function browser() {
     if (safari) {
-      $('html').addClass('safari');
+      html.addClass('safari');
     }
 
     if (chrome) {
-      $('html').addClass('chrome');
+      html.addClass('chrome');
+    }
+    
+    if (navigator.userAgent.includes("Chrome")) {
+      index_of_chrome = navigator.userAgent.indexOf("Chrome");
+      if (index_of_chrome < user_agent_length) {
+        html.addClass('chrome');
+      } 
     }
 
     if (firefox) {
-      $('html').addClass('firefox');
+      html.addClass('firefox');
     }
     
     function newUser() {
@@ -162,12 +171,12 @@ function checkDeviceLength() {
 function checkMobileOrientation() {
   portrait = window.orientation == 0;
   if (portrait) {
-    $('html').removeClass('landscape').addClass('portrait');
+    html.removeClass('landscape').addClass('portrait');
   }
   
   landscape = window.orientation == -90 || window.orientation == 90;
   if (landscape) {
-    $('html').removeClass('portrait').addClass('landscape');
+    html.removeClass('portrait').addClass('landscape');
   }
 }
 
