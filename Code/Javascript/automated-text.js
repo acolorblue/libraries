@@ -62,8 +62,6 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
     for (var i = 0; i < lineCount; i++) {  
       lineContents[i] = $($lines[i]).text(); 
       $($lines[i]).text('');
-//       $($lines[i]).css('visibility', 'visible');
-//       $($lines[i]).css('display', 'block');
     }
     typeLine();
 
@@ -77,7 +75,7 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
         let lengthClassSkip = elClassSkip.length;
 
         while (lengthClassSkip--) {
-          $(elClassSkip[lengthClassSkip]).css('display', 'none');
+//           $(elClassSkip[lengthClassSkip]).css('display', 'none');
         }
         return;
       }
@@ -103,8 +101,6 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
       else {
         content = '' + content + '';
         element.appendChild(document.createTextNode(' '));
-//         element.className += ' active opened';
-        
         $(element).removeClass('unread')
         element.className += ' reading';
         typeChar();
@@ -128,7 +124,6 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
               typeChar();
             }
             else { 
-//               $(element).removeClass('active unread').addClass('read');
               $(element).removeClass('reading').addClass('read');
               
               setTimeout(function () {
