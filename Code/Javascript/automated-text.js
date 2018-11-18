@@ -5,30 +5,31 @@
 
 
 // GLOBAL VARIABLES
-var current_paragraph,
-      next_block_class,
-      next_block_number,
-      next_paragraph,
-      next_block_paragraphs,
-      next_block_paragraphs_class,
-      first_block_interval, 
-      second_block_interval,
-      third_block_interval,
-      fourth_block_interval,
-      fifth_block_interval,
-      sixth_block_interval,
-      seventh_block_interval,
-      eighth_block_interval,
-      ninth_block_interval,
-      tenth_block_interval,
-      eleventh_block_interval;
+var fast_forward,
+    current_paragraph,
+    next_block_class,
+    next_block_number,
+    next_paragraph,
+    next_block_paragraphs,
+    next_block_paragraphs_class,
+    first_block_interval, 
+    second_block_interval,
+    third_block_interval,
+    fourth_block_interval,
+    fifth_block_interval,
+    sixth_block_interval,
+    seventh_block_interval,
+    eighth_block_interval,
+    ninth_block_interval,
+    tenth_block_interval,
+    eleventh_block_interval;
 
 
 
 
 // AUTOMATED TEXT
 function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, breakWord, breakTime) {
-  var booSkipAutomatedText = false;
+  fast_forward = false;
 
   if (selector == null || selector.trim() == '') {
     return;
@@ -71,7 +72,7 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
       var content = lineContents[idx];
 
       if (typeof content == "undefined") {
-        let elClassSkip = $('.skip');
+        let elClassSkip = $('.fast-forward-automated-text');
         let lengthClassSkip = elClassSkip.length;
 
         while (lengthClassSkip--) {
@@ -94,7 +95,7 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
 
       var charIdx = 0; 
 
-      if (booExclude || booSkipAutomatedText) {
+      if (booExclude || fast_forward) {
         $(element).text(content);
         typeLine(++idx);
       } 
@@ -107,7 +108,7 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
       }
 
       function typeChar() {
-        var rand = (!booSkipAutomatedText ? Math.round(Math.random() * 60) + 25 : 0);
+        var rand = (!fast_forward ? Math.round(Math.random() * 60) + 25 : 0);
 
         setTimeout(function () {
           var char = content[charIdx++],
@@ -128,16 +129,16 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
               
               setTimeout(function () {
                 typeLine(++idx);
-              }, (!booSkipAutomatedText ? objTextInfo.timeBetweenText : 0));
+              }, (!fast_forward ? objTextInfo.timeBetweenText : 0));
             }
-          }, (booBreak && !booSkipAutomatedText ? objTextInfo.breakTime : 0))
+          }, (booBreak && !fast_forward ? objTextInfo.breakTime : 0))
         }, rand);
       }
     }
   }
   
-  $('button.skip').click(function() {
-    booSkipAutomatedText = true;
+  $('button.fast-forward-automated-text').click(function() {
+    fast_forward = true;
   });
 }
 
