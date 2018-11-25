@@ -24,6 +24,19 @@ body {
 }
 
 button {
+  background: none;
+  user-select: none;
+  touch-action: none;
+  outline: none;
+  border: none;
+  cursor: pointer; 
+  padding: 0;
+  margin: 0;
+  transition: unset;
+}
+
+button:active {
+  opacity: .7;
   transition: unset;
 }
 
