@@ -71,11 +71,11 @@
 
 /* YOUTUBE */
 .youtube.white.icons-b::before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Medias/Youtube/White%20-%201%20-%20Comp.png');
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Youtube/White%20-%201%20-%20Comp.png");
 }
 
 .youtube.red.icons-b::before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Youtube/Youtube%20-%20Red%20-%205.png');
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Youtube/Red%20-%201%20-%20Comp.png");
 }
 
 
