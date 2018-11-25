@@ -1,37 +1,4 @@
-button {
-  background: none;
-  user-select: none;
-  touch-action: none;
-  outline: none;
-  border: none;
-  cursor: pointer; 
-  padding: 0;
-  margin: 0;
-}
-
-button:active {
-  opacity: .7;
-  transition: unset;
-}
-
-.icons:before {
-  content: '';
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 1;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 12px;
-}
-
-
-
-
-/** ICONS UPDATED - 3 **/
+/** ICONS **/
 .icons-b::before,
 .icons-a::after {
   content: '';
@@ -42,7 +9,7 @@ button:active {
 }
 
 
-/* ICONS ABSOLUTE */
+/* .ICONS-B.ABS */
 .icons-b.abs::before,
 .icons-a.abs::after {
   display: block;
@@ -53,7 +20,8 @@ button:active {
   left: 0;
 }
 
-/* ICONS RELATIVE */
+
+/* .ICONS-B.REL */
 .icons-b.rel::before,
 .icons-a.rel::after {
   display: inline-block;
@@ -286,7 +254,7 @@ button:active {
 
 /* IOS  */
 .battery.low-power-mode.icons-b::before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/iOS/Battery/Low%20Power%20Mode/Yellow%20-%20%20Rect%20-%20%201%20-%20Comp.png');
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/iOS/Battery/Low%20Power%20Mode/Yellow%20-%201%20-%20Comp.png");
 }
 
 
