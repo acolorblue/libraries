@@ -389,12 +389,12 @@
 
 
 /* APPLE MEDIA FILE - ZOOM ICONS */
-.zoom-out.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Zoom/Rounded%20Edge/Rounded%20%26%20Thick/Zoom%20Out%20-%20Rounded%20Thick%20-%201.png");
+.zoom-in.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Zoom/In/%234f4f4f%20-%201.png");
 }
 
-.zoom-in.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Zoom/Rounded%20Edge/Rounded%20%26%20Thick/Zoom%20In%20-%20Rounded%20Thick%20-%201.png");
+.zoom-out.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Zoom/Out/%234f4f4f%20-%201.png");
 }
 
 .amf-share.icons:before {
