@@ -37,17 +37,17 @@
   background: #00C3F3;
 }
 
-.twitter.icons-b:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Medias/Twitter/White%20-%201%20-%20Comp.png");
+.twitter.white.icons-b:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Twitter/White%20-%201%20-%20Comp.png");
 }
 
 .twitter.black.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Logo/Twitter%20-%20Black%20-%201.png");
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Twitter/Black%20-%201%20-%20Comp.png");
 }
 
 .twitter .extra-options.icons-b::before,
 .twitter .extra-options.icons-b::after {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Medias/Twitter/Extra%20Options/Blue%20-%201%20-%20Comp.png');
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Twitter/Extra%20Options/Blue%20-%201%20-%20Comp.png");
 }
 
 
@@ -58,7 +58,7 @@
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
 
-.instagram.icons-b:before {
+.instagram.white.icons-b:before {
    background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Instagram/White%20-%201%20-%20Comp.png");
 }
 
@@ -83,7 +83,7 @@
 
 
 /* EMAIL */
-.email.icons-b {
+.apple .email.icons-b {
   background: -webkit-linear-gradient(top, #1a51f0 0%, #03e4fe 100%);
 }
 
@@ -99,7 +99,7 @@
   background-color: #35465c;
 }
 
-.tumblr.icons-b:before {
+.tumblr.white.icons-b:before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Tumblr/White%20-%201%20-%20Comp.png");
 }
 
@@ -277,11 +277,11 @@
 /* GTA */
 .gta .info.icons-b::before,
 .gta .info.icons-a::after {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Information/White%20-%201%20-%20Comp.png');
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar/GTA/Info%20Alert/White%20-%201%20-%20Comp.png");
 }
 
 .gta .loading-circle.icons-b::before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Loading%20Indicator/Fading%20Circle%20-%201.gif');
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar/GTA/Loading/Gradient%20Circle%20-%201.gif");
 }
 
 
