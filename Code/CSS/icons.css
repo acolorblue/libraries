@@ -73,7 +73,7 @@
 }
 
 .forward.white.icons-b::before {
-  background-image: url("ttps://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/Content%20Controls/Forward/White%20-%201%20-%20Comp.png");
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/Content%20Controls/Forward/White%20-%201%20-%20Comp.png");
 }
 
 .forward.white.outline.icons-b::before {
@@ -102,40 +102,8 @@
 
 
 
-/* APPLE MEDIA FILE CONTROLS */
-.amf-controls.close.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/AMF%20-%20Close%20Icon/Close%20-%20Black%201.png");
-}
-
-.amf-controls.close-grey.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/AMF%20-%20Close%20Icon/Close%20-%20Grey%203.png");
-  opacity: 1;
-}
-
-.amf-controls.minimize.icons:before,
-.application .window-controls .minimize.icons-b::before,
-.application .window-controls .minimize.icons-a::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/AMF%20-%20Minimize%20Icon/Minimize%20-%20Black%201.png");
-  background-size: 8.5px;
-}
-
-.amf-controls.full-screen.icons:before,
-.application .window-controls .full-screen.icons-b::before,
-.application .window-controls .full-screen.icons-a::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/AMF%20-%20Full%20Screen%20Icon/Full%20Screen%20-%20Black%201.png");
-}
-
-
-
-
 /* APPLE MEDIA FILE - ICONS IN TITLE */
-.image-app .amf-title-entire-container.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/Image%20App%20Specifics/Image%20App%20Icon%20-%201.png");
-}
 
-.image-app .amf-title-entire-container.icons:after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/Image%20App%20Specifics/Arrow%20-%20Thick%20-%20Grey%20-%202.png");
-}
 
 
 
@@ -210,16 +178,32 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Share/White%20-%201%20-%20Comp.png");
 }
 
-.close.grey.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Close/Grey%20-%201%20-%20Comp.png");
-}
-
 .close.white.icons-b::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Close/White%20-%201%20-%20Comp.png");
 }
 
+.close.grey.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Close/Grey%20-%201%20-%20Comp.png");
+}
+
+.minimize.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Minimize/Black%20-%201.png");
+}
+
+.full-screen.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Full%20Screen/Black%20-%201.png");
+}
+
 .application .video.icons-b:before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Souncloud%20Play%20-%20Pause%20Button/Play%20White%20-%204.png');
+}
+
+.application.image-app .amf-title-entire-container.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Image%20Preview/Title%20-%20Thumbnail.png");
+}
+
+.application.image-app .amf-title-entire-container.icons:after {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Image%20Preview/Title%20-%20More%20Info.png");
 }
 
 
@@ -309,8 +293,8 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20-%20Right%20-%201.png");
 }
 
-.ios .imessage .expand-embed-window.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20-%20Content%20Window%206.png");
+.ios .imessage .embed-window .expand.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Embed%20Window/Expand/Grey%20-%201.png");
 }
 
 .ios .imessage .mute.icons-b:before {
