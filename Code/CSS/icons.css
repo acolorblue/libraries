@@ -31,331 +31,74 @@
 
 
 
-/* BRAND */
-/* TWITTER */
-.twitter {
-  background: #00C3F3;
+
+
+
+/******** OBJECTS ********/
+/* GUN IN HAND */
+.gun-in-hand.filled.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Objects/Gun/Filled.png");
 }
 
-.twitter.white.icons-b:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Twitter/White%20-%201%20-%20Comp.png");
-}
-
-.twitter.black.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Twitter/Black%20-%201%20-%20Comp.png");
-}
-
-.twitter .extra-options.icons-b::before,
-.twitter .extra-options.icons-b::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Twitter/Extra%20Options/Blue%20-%201%20-%20Comp.png");
-}
-
-
-
-
-/* INSTAGRAM */
-.instagram.icons-b {
-  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-}
-
-.instagram.white.icons-b:before {
-   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Instagram/White%20-%201%20-%20Comp.png");
-}
-
-.instagram.black.icons:before {
-   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Instagram/Black%20-%201%20-%20Comp.png");
-}
-
-
-
-
-/* YOUTUBE */
-.youtube.white.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Youtube/White%20-%201%20-%20Comp.png");
-}
-
-.youtube.red.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Youtube/Red%20-%201%20-%20Comp.png");
+.gun-in-hand.outlined.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Objects/Gun/Outlined.png");
 }
 
 
 
 
 
-/* EMAIL */
-.apple .email.icons-b {
-  background: -webkit-linear-gradient(top, #1a51f0 0%, #03e4fe 100%);
+
+
+
+/* MEDIA CONTROLS */
+.search.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/Content%20Controls/Search/White%20-%201%20-%20Comp.png");
 }
 
-.email.icons-b:before {
-   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Email%20-%20White%201.png");
+.search.black.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/Content%20Controls/Search/Black%20-%201%20-%20Comp.png");
 }
 
-
-
-
-/* TUMBLR */
-.tumblr.icons-b {
-  background-color: #35465c;
+.play.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/Content%20Controls/Play/White%20-%201%20-%20Comp.png");
 }
 
-.tumblr.white.icons-b:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Tumblr/White%20-%201%20-%20Comp.png");
+.pause.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/Content%20Controls/Pause/White%20-%201%20-%20Comp.png");
 }
 
-.tumblr.black.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Tumblr/Black%20-%201%20-%20Comp.png");
+.rewind.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/Content%20Controls/Rewind/White%20-%201%20-%20Comp.png");
 }
 
-
-
-
-/* ROCKSTAR GAMES */
-.rockstar-games.icons-b:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/a-kanye-west-analysis/master/Images/Loader/Gta%20Loader/Rockstar/Logo%20-%201.png");
+.forward.white.icons-b::before {
+  background-image: url("ttps://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/Content%20Controls/Forward/White%20-%201%20-%20Comp.png");
 }
 
-/* G.O.O.D MUSIC */
-.good-music.icons-b:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/a-kanye-west-analysis/master/Images/Loader/Gta%20Loader/Kanye/Logo%20-%201.png");
+.forward.white.outline.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Acolorblue/Content%20Controls/Forward/Outline%20-%20White%20-%201.png");
 }
 
-/* SOUNDCLOUD */
-.soundcloud.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Logos/Soundcloud/Orange%20-%201%20-%20Comp.png");
-}
-
-/* BLONDED */
-.blonded.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Blonded/1.png");
-}
-
-/* GUN */
-.gun-in-hand-outlined.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Gun/1.png");
-}
-
-.gun-in-hand-filled.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Gun/2.png");
-}
-
-
-
-
-/* MAC OS */
-.apple.white.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/0.%20Logo/White%20-%201%20-%20Comp.png");
-}
-
-.apple.black.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/0.%20Logo/Black%20-%201%20-%20Comp.png");
-}
-
-/*.mac-os .menu-bar .section-container.date-and-time.selected .item.checked.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Checked/Black%20-%201%20-%20Comp.png");
-}
-
-.mac-os .menu-bar .section-container.date-and-time.selected .item.checked.icons-b:hover:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Checked/White%20-%201%20-%20Comp.png");
-}*/
-
-
-.checked.black.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Checked/Black%20-%201%20-%20Comp.png");
-}
-
-.checked.white.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Checked/White%20-%201%20-%20Comp.png");
-}
-
-
-
-.mac-os .menu-bar .search.icons-b::before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/App%20Design%20References/Mac%20OS/Icons/Menu%20Bar%20Search/Search%20-%20Black%20-%204.png');
-}
-
-.mac-os .menu-bar .search.selected.icons-b::before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/App%20Design%20References/Mac%20OS/Icons/Menu%20Bar%20Search/Search%20-%20White%20-%204.png');
-}
-
-.mac-os .menu-bar .notification-center.black.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Notification%20Center/Black%20-%201%20-%20Comp.png");
-}
-
-.mac-os .menu-bar .notification-center.white.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Notification%20Center/White%20-%201%20-%20Comp.png");
-}
-
-.close.grey::before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Apple%20Media%20File%20Controls/AMF%20-%20Close%20Icon/Close%20-%20Grey%203.png');
-}
-
-.close.white::before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/App%20Design%20References/Mac%20OS/Icons/Close/White%20-%201%20-%20Comp.png');
-}
-
-.application .search.white::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Search/White%20-%201%20-%20Comp.png");
-}
-
-.application .share.white::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Share/White%20-%201%20-%20Comp.png");
-}
-
-.application .video.icons-b:before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Souncloud%20Play%20-%20Pause%20Button/Play%20White%20-%204.png');
-}
-
-.extra-options.icons-b::before,
-.extra-options.icons-a::after {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Medias/Twitter/Extra%20Options/Blue%20-%201%20-%20Comp.png');
-}
-
-.play.icons-b::before,
-.play.icons-a::after {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Media%20Controls/Play/White%20-%201%20-%20Comp.png');
-}
-
-.pause.icons-b::before,
-.pause.icons-a::after {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Media%20Controls/Pause/White%20-%201%20-%20Comp.png');
-}
-
-.rewind.icons-b::before,
-.rewind.icons-a::after {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Media%20Controls/Rewind/White%20-%201%20-%20Comp.png');
-}
-
-.forward.icons-b::before,
-.forward.icons-a::after {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Media%20Controls/Forward/White%20-%201%20-%20Comp.png');
-}
-
-.forward.white.outline.icons-b::before,
-.forward.white.outline.icons-a::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Forward/Outline%20-%20White%20-%203%20-%20Comp.png");
-}
-
-.skip.white.icons-b::before,
-.skip.white.icons-a::after {
+.skip.white.icons-b::before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Skip/Thick%20-%20White%20-%202.png');
 }
 
-.reload.icons-b::before,
-.reload.icons-a::after {
+.reload.icons-b::before {
   background-image: url('https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Reload/3.png');
 }
 
 
 
 
-/* USER AVI ICONS */
-.avi.icons {
-  background: linear-gradient(#a4aaba, #888b92);
-  border-radius: 50%;
-}
-
-.avi.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Anonymous%20User/Anonymous%20User%20-%20White%20Only%202.png");
-}
 
 
-
-/* IOS  */
-.battery.low-power-mode.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/Battery/Low%20Power%20Mode/Yellow%20-%201%20-%20Comp.png");
-}
-
-
-/* IOS PROMPT ICONS */
-.ios-prompt-container.translucent:before {
-  background-image: url("https://acolorblueserver.com/commenting/logo-background.jpg");
-}
-
-.ios-prompt.sign-out .confirm-action:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/App%20Design%20References/iOS%20Prompt/Icons/Shut%20Down/Shut%20Down%20-%20Thick%20-%205.png");
-}
-
-.ios-prompt.sign-out .cancel-action:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/App%20Design%20References/iOS%20Prompt/Icons/Close/Close%20-%20White%20-%202.png");
-}
-
-
-
-
-/* GTA */
-.gta .info.icons-b::before,
-.gta .info.icons-a::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar/GTA/Info%20Alert/White%20-%201%20-%20Comp.png");
-}
-
-.gta .loading-circle.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar/GTA/Loading/Gradient%20Circle%20-%201.gif");
-}
-
-
-
-
-/* PLAYSTATION */
+/******** ORGANIZATION - SONY ********/
+/**** SONY - PLAYSTATION ****/
 .playstation .x.icons-b::before,
 .playstation .x.icons-a::after {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/PlayStation/Controls/X/Black%20-%201%20-%20Comp.png');
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Sony/Playstation/Controller/X/Black%20-%201%20-%20Comp.png");
 }
-
-
-
-
-/* INPUT BAR ICONS */
-.upload-media.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Camera%20Icons/Camera%20-%20White%202.png");
-}
-
-.app-store.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/App%20Store%20Icons/App%20Store%20Icon%20-%20White%202.png");
-  background-size: 12.6px;
-}
-
-.expand-right.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20-%202.png");
-}
-
-.send-message.icons {
-  background-color: #0070eb;
-  border-radius: 50%;
-}
-
-.send-message.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Send/Blue%20-%201.png");
-}
-
-.gifs.icons {
-  background-color: #fa0244;
-}
-
-
-
-
-/* EXPAND ICONS */
-.expand-left-blue.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20Left%20-%20Blue%201.png");
-}
-
-.expand-right.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20-%20Right%20-%201.png");
-}
-
-.expand-embed-window.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20-%20Content%20Window%206.png");
-}
-
-
-
-
-/* SEARCH INPUT ICON */
-.search-icon {
-  background-image: url(https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Search/Search%20-%20Grey%20-%202.png);
-}
-
 
 
 
@@ -399,11 +142,11 @@
 
 /* APPLE MEDIA FILE - ZOOM ICONS */
 .zoom-in.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Zoom/In/%234f4f4f%20-%201%20-%20Comp.png");
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Zoom/In/%234f4f4f%20-%201%20-%20Comp.png");
 }
 
 .zoom-out.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Zoom/Out/%234f4f4f%20-%201%20-%20Comp.png");
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Zoom/Out/%234f4f4f%20-%201%20-%20Comp.png");
 }
 
 .amf-share.icons:before {
@@ -422,138 +165,371 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Heart/Heart%20-%20CDG%20-%20Eyes%20-%20Red%20-%201.png") !important;
 }
 
-.heart.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Heart/Heart%20-%20CDG%20-%20Eyes%20-%20Grey%20-%201.png");
-}
-
-.liked .heart.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Heart/Heart%20-%20CDG%20-%20Red%20-%20Eyes%20-%206.png") !important;
-}
-
-.reply-right.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Reply/Reply%20-%20Grey%20-%20Left%20to%20Right%202.png");
-}
-
-.reply-left.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Reply/Reply%20-%20Grey%20-%20Right%20to%20Left%202.png");
-}
-
-.follow.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Follow/Grey%20-%203.png");
-}
-
 .un-follow.icons:before {
   background-image: url("");
 }
 
-.mute-user.icons-b:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Mute/Mute%20-%20Grey%20-%202.png");
+
+
+
+
+
+
+
+
+
+/******** ORGANIZATION - APPLE ********/
+/**** APPLE - LOGO ****/
+.apple.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/0.%20Logo/White%20-%201%20-%20Comp.png");
 }
 
-.delete.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Delete/Trash%20Can%20-%20Grey%202.png");
+.apple.black.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/0.%20Logo/Black%20-%201%20-%20Comp.png");
+}
+
+
+/**** APPLE - MacOS ****/
+.mac-os .checked.black.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Checked/Black%20-%201%20-%20Comp.png");
+}
+
+.mac-os .checked.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Checked/White%20-%201%20-%20Comp.png");
+}
+
+.mac-os .menu-bar .notification-center.black.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Notification%20Center/Black%20-%201%20-%20Comp.png");
+}
+
+.mac-os .menu-bar .notification-center.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Notification%20Center/White%20-%201%20-%20Comp.png");
+}
+
+.mac-os .share.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Share/White%20-%201%20-%20Comp.png");
+}
+
+.close.grey.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Close/Grey%20-%201%20-%20Comp.png");
+}
+
+.close.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Close/White%20-%201%20-%20Comp.png");
+}
+
+.application .video.icons-b:before {
+  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Souncloud%20Play%20-%20Pause%20Button/Play%20White%20-%204.png');
+}
+
+
+/**** APPLE - iOS  ****/
+.battery.low-power-mode.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/Battery/Low%20Power%20Mode/Yellow%20-%201%20-%20Comp.png");
+}
+
+.ios .email.icons-b {
+  background: -webkit-linear-gradient(top, #1a51f0 0%, #03e4fe 100%);
+}
+
+.ios .email.icons-b:before {
+   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Email%20-%20White%201.png");
+}
+
+.app-store.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/App%20Store/White%20-%201%20-%20Comp.png");
+  background-size: 12.6px;
+}
+
+.ios .alert-container.translucent:before {
+  background-image: url("https://acolorblueserver.com/commenting/logo-background.jpg");
+}
+
+.ios .alert.sign-out .confirm::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/Alert/Power%20Off/Shut%20Down/Red%20-%201%20-%20Comp.png");
+}
+
+.ios .alert.sign-out .cancel::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/Alert/Power%20Off/Cancel/White%20-%201%20-%20Comp.png");
+}
+
+
+/**** iOS - iMESSAGE ****/
+.ios .imessage .avi.icons {
+  background: linear-gradient(#a4aaba, #888b92);
+  border-radius: 50%;
+}
+
+.ios .imessage .avi.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Anonymous%20User/Person%20-%202.png");
+}
+
+.ios .imessage .reply.left.filled.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Reply/Left/Filled%20-%20Grey.png");
+}
+
+.ios .imessage .reply.right.filled.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Reply/Right/Filled%20-%20Grey.png");
+}
+
+.ios .imessage .trash.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/Photos/Trash/Filled%20-%20Grey.png");
+}
+
+.ios .imessage .follow.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Follow/Grey%20-%203.png");
+}
+
+.ios .imessage .upload-media.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/Camera/White%20-%201.png");
+}
+
+.ios .imessage .expand-right.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20-%202.png");
+}
+
+.ios .imessage .send-message.icons {
+  background-color: #0070eb;
+  border-radius: 50%;
+}
+
+.ios .imessage .send-message.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Send/Blue%20-%201.png");
+}
+
+.ios .imessage .gifs.icons {
+  background-color: #fa0244;
+}
+
+.ios .imessage .expand-left-blue.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20Left%20-%20Blue%201.png");
+}
+
+.ios .imessage .expand-right.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20-%20Right%20-%201.png");
+}
+
+.ios .imessage .expand-embed-window.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20-%20Content%20Window%206.png");
+}
+
+.ios .imessage .mute.icons-b:before {
+  background-image: url("hhttps://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Mute/Line%20Through%20-%20Grey%20-%202.png");
+}
+
+.ios .imessage .heart.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Comme%20Des%20Garcons/0.%20Logo/Rounded/Grey%20-%201.png");
+}
+
+.ios .imessage .liked .heart.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Comme%20Des%20Garcons/0.%20Logo/Rounded/Red%20%2B%20Black%20-%201.png") !important;
 }
 
 
 
 
-/* ALL TWITTER EMBED ICONS */
-.twitter-embed .loader {
-  background: #00C3F3;
+
+
+
+/******** ORGANIZATION - ROCKSTAR GAMES ********/
+.rockstar-games.icons-b:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/a-kanye-west-analysis/master/Images/Loader/Gta%20Loader/Rockstar/Logo%20-%201.png");
 }
 
-.twitter-embed .loader:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Twitter%20-%20White%201.png");
+
+/**** ROCKSTAR GAMES - GTA ****/
+.gta .info.icons-b::before,
+.gta .info.icons-a::after {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar/GTA/Info%20Alert/White%20-%201%20-%20Comp.png");
 }
 
-.twitter-embed .verified .display-name.icons-a:after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Verified/Verified%20-%20White%20-%201.png");
+.gta .loading-circle.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar/GTA/Loading/Gradient%20Circle%20-%201.gif");
 }
 
-.twitter-embed .private .header-user-info .display-name:after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Private/Private%20-%20White%20-%201.png");
+
+
+
+
+
+
+/******** ORGANIZATION - G.O.O.D MUSIC ********/
+.good-music.icons-b:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/a-kanye-west-analysis/master/Images/Loader/Gta%20Loader/Kanye/Logo%20-%201.png");
 }
 
-.twitter-embed .verified.private .header-user-info .display-name:after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Verified%20%2B%20Private/Verified%20%2B%20Private%20-%202.png");
+
+
+
+
+
+
+
+/******** ORGANIZATION - SOUNDCLOUD ********/
+.soundcloud.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Soundcloud/0.%20Logo/Orange%20-%201%20-%20Comp.png");
 }
 
-.twitter-embed .dm.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Direct%20Messages.png");
+
+
+
+
+
+
+
+/******** ORGANIZATION - BLONDED ********/
+.blonded.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Blonded/0.%20Logo/Black%20-%201%20-%20Comp.png");
 }
 
-.twitter-embed .location.icons-b::before,
-.twitter-embed .location.icons-a::after {
+
+
+
+
+
+
+
+/******** ORGANIZATION - TWITTER ********/
+.twitter.white.icons-b {
+  background-color: #00C3F3;
+}
+
+.twitter.white.icons-b:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/0.%20Logo/White%20-%201%20-%20Comp.png");
+}
+
+.twitter.black.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/0.%20Logo/Black%20-%201%20-%20Comp.png");
+}
+
+.twitter .extra-options.icons-b::before,
+.twitter .extra-options.icons-a::after {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Extra%20Options/Blue%20-%201%20-%20Comp.png");
+}
+
+.twitter .verified .display-name.icons-a:after {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Verified/White%20-%201%20-%20Comp.png");
+}
+
+.twitter .private .header-user-info .display-name:after {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Private/White%20-%201%20-%20Comp.png");
+}
+
+.twitter .verified.private .header-user-info .display-name::after {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Verified%20%2B%20Private/White%20-%201%20-%20Comp.png");
+}
+
+.twitter .dm.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/DM/Blue%20-%201.png");
+}
+
+.twitter .location.icons-b::before,
+.twitter .location.icons-a::after {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Location%20-%20Grey%20-%205.png");
 }
 
-.twitter-embed .main-link.icons-b::before,
-.twitter-embed .main-link.icons-a::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Link/Link%20-%20Thick%20-%20Grey%20-%201.png");
+.twitter .main-link.icons-b::before,
+.twitter .main-link.icons-a::after {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Link/Grey%20-%201.png");
 }
 
-.twitter-embed .birthday.icons-b::before,
-.twitter-embed .birthday.icons-a::after {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Birthday/Birthday%20-%20Grey%20-%2015.png');
+.twitter .birthday.icons-b::before,
+.twitter .birthday.icons-a::after {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Birthday/Grey%20-%201.png");
 }
 
-.twitter-embed .post-info:after {
+.twitter .post-info:after {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Post%20Info%20-%203.png");
 }
 
-.twitter-embed .video.icons-b:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Video%20Play/Play%20-%20Icon%20-%202.png");
+.twitter .video.icons-b:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Video%20Play/White%20%2B%20Blue%20-%201%20-%20Comp.png");
 }
 
-.twitter-embed .reply.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Reply/Reply%20-%201.png");
+.twitter .reply.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Reply/Grey%20-%201%20-%20Comp.png");
 }
 
-.twitter-embed .retweeted.icons-b::before,
-.twitter-embed .retweeted.icons-a::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Retweet/Retweet%20-%20Grey%20-%205.png");
+.twitter .retweeted.icons-b::before,
+.twitter .retweeted.icons-a::after {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Retweet/Grey%20-%201%20-%20Comp.png");
 }
 
-.twitter-embed .likes.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Like/Like%20-%20Grey%20-%207.png");
+.twitter .likes.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Like/Grey%20-%201.png");
 }
 
-.twitter-embed a.see-more.icons-a::after {
+.twitter a.see-more.icons-a::after {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Twitter%20-%20White%201.png");
 } 
 
-.twitter.extra-options.icons-b::before {
-  background-image: url('https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Twitter%20Icons/Regular%20Mode%20Icons/Extra%20Options/1.png');
-}
 
 
 
 
-/* INSTAGRAM EMBED PROFILE ICONS */
-.instagram-embed .loader {
+
+
+
+/******** ORGANIZATION - INSTAGRAM ********/
+.instagram.gradient.icons-b {
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
 
-.instagram-embed .loader:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Instagram.png");
+.instagram.white.icons-b:before {
+   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Instagram/0.%20Logo/White%20-%201%20-%20Comp.png");
 }
 
-.instagram-embed a.see-more.icons-a::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Instagram.png");
-} 
-
-
-
-
-/* TUMBLR EMBED PROFILE ICONS */
-.tumblr-embed .loader {
-  background: #35465c;
+.instagram.black.icons:before {
+   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Instagram/0.%20Logo/Black%20-%201%20-%20Comp.png");
 }
 
-.tumblr-embed .loader:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Tumblr%20White%20-%201.png");
+
+
+
+
+
+
+
+/******** ORGANIZATION - TUMBLR ********/
+.tumblr.icons-b {
+  background-color: #35465c;
 }
 
-.tumblr-embed a.see-more.icons-a::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Tumblr%20White%20-%201.png");
-} 
+.tumblr.white.icons-b:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Tumblr/0.%20Logo/White%20-%201%20-%20Comp.png");
+}
+
+.tumblr.black.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Tumblr/0.%20Logo/Black%20-%201%20-%20Comp.png");
+}
+
+
+
+
+
+
+
+
+/******** ORGANIZATION - YOUTUBE ********/
+.youtube.white.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Youtube/0.%20Logo/White%20-%201%20-%20Comp.png");
+}
+
+.youtube.red.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Youtube/0.%20Logo/Red%20-%201%20-%20Comp.png");
+}
+
+
+
+
+
+
+
+/******** ORGANIZATION - ACOLORBLUE ********/
+.acolorblue.background.icons-b::before {
+  background-image: url("");
+}
+
+.acolorblue.foreground.icons-b::before {
+  background-image: url("");
+}
