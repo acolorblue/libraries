@@ -2,7 +2,6 @@
 .icons-b::before,
 .icons-a::after {
   content: '';
-  border-radius: inherit;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 12px;
