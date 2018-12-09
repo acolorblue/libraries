@@ -36,13 +36,7 @@
 
 /******** OBJECTS ********/
 /* GUN IN HAND */
-.gun-in-hand.filled.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Objects/Gun/Filled.png");
-}
 
-.gun-in-hand.outlined.icons-b::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Objects/Gun/Outlined.png");
-}
 
 
 
@@ -512,9 +506,17 @@
 
 /******** ORGANIZATION - ACOLORBLUE ********/
 .acolorblue.background.icons-b::before {
-  background-image: url("");
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Acolorblue/0.%20Logo/Background/1%20-%20Comp.jpg");
 }
 
 .acolorblue.foreground.icons-b::before {
-  background-image: url("");
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Acolorblue/0.%20Logo/Foreground/1%20-%20Comp.jpg");
+}
+
+.gun-in-hand.filled.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Acolorblue/Gun%20In%20Hand/Filled.png");
+}
+
+.gun-in-hand.outlined.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Acolorblue/Gun%20In%20Hand/Outlined.png");
 }
