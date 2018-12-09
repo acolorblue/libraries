@@ -117,9 +117,7 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Zoom/Out/%234f4f4f%20-%201%20-%20Comp.png");
 }
 
-.amf-share.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Share%20Icon/Share%20-%20Old%20-%201.png");
-}
+
 
 
 
@@ -176,6 +174,10 @@
 
 .mac-os .share.white.icons-b::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Share/White%20-%201%20-%20Comp.png");
+}
+
+.mac-os .share.grey.icons-b::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Share/Grey%20-%201.png");
 }
 
 .close.white.icons-b::before {
@@ -264,12 +266,12 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Follow/Grey%20-%203.png");
 }
 
-.ios .imessage .upload-media.icons:before {
+.ios .camera.icons:before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/Camera/White%20-%201.png");
 }
 
 .ios .imessage .expand-right.icons:before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20-%202.png");
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Minimize%20Text%20Input/Grey%20-%201.png");
 }
 
 .ios .imessage .send-message.icons {
@@ -285,7 +287,7 @@
   background-color: #fa0244;
 }
 
-.ios .imessage .expand-left-blue.icons:before {
+.ios .imessage .expand-left-blue.icons-b:before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Expand%20Buttons/Expand%20Left%20-%20Blue%201.png");
 }
 
@@ -295,6 +297,10 @@
 
 .ios .imessage .embed-window .expand.icons:before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Embed%20Window/Expand/Grey%20-%201.png");
+}
+
+.ios .imessage .embed-window .shrink.icons:before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Embed%20Window/Shrink/Grey%20-%201.png");
 }
 
 .ios .imessage .mute.icons-b:before {
@@ -442,11 +448,6 @@
 .twitter .likes.icons:before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Like/Grey%20-%201.png");
 }
-
-.twitter a.see-more.icons-a::after {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/Design%20Icons/Social%20Media%20Icons/Twitter%20-%20White%201.png");
-} 
-
 
 
 
