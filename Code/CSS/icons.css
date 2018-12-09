@@ -1,4 +1,3 @@
-/** ICONS **/
 .icon::before {
   content: '';
   display: block;
@@ -21,7 +20,7 @@
 
 
 /******** ORGANIZATION - SONY ********/
-/**** SONY - PLAYSTATION ****/
+/*^ SONY - PLAYSTATION ^*/
 .playstation .x.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Sony/Playstation/Controller/X/Black%20-%201%20-%20Comp.png");
 }
@@ -34,7 +33,7 @@
 
 
 /******** ORGANIZATION - APPLE ********/
-/**** APPLE - LOGO ****/
+/*^ APPLE - LOGO ^*/
 .apple.white.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/0.%20Logo/White%20-%201%20-%20Comp.png");
 }
@@ -46,7 +45,7 @@
 
 
 
-/**** APPLE - AllOS ****/
+/*^ APPLE - AllOS ^*/
 .search.white.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/Content%20Controls/Search/White%20-%201%20-%20Comp.png");
 }
@@ -78,7 +77,7 @@
 
 
 
-/**** APPLE - MacOS ****/
+/*^ APPLE - MacOS ^*/
 .mac-os .checked.black.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Checked/Black%20-%201%20-%20Comp.png");
 }
@@ -123,7 +122,7 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Image%20Preview/Title%20-%20Thumbnail.png");
 }
 
-.application.image-app .amf-title-entire-container.icon::after {
+.application.image-app .amf-title-entire-container.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Image%20Preview/Title%20-%20More%20Info.png");
 }
 
@@ -138,7 +137,7 @@
 
 
 
-/**** APPLE - iOS  ****/
+/*^ APPLE - iOS  ^*/
 .battery.low-power-mode.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/Battery/Low%20Power%20Mode/Yellow%20-%201%20-%20Comp.png");
 }
@@ -147,7 +146,7 @@
   background: -webkit-linear-gradient(top, #1a51f0 0%, #03e4fe 100%);
 }
 
-.ios .email.icon:before {
+.ios .email.icon::before {
    background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/Email/White%20-%201%20-%20Comp.png");
 }
 
@@ -164,14 +163,13 @@
 }
 
 
-/**** iOS - iMESSAGE ****/
+/*^ iOS - iMESSAGE ^*/
 .ios .imessage .avi.icons {
   background: linear-gradient(#a4aaba, #888b92);
-  border-radius: 50%;
 }
 
 .ios .imessage .avi.icon::before {
-  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Anonymous%20User/Person%20-%202.png");
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Anonymous%20User/Grey%20-%204.png");
 }
 
 .ios .imessage .reply.left.filled.icon::before {
@@ -222,7 +220,7 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Embed%20Window/Shrink/Grey%20-%201.png");
 }
 
-.ios .imessage .mute.icon:before {
+.ios .imessage .mute.icon::before {
   background-image: url("hhttps://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Mute/Line%20Through%20-%20Grey%20-%202.png");
 }
 
@@ -246,7 +244,9 @@
 }
 
 
-/**** ROCKSTAR GAMES - GTA ****/
+
+
+/*^ ROCKSTAR GAMES - GTA ^*/
 .gta .info.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar/GTA/Info%20Alert/White%20-%201%20-%20Comp.png");
 }
@@ -261,8 +261,9 @@
 
 
 
+
 /******** ORGANIZATION - G.O.O.D MUSIC ********/
-.good-music.icon:before {
+.good-music.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/G.O.O.D%20Music/0.%20Logo/White%20%2B%20Black%20-%201%20-%20Comp.png");
 }
 
@@ -298,8 +299,8 @@
 
 
 /******** ORGANIZATION - TWITTER ********/
-.twitter.white.icon {
-  background-color: #00C3F3;
+.twitter.blue.icon::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/0.%20Logo/Blue%20-%201%20-%20Comp.png");
 }
 
 .twitter.white.icon:before {
@@ -314,15 +315,15 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Extra%20Options/Blue%20-%201%20-%20Comp.png");
 }
 
-.twitter .verified .display-name.icons-a:after {
+.twitter .verified.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Verified/White%20-%201%20-%20Comp.png");
 }
 
-.twitter .private .header-user-info .display-name:after {
+.twitter .private.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Private/White%20-%201%20-%20Comp.png");
 }
 
-.twitter .verified.private .header-user-info .display-name::after {
+.twitter .verified.private.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Verified%20%2B%20Private/White%20-%201%20-%20Comp.png");
 }
 
@@ -342,7 +343,7 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Birthday/Grey%20-%201.png");
 }
 
-.twitter .post-info:after {
+.twitter .post-info.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Tweet%20Owner%20Menu/Grey%20-%201.png");
 }
 
@@ -368,9 +369,10 @@
 
 
 
+
 /******** ORGANIZATION - INSTAGRAM ********/
-.instagram.gradient.icon {
-  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+.instagram.gradient.icon::before {
+   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Instagram/0.%20Logo/Gradient%20-%201%20-%20Comp.png");
 }
 
 .instagram.white.icon:before {
@@ -389,8 +391,8 @@
 
 
 /******** ORGANIZATION - TUMBLR ********/
-.tumblr.icon {
-  background-color: #35465c;
+.tumblr.navy.icon::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Tumblr/0.%20Logo/Navy%20-%201%20-%20Comp.png");
 }
 
 .tumblr.white.icon:before {
@@ -416,6 +418,7 @@
 .youtube.red.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Youtube/0.%20Logo/Red%20-%201%20-%20Comp.png");
 }
+
 
 
 
