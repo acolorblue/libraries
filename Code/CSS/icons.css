@@ -199,7 +199,7 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Send/Blue%20-%201%20-%20Comp.png");
 }
 
-.ios .imessage .search-gifs.icons {
+.ios .imessage .search-gifs.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/iOS/iMessage/Search%20Gifs/White%20%2B%20Background%20-%201%20-%20Comp.png");
 }
 
@@ -230,7 +230,7 @@
 
 
 /******** ORGANIZATION - ROCKSTAR GAMES ********/
-.rockstar-games.icon:before {
+.rockstar-games.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar%20Games/0.%20Logo/Yellow%20%2B%20Black%20-%201%20-%20Comp.png");
 }
 
@@ -294,7 +294,7 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/0.%20Logo/Blue%20-%201%20-%20Comp.png");
 }
 
-.twitter.white.icon:before {
+.twitter.white.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/0.%20Logo/White%20-%201%20-%20Comp.png");
 }
 
@@ -338,7 +338,7 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Tweet%20Owner%20Menu/Grey%20-%201%20-%20Comp.png");
 }
 
-.twitter .video.icon:before {
+.twitter .video.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Video%20Play/White%20%2B%20Blue%20-%201%20-%20Comp.png");
 }
 
@@ -366,7 +366,7 @@
    background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Instagram/0.%20Logo/Gradient%20-%201%20-%20Comp.png");
 }
 
-.instagram.white.icon:before {
+.instagram.white.icon::before {
    background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Instagram/0.%20Logo/White%20-%201%20-%20Comp.png");
 }
 
@@ -386,7 +386,7 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Tumblr/0.%20Logo/Navy%20-%201%20-%20Comp.png");
 }
 
-.tumblr.white.icon:before {
+.tumblr.white.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Tumblr/0.%20Logo/White%20-%201%20-%20Comp.png");
 }
 
