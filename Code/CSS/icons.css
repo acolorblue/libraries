@@ -238,6 +238,10 @@
 
 
 /*^ ROCKSTAR GAMES - GTA ^*/
+.gta-V.icon::before {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar%20Games/GTA/0.%20Version/V/0.%20Logo/Text%20-%20Comp.png");
+}
+
 .gta .info.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar%20Games/GTA/Info%20Alert/White%20-%201%20-%20Comp.png");
 }
