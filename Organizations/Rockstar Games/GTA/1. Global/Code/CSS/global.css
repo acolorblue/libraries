@@ -17,42 +17,42 @@
   -webkit-transform: translateZ(950px);
 }
 
-.loader .gta .foreground-layer .text-logo {
+.loader .gta .foreground-layer .product-logo {
   font-family: Pricedown;
-  color: transparent;
   text-transform: lowercase;
   text-shadow: none;
 }
 
-.loader .gta .foreground-layer .text-logo.icon {
+.loader .gta .foreground-layer .product-logo.icon {
   width: 180px;
   height: 180px;
+  color: transparent;
   top: auto;
   right: auto;
   bottom: 20px;
   left: 20px;
 }
 
-.loader .gta .foreground-layer .text-logo.icon::before {
+.loader .gta .foreground-layer .product-logo.icon::before {
   width: inherit;
   height: inherit;
   background-size: contain;
   background-position: bottom;
 }
 
-.loader .gta .foreground-layer .text-logo.kanye-analysis {
+.loader .gta .foreground-layer .product-logo.text {
   width: 210px;
-  height: 145px;
   font-size: 55px;
+  color: white;
   line-height: 0.85;
   -webkit-text-stroke: 2.4px black;
 }
 
-.loader .gta .foreground-layer .text-logo.kanye-analysis.reading::after {
+.loader .gta .foreground-layer .product-logo.text.reading::after {
   color: #eee;
 }
 
-.loader .gta .foreground-layer .icon-logo {
+.loader .gta .foreground-layer .organization-logo {
   width: 40px;
   height: 40px;
   top: auto;
@@ -61,7 +61,7 @@
   left: auto;
 }
 
-.loader .gta .foreground-layer .icon-logo::before {
+.loader .gta .foreground-layer .organization-logo::before {
   background-size: contain;
 }
 
@@ -292,6 +292,12 @@
 
 
 /******** VERSION - GTA CUSTOM ********/
+/*^ LOADER - PRODUCT LOGO ^*/
+.loader .gta .foreground-layer .product-logo.text {
+  height: 145px;
+}
+
+
 /*^ LOADER - ANIMATIONS CONTAINER ^*/
 .gta.custom .animations-container.kanye .scene {
   background-image: url("https://acolorblue.co/libraries/Organizations/Rockstar%20Games/GTA/Custom/Interfaces/Loader/Kanye/Scene/Hallway%20-%20Comp.jpg");
