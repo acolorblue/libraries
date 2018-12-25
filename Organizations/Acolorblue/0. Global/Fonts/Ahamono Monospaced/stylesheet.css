@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Ahamono Monospaced';
+    src: url('../Ahamono Monospaced/eot');
+    src: url('../Ahamono Monospaced/eot?#iefix') format('embedded-opentype'),
+         url('../Ahamono Monospaced/woff') format('woff'),
+    	 url('../Ahamono Monospaced/woff2') format('woff2'),
+         url('../Ahamono Monospaced/ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
