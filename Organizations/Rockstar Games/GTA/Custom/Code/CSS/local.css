@@ -1,0 +1,16 @@
+/* SCENE IMAGES */
+.gta.custom .animations-container.kanye .scene {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Interfaces/Organizations/Rockstar%20Games/GTA/Custom/0.%20Loader/Kanye/Scene/Hallway%20-%20Comp.jpg");
+}
+
+
+/* CHARACTER */
+.height-longer .loader .gta.custom .animations-container.kanye .character {
+  background-size: auto 90%;
+}
+
+
+/* CHARACTER IMAGES */
+.gta.custom .animations-container.kanye .character {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Interfaces/Organizations/Rockstar%20Games/GTA/Custom/0.%20Loader/Kanye/Character/Hat%20%2B%20Juice%20%2B%20Phone%20-%20Comp.png");
+}

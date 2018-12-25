@@ -1,0 +1,217 @@
+/* LOADER */
+.loader .gta {
+  width: inherit;
+  height: inherit;
+  background-color: #111;
+  color: #ffffff;
+  position: inherit;
+}
+
+
+/* FOREGROUND LAYER */
+.loader .gta .foreground-layer {
+  width: inherit;
+  height: inherit;
+  z-index: 1;
+}
+
+.width-longer .loader .gta .foreground-layer {
+  -webkit-transform: translateZ(950px);
+}
+
+.loader .gta .foreground-layer .text-logo {
+  font-family: Pricedown;
+  color: transparent;
+  text-transform: lowercase;
+  text-shadow: none;
+  top: auto;
+  right: auto;
+  bottom: 20px;
+  left: 20px;
+}
+
+.loader .gta .foreground-layer .text-logo.icon {
+  width: 180px;
+  height: 180px;
+}
+
+.loader .gta .foreground-layer .text-logo.icon::before {
+  width: inherit;
+  height: inherit;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.loader .gta .foreground-layer .text-logo.kanye-analysis {
+  width: 210px;
+  height: 145px;
+  font-size: 55px;
+  line-height: 0.85;
+  -webkit-text-stroke: 2.4px black;
+}
+
+.loader .gta .foreground-layer .text-logo.kanye-analysis.reading::after {
+  color: #eee;
+}
+
+.loader .gta .foreground-layer .icon-logo {
+  width: 40px;
+  height: 40px;
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: auto;
+}
+
+.loader .gta .foreground-layer .icon-logo::before {
+  background-size: contain;
+}
+
+
+/* INFO CONTAINER */
+.loader .gta .foreground-layer .info-container {
+  width: auto;
+  height: auto;
+  border: 4px solid #000000;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: rgba(17, 17, 17, .7);
+  padding: 1%;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  line-height: 1.3;
+  color: #ffffff;
+  top: auto;
+  opacity: 0;
+}
+
+.loader .gta .foreground-layer .info-container.show {
+  opacity: 1;
+}
+
+.loader .gta .info-container.loading-indicator {
+  background-color: #000000;
+  right: 20px;
+  bottom: 70px;
+  left: auto;
+}
+
+.loader .gta .info-container.battery-adjustment,
+.loader .gta .info-container.open-in-different-browser,
+.loader .gta .info-container.fast-forward-automated-text {
+  width: 200px;
+}
+
+.loader .gta .info-container.battery-adjustment {
+  right: auto;
+  bottom: 200px;
+  left: 20px;
+}
+
+.android .loader .gta .info-container.battery-adjustment .title {
+  color: red;
+}
+
+.computer.windows .loader .gta .info-container.open-in-different-browser.firefox {
+  right: auto;
+  bottom: 186px;
+  left: 20px;
+}
+
+.mobile .loader .gta .info-container.open-in-different-browser {
+  right: 20px;
+  bottom: 116px;
+  left: auto;
+}
+
+.loader .gta .info-container.skip-loader {
+  top: 20px;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+}
+
+.loader .gta .info-container.fast-forward-automated-text {
+  top: 20px;
+  right: auto;
+  bottom: auto;
+  left: 20px;
+}
+
+
+/* INFO CONTAINER ICONS */
+.loader .gta .foreground-layer .info-container .icon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  display: inline-block;
+  margin-top: auto;
+  margin-right: 4px;
+  margin-bottom: -3px;
+  margin-left: 4px;
+}
+
+.loader .gta .info-container .icon.battery.low-power-mode {
+  width: 18px;
+}
+
+.loader .gta .info-container .icon.play-station-x {
+  margin-left: 0px;
+}
+
+.loader .gta .info-container .icon::before {
+  width: inherit;
+  height: inherit;
+  background-size: contain;
+} 
+
+
+/* BACKGROUND LAYER */
+.loader .gta .background-layer {
+  width: inherit;
+  height: inherit;
+}
+
+.loader .gta .animations-container {
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.loader .gta .animations-container.show {
+  opacity: 1;
+}
+
+.loader .gta .animations-container div {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* BACKGROUND LAYER - SCENE */
+.width-longer .loader .gta .animations-container .scene {
+  width: 80%;
+  height: 80%;
+  background-size: contain;
+}
+
+.height-longer .loader .gta .animations-container .scene {
+  background-size: cover;
+}
+
+
+/* BACKGROUND LAYER - CHARACTER */
+.loader .gta .animations-container .character {
+  background-size: contain;
+  background-position: bottom;
+  background-position-x: 50%; 
+}
+
+.width-longer .loader .gta .animations-container .character {
+  background-size: auto 95%;
+}
+
+.height-longer .loader .gta .animations-container .character {
+  background-size: 90% auto;
+}

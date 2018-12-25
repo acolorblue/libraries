@@ -1,0 +1,72 @@
+/* SCENE */ 
+.width-longer .loader .gta.five .animations-container .scene {
+  transform: perspective(211px) rotateX(-1deg) rotateY(2deg) rotateZ(1deg);
+  transform-origin: center center 0px;
+}
+
+.height-longer .loader .gta.five .animations-container .scene {
+  background-position-x: 50%;
+  transition: background-position-x 4s linear;
+}
+
+.width-longer .loader .gta.five .animations-container .scene.move {
+  -webkit-animation: gta-V-loading-scene-rotation 19.5s linear;
+}
+
+@-webkit-keyframes gta-V-loading-scene-rotation {  
+  0% {
+    transform: perspective(122px) rotateX(-3deg) rotateY(0deg) rotateZ(-2deg);
+  }
+
+  100% { 
+    transform: perspective(211px) rotateX(-1deg) rotateY(2deg) rotateZ(1deg);
+  }
+}
+
+.height-longer .loader .gta.five .animations-container .scene.move {
+  background-position-x: 60%;
+}
+
+
+/* SCENE IMAGES */
+.gta.five .animations-container.michael .scene {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Interfaces/Organizations/Rockstar%20Games/GTA/V/0.%20Loader/Michael/Scene/Vinewood%20-%20Comp.jpg");
+}
+
+.gta.five .animations-container.trevor .scene {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Interfaces/Organizations/Rockstar%20Games/GTA/V/0.%20Loader/Trevor/Scene/Water%20Mount%20%2B%20Mountain%20-%20Comp.jpg");
+}
+
+.gta.five .animations-container.franklin-and-chop .scene {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Interfaces/Organizations/Rockstar%20Games/GTA/V/0.%20Loader/Franklin%20And%20Chop/Scene/Liquor%20Store%20-%20Comp.jpg");
+}
+
+
+/* CHARACTER */
+.width-longer .loader .gta.five .animations-container .character {
+  background-size: auto 95%;
+  -webkit-transform: translateZ(900px);
+  transition: background-position-x 4s linear;
+} 
+
+.height-longer .loader .gta.five .animations-container .character {
+  background-size: 90% auto;
+}
+
+.width-longer .loader .gta.five .animations-container .character.move {
+  background-position-x: 60%;
+}
+
+
+/* CHARACTER IMAGES */
+.gta.five .animations-container.michael .character {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Interfaces/Organizations/Rockstar%20Games/GTA/V/0.%20Loader/Michael/Character/Gun%20%2B%20Suit%20-%20Comp.png");
+}
+
+.gta.five .animations-container.trevor .character {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Interfaces/Organizations/Rockstar%20Games/GTA/V/0.%20Loader/Trevor/Character/Bike%20%2B%20Gun%20-%20Comp.png");
+}
+
+.gta.five .animations-container.franklin-and-chop .character {
+  background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Interfaces/Organizations/Rockstar%20Games/GTA/V/0.%20Loader/Franklin%20And%20Chop/Character/Bat%20%2B%20Chop%20Barking%20-%20Comp.png");
+}
