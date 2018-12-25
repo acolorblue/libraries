@@ -7,8 +7,6 @@
   position: inherit;
 }
 
-
-/* FOREGROUND LAYER */
 .loader .gta .foreground-layer {
   width: inherit;
   height: inherit;
@@ -24,15 +22,15 @@
   color: transparent;
   text-transform: lowercase;
   text-shadow: none;
-  top: auto;
-  right: auto;
-  bottom: 20px;
-  left: 20px;
 }
 
 .loader .gta .foreground-layer .text-logo.icon {
   width: 180px;
   height: 180px;
+  top: auto;
+  right: auto;
+  bottom: 20px;
+  left: 20px;
 }
 
 .loader .gta .foreground-layer .text-logo.icon::before {
@@ -68,7 +66,7 @@
 }
 
 
-/* INFO CONTAINER */
+/* LOADER - INFO CONTAINER */
 .loader .gta .foreground-layer .info-container {
   width: auto;
   height: auto;
@@ -139,7 +137,7 @@
 }
 
 
-/* INFO CONTAINER ICONS */
+/* LOADER - INFO CONTAINER - ICONS */
 .loader .gta .foreground-layer .info-container .icon {
   width: 14px;
   height: 14px;
@@ -166,13 +164,13 @@
 } 
 
 
-/* BACKGROUND LAYER */
+/* LOADER - BACKGROUND LAYER */
 .loader .gta .background-layer {
   width: inherit;
   height: inherit;
 }
 
-.loader .gta .animations-container {
+.loader .gta .background-layer .animations-container {
   width: inherit;
   height: inherit;
   opacity: 0;
@@ -189,7 +187,7 @@
 }
 
 
-/* BACKGROUND LAYER - SCENE */
+/* LOADER - SCENE */
 .width-longer .loader .gta .animations-container .scene {
   width: 80%;
   height: 80%;
@@ -201,7 +199,7 @@
 }
 
 
-/* BACKGROUND LAYER - CHARACTER */
+/* LOADER - CHARACTER */
 .loader .gta .animations-container .character {
   background-size: contain;
   background-position: bottom;
@@ -214,4 +212,95 @@
 
 .height-longer .loader .gta .animations-container .character {
   background-size: 90% auto;
+}
+
+
+
+
+
+
+
+
+/******** VERSION - GTA 5 ********/
+/*^ LOADER - ANIMATIONS CONTAINER ^*/
+.width-longer .loader .gta.five .animations-container .scene {
+  transform: perspective(211px) rotateX(-1deg) rotateY(2deg) rotateZ(1deg);
+  transform-origin: center center 0px;
+}
+
+.height-longer .loader .gta.five .animations-container .scene {
+  background-position-x: 50%;
+  transition: background-position-x 4s linear;
+}
+
+.width-longer .loader .gta.five .animations-container .scene.move {
+  -webkit-animation: gta-V-loading-scene-rotation 19.5s linear;
+}
+
+@-webkit-keyframes gta-V-loading-scene-rotation {  
+  0% {
+    transform: perspective(122px) rotateX(-3deg) rotateY(0deg) rotateZ(-2deg);
+  }
+
+  100% { 
+    transform: perspective(211px) rotateX(-1deg) rotateY(2deg) rotateZ(1deg);
+  }
+}
+
+.height-longer .loader .gta.five .animations-container .scene.move {
+  background-position-x: 60%;
+}
+
+.gta.five .animations-container.michael .scene {
+  background-image: url("https://acolorblue.co/libraries/Organizations/Rockstar%20Games/GTA/5/Interfaces/Loader/Michael/Scene/Vinewood%20-%20Comp.jpg");
+}
+
+.gta.five .animations-container.trevor .scene {
+  background-image: url("https://acolorblue.co/libraries/Organizations/Rockstar%20Games/GTA/5/Interfaces/Loader/Trevor/Scene/Water%20Mount%20%2B%20Mountain%20-%20Comp.jpg");
+}
+
+.gta.five .animations-container.franklin-and-chop .scene {
+  background-image: url("https://acolorblue.co/libraries/Organizations/Rockstar%20Games/GTA/5/Interfaces/Loader/Franklin%20And%20Chop/Scene/Liquor%20Store%20-%20Comp.jpg");
+}
+
+.width-longer .loader .gta.five .animations-container .character {
+  -webkit-transform: translateZ(900px);
+  transition: background-position-x 4s linear;
+}
+
+.width-longer .loader .gta.five .animations-container .character.move {
+  background-position-x: 60%;
+}
+
+.gta.five .animations-container.michael .character {
+  background-image: url("https://acolorblue.co/libraries/Organizations/Rockstar%20Games/GTA/5/Interfaces/Loader/Michael/Character/Gun%20%2B%20Suit%20-%20Comp.png");
+}
+
+.gta.five .animations-container.trevor .character {
+  background-image: url("https://acolorblue.co/libraries/Organizations/Rockstar%20Games/GTA/5/Interfaces/Loader/Trevor/Character/Bike%20%2B%20Gun%20-%20Comp.png");
+}
+
+.gta.five .animations-container.franklin-and-chop .character {
+  background-image: url("https://acolorblue.co/libraries/Organizations/Rockstar%20Games/GTA/5/Interfaces/Loader/Franklin%20And%20Chop/Character/Bat%20%2B%20Chop%20Barking%20-%20Comp.png");
+}
+
+
+
+
+
+
+
+
+/******** VERSION - GTA CUSTOM ********/
+/*^ LOADER - ANIMATIONS CONTAINER ^*/
+.gta.custom .animations-container.kanye .scene {
+  background-image: url("https://acolorblue.co/libraries/Organizations/Rockstar%20Games/GTA/Custom/Interfaces/Loader/Kanye/Scene/Hallway%20-%20Comp.jpg");
+}
+
+.height-longer .loader .gta.custom .animations-container.kanye .character {
+  background-size: auto 90%;
+}
+
+.gta.custom .animations-container.kanye .character {
+  background-image: url("https://acolorblue.co/libraries/Organizations/Rockstar%20Games/GTA/Custom/Interfaces/Loader/Kanye/Character/Hat%20%2B%20Juice%20%2B%20Phone%20-%20Comp.png");
 }
