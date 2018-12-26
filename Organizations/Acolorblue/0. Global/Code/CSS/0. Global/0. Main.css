@@ -1,0 +1,279 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+* img {
+  object-fit: cover;
+}
+
+button {
+  background: none;
+  user-select: none;
+  touch-action: none;
+  outline: none;
+  border: none;
+  cursor: pointer; 
+  padding: 0;
+  margin: 0;
+  transition: unset;
+}
+
+button:active {
+  opacity: .7;
+  transition: unset;
+}
+
+a {
+  color: unset;
+}
+
+.ab-mid {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+}
+
+.scale-down {
+  transform: scale(.002);
+}
+
+.no-opacity {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.slide-up {
+  transform: translate(0%, -110%);
+  transition: transform 3s linear;
+}
+
+
+
+
+/* LOADER */
+.loader {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #111111;
+  z-index: 9;
+}
+
+.loader::before {
+  transition: all 1s ease-in-out;
+}
+
+.loader.covered::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  background-color: rgb(17, 17, 17);
+  position: inherit;
+  top: inherit;
+  right: inherit;
+  bottom: inherit;
+  left: inherit;
+  z-index: 9;
+  opacity: 1;
+}
+
+.loader.uncovered::before {
+  content: '';
+  opacity: 0; 
+}
+
+
+
+
+/* ROTATE TO LANDSCAPE */
+.rotate-to-landscape {
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  display: block;
+  z-index: 10;
+}
+
+.mobile.width-longer .rotate-to-landscape {
+  display: none;
+}
+
+.mobile.height-longer .rotate-to-landscape {
+  display: block;
+}
+
+.rotate-to-landscape::before {
+  content: "Please Rotate Your Device To Landscape Mode";
+  width: 80%;
+  height: fit-content;
+  font-family: Ahamono Monospaced, Pricedown, Sans-Serif;
+  color: #f9f9f9;
+  text-shadow: 0px 0px 5px #8e8e8e;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.rotate-to-landscape > .close {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #bababa;
+  margin: 10px 10px auto auto;
+  z-index: 11;
+}
+
+.rotate-to-landscape > .close.grey::before {
+  background-size: 8px;
+  -webkit-filter: drop-shadow(0px 0px 1px #303030);
+}
+
+
+
+
+/* AUTOMATED TEXT */
+.unread {
+  visibility: hidden;
+  display: none;
+}
+
+.reading {
+  visibility: visible;
+  display: block;
+}
+
+.reading::after {
+  content: "|";
+}
+
+.read {
+  visibility: visible;
+  display: block;
+}
+
+
+
+
+/* IMAGE SLIDER */
+.image-slider {
+  width: 74%;
+  border-radius: 5px;
+  right: 100%; 
+  left: auto;
+  display: none;
+}
+
+.image-slider.show {
+  display: inline;
+  z-index: 10;
+  -webkit-animation: image-slider-transition 4.5s ease-in-out;
+}
+
+@-webkit-keyframes image-slider-transition {
+  0% {
+    right: -74%;
+  }
+  
+  30%, 70% {
+    right: 5%;
+  }
+  
+  100% {
+    right: 100%;
+  }
+}
+
+
+
+
+/* BACKGROUND IMAGE ZOOM */
+.zoom.regular {
+  background-size: auto 100% !important;
+}
+
+.zoom.x2 { 
+  background-size: auto 200% !important;
+}
+
+
+
+
+/* SLIDE UP */
+@-webkit-keyframes slide-up {  
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, -110%);
+  }
+}
+
+
+
+
+/* TITLE OVERFLOW */
+@-webkit-keyframes title-overflow {
+  0%, 20%, 100% { 
+    transform: translateX(0%); 
+  }
+  
+  70% {
+    transform: translateX(-135%);
+  }
+
+  70.00001% {
+    transform: translateX(0%); 
+  }
+}
+
+
+
+
+/* MONOTONE BREATHER */
+.monotone-breather {
+  -webkit-animation: monotone-breather 3.5s ease-in-out infinite;
+} 
+
+@-webkit-keyframes monotone-breather {  
+  0% {
+    background-color: rgb(17, 17, 17);
+  }
+  
+  50% {
+    background-color: rgb(220, 220, 220);
+  }
+
+  100% {
+    background-color: rgb(17, 17, 17);
+  }
+}
