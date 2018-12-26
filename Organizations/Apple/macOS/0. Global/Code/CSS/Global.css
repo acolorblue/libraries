@@ -1,0 +1,586 @@
+/* MAC OS */
+.mac-os {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+  background-size: cover;
+  background-position: center;
+  font-family: Helvetica, Sans-Serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.mac-os::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  transition: inherit;
+}
+
+.mac-os.dim::after {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .9);
+  z-index: 1;
+}
+
+  
+
+
+/* MENU BAR */
+.mac-os .menu-bar {
+  width: 100%;
+  height: 22px;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, .4);
+  font-size: 14px;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 3;
+}
+
+.mac-os.dim > .menu-bar {
+  z-index: 0;
+}
+
+.mac-os > .menu-bar .blur-container {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mac-os > .menu-bar .blur-container .blur {
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  margin: 0px;
+}
+
+.mac-os > .menu-bar::after {
+  content: '';
+  width: inherit;
+  height: inherit;
+  border-bottom: 1px solid #8a8a8a;
+  background-color: rgba(243, 243, 243, 0.9);
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+
+
+
+
+/* MENU BAR - PANEL */
+.mac-os .menu-bar .panel {
+  width: fit-content;
+  width: -moz-fit-content;
+  height: inherit;
+  display: inline-flex;
+  position: absolute;
+  z-index: 3;
+}
+
+.mac-os .menu-bar .panel.left {
+  left: 10px;
+}
+
+.mac-os .menu-bar .panel.right {
+  right: 10px;
+}
+
+
+/* MENU BAR - PANEL - SECTION CONTAINER */
+.mac-os .menu-bar .panel .section-container {
+  width: fit-content;
+  width: -moz-fit-content;
+  height: inherit;
+  display: inline-block;
+  position: relative;
+}
+
+
+/* MENU BAR - SECTION CONTAINER - TITLE BUTTON */
+.mac-os .menu-bar .section-container > button {
+  width: inherit;
+  height: inherit;
+  padding: 0px 10px;
+  font-size: unset;
+  line-height: 22px;
+  display: block;
+  position: relative;
+}
+
+.android .mac-os .menu-bar .section-container > button {
+  line-height: 1.8;
+}
+
+.mac-os .menu-bar .section-container > .icon {
+  width: 35px;
+}
+
+.mac-os .menu-bar .section-container > .icon::before {
+  width: inherit;
+  height: inherit;
+  background-size: 15px;
+}
+
+.mac-os .menu-bar .section-container .name {
+  font-weight: bold;
+}
+
+.mac-os .menu-bar .section-container .notification-center {
+  width: 38px;
+}
+
+.mac-os .menu-bar .section-container .notification-center.icon::before {
+  background-size: 18px;
+}
+
+.mac-os .menu-bar .section-container.selected > button,
+.mac-os .menu-bar .section-container.selected > .menu .item:hover {
+  background-color: #026cea;
+  color: #ffffff;
+}
+
+
+/* MENU BAR - SECTION CONTAINER - MENU */
+.mac-os .menu-bar .section-container .menu {
+  width: fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  height: -moz-fit-content;
+  border-radius: 0px 0px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.15);
+  background-color: rgba(243, 243, 243, 0.97);
+  position: absolute;
+  top: 0px;
+  margin-top: 22px;
+  display: none;
+}
+
+.mac-os .menu-bar .panel.left .section-container .menu {
+  left: 0px;
+}
+
+.mac-os .menu-bar .panel.right .section-container .menu {
+  right: 0px;
+}
+
+.mac-os .menu-bar .section-container.selected .menu {
+  display: block;
+}
+
+
+/* MENU BAR - SECTION CONTAINER - MENU - ITEM AND SEPERATOR */
+.mac-os .menu-bar .section-container .menu .item {
+  width: 100%;
+  height: 18px;
+  overflow: hidden;
+  padding: 0px 22px;
+  font-size: unset;
+  line-height: 18px;
+  line-height: -moz-block-height;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #434343;
+  text-align: left;
+  display: block;
+  position: relative;
+  margin: 4px 0px;
+  user-select: none;
+}
+
+.mac-os .menu-bar .section-container .menu .item::before {
+  width: 11px;
+  height: 11px;
+  background-size: contain;
+  margin: auto auto auto 5px;
+}
+
+.mac-os .menu-bar .section-container .menu .seperator {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(211, 211, 211, 0.8);
+  display: block;
+  position: relative;
+  margin: 3px 0px;
+}
+
+
+/* MENU BAR - SECTION CONTAINER - APPLE MENU */
+.mac-os .menu-bar .section-container.apple-menu .menu {
+  width: 350px;
+  height: fit-content;
+  background-color: #6d6d6d;
+}
+
+.mac-os .menu-bar .section-container.apple-menu .menu img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+  display: block;
+  z-index: 2;
+}
+
+
+/* MENU BAR - SECTION CONTAINER - DATE AND TIME */
+.mac-os .menu-bar .section-container.date-and-time > button.time * {
+  transition: inherit;
+}
+
+.mac-os .menu-bar .section-container.date-and-time > .menu {
+  max-width: 276px;
+  min-width: 200px; 
+  height: fit-content;
+  height: -moz-fit-content; 
+  overflow: hidden; 
+  background-color: rgba(243, 243, 243, 0.97);
+}
+
+.mac-os .menu-bar .section-container.date-and-time > .menu .item.full-date,
+.mac-os .menu-bar .section-container.date-and-time > .menu .item.full-date:hover {
+  background-color: transparent;
+  color: #adadad;
+  text-decoration: none; 
+  cursor: default;
+} 
+
+.mac-os .menu-bar .section-container.date-and-time > .menu .item.location-and-time-preferences .timezones {
+  display: none;
+}
+
+
+/* MENU BAR - DATE AND TIME - ANALOG */
+.mac-os .menu-bar .section-container.date-and-time > button.analog {
+  width: fit-content;
+  width: -moz-fit-content;
+  height: inherit;
+}
+
+.mac-os .menu-bar .section-container.date-and-time > button.analog .clock.text {
+  display: none;
+}
+
+.mac-os .menu-bar .section-container.date-and-time > button.analog .clock.border {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  position: relative;
+}
+
+.mac-os .menu-bar .section-container.selected.date-and-time > button.analog .clock.border {
+  border: 1px solid #ffffff;
+}
+
+.mac-os .menu-bar .section-container.date-and-time > button.analog .clock.border .hand {
+  width: 1px;
+  background-color: #000;
+} 
+
+.mac-os .menu-bar .section-container.selected.date-and-time > button.analog .clock.border .hand {
+  background-color: #fff;
+}
+
+.mac-os .menu-bar .section-container.date-and-time > button.analog .clock.border .hour {
+  height: 5px;
+  top: auto;
+  right: auto;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+}
+
+.mac-os .menu-bar .section-container.date-and-time > button.analog .clock.border .minute {
+  height: 7px;
+  top: auto;
+  right: auto;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+}
+
+
+/* MENU BAR - DATE AND TIME - DIGITAL */
+.mac-os .menu-bar .section-container.date-and-time > button.digital {
+  width: fit-content;
+  width: -moz-fit-content;
+  height: inherit;
+  white-space: nowrap;
+}
+
+.mac-os .menu-bar .section-container.date-and-time > button.digital span.text {
+  width: fit-content;
+  width: -moz-fit-content;
+  height: inherit;
+  line-height: 22px;
+  white-space: nowrap;
+  display: block;
+}
+
+.android .mac-os .menu-bar .section-container.date-and-time > button.digital span.text {
+  line-height: 1.8;
+}
+
+.mac-os .menu-bar .section-container.date-and-time > button.digital .clock.border {
+  display: none;
+}
+
+
+
+
+/* MENU BAR - PROFILE */
+.mac-os .menu-bar .section-container.profile .menu {
+  width: 276px;
+  height: 276px;
+  background: -webkit-linear-gradient(top, #f0f0f0, #ddd);
+  background-color: rgba(243, 243, 243, 0.97);
+  background-size: cover;
+  background-position: center;
+  padding: 25% 0px;
+}
+
+.mac-os .menu-bar .section-container.profile .menu::before {
+  background-size: cover;
+}
+
+.mac-os .menu-bar .section-container.selected.profile .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mac-os .menu-bar .section-container.profile .menu .avi {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-size: cover;
+  margin: auto auto -4px auto;
+  position: relative;
+}
+
+.mac-os .menu-bar .section-container.profile .menu .avi::before {
+  border-radius: inherit;
+  background-size: cover;
+}
+
+.mac-os .menu-bar .section-container.profile .menu .username {
+  color: #fff;
+  letter-spacing: 0.4px;
+  text-shadow: 0px 0px 4px #000000;
+  margin: auto;
+  z-index: 2;
+}
+
+.mac-os .menu-bar .section-container.profile .menu .bio {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 8px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: #757575;
+  margin: auto;
+  z-index: 2;
+}
+
+.mac-os .menu-bar .section-container.profile .menu .accounts {
+  display: inline-flex;
+  margin: auto;
+  z-index: 2;
+}
+
+.mac-os .menu-bar .section-container.profile .menu .accounts .icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 8px;
+  background: transparent;
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-right: 56px;
+}
+
+.mac-os .menu-bar .section-container.profile .menu .accounts .icon:last-child {
+  margin-right: 0px;
+}
+
+.mac-os .menu-bar .section-container.profile .menu .accounts .icon::before {
+  background-size: 18px;
+  -webkit-filter: drop-shadow(0px 0px 1px #303030);
+}
+
+
+/* MENU BAR - NOTIFICATION */
+.mac-os .menu-bar .panel.right .section-container.notification .menu {
+  width: 268px;
+  background-color: #252525;
+  display: block;
+  right: -278px;
+  transition: height 0ms ease-in-out,
+              right 200ms ease-in-out;
+}
+
+.mac-os .menu-bar .panel.right .section-container.notification.selected .menu {
+  right: -10px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.mac-os .menu-bar .panel.right .section-container.notification .menu.cover::before {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  background-size: 10%;
+  z-index: 2;
+}
+
+.mac-os .menu-bar .panel.right .section-container.notification.selected .menu > * {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  position: absolute;
+}
+
+
+
+
+/* DESKTOP */
+.mac-os .desktop {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.mac-os .desktop .files-row {  
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+} 
+
+.mac-os .desktop .file {
+  width: 130px;
+  height: 130px;
+  background-color: unset;
+  margin: 10px;
+  display: none;
+}
+
+.mac-os .desktop .file.show {
+  display: block;
+}
+
+.mac-os .desktop .file * {
+  user-select: none;
+}
+
+.mac-os .desktop .file a {
+  display: block;
+}
+
+
+/* DESKTOP - FILE - THUMBNAIL */
+.mac-os .file .thumbnail-container {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+
+.mac-os .file.selected .thumbnail-container {
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.mac-os .file .thumbnail-container .file-type-indicator {
+  width: fit-content;
+  width: -moz-fit-content;
+  height: fit-content;
+  height: -moz-fit-content;
+  font-size: 10px;
+  text-shadow: 0px 0px 4px #545454;
+}
+
+.mac-os .file .thumbnail-container .file-type-indicator.icon {
+  width: 40px;
+  height: 40px; 
+}
+ 
+.mac-os .file .thumbnail-container .file-type-indicator::before {
+  background-size: contain;
+  z-index: 1;
+}
+
+.mac-os .file.shadow .thumbnail-container .file-type-indicator::before {
+  -webkit-filter: drop-shadow(0px 0px 1px #eeeeee);
+}
+
+.mac-os .file .thumbnail-container .thumbnail {
+  width: auto;
+  max-width: 60px;
+  height: auto;
+  max-height: 60px;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 1px 5px #4b4b4b;
+  margin: auto;
+}
+
+.mac-os .file.shadow .thumbnail-container .thumbnail {
+  background-color: #111;
+}
+
+.mac-os .file.audio .thumbnail-container .thumbnail {
+  border: none;
+}
+
+
+
+
+/* DESKTOP - FILE - TITLE */
+.mac-os .file .title-container {
+  padding: 2px;
+  margin-top: 4px;
+}
+
+.mac-os .file .title {
+  width: fit-content;
+  width: -moz-fit-content;
+  max-width: 128px;
+  height: fit-content;
+  height: -moz-fit-content;
+  border-radius: 3px;
+  overflow: hidden;
+  display: block;
+  padding: 3px 5px;
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px #000000;
+  text-align: center;
+  margin: auto;
+}
+
+.mac-os .file .title:nth-child(2) {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: -1px;
+}
+
+.mac-os .file.selected .title {
+  border-radius: 3px;
+  background-color: #0168da;
+  text-shadow: unset;
+}
+
+.mac-os .file.selected .title:nth-child(2) {
+  border-radius: 0px 0px 3px 3px;
+}
