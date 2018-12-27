@@ -584,3 +584,72 @@
 .mac-os .file.selected .title:nth-child(2) {
   border-radius: 0px 0px 3px 3px;
 }
+
+
+
+
+/* MAC OS - BACKGROUND CREDITS */
+.mac-os .background-credits {
+  width: 218px;
+  height: 20px;
+  border-radius: 0px 5px 0px 0px;
+  border-top: 1px solid #8a8a8a;
+  border-right: 1px solid #8a8a8a;
+  overflow: hidden;
+  box-shadow: 0px -5px 50px rgba(0, 0, 0, .4);
+  padding: 4px;
+  font-family: Helvetica, Ahamono Monospaced;
+  font-size: 12.4px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  color: #000000;
+  top: auto;
+  right: auto;
+  left: -218px;
+}
+
+.mac-os .background-credits.show {
+  left: 0px;
+}
+
+.mac-os .background-credits .blur {
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  margin: 0px;
+}
+
+.mac-os .background-credits .title {
+  width: fit-content;
+  width: -moz-fit-content;
+  height: fit-content;
+  height: -moz-fit-content;
+  line-height: -moz-block-height;
+  white-space: nowrap;
+  display: block;
+  z-index: 3;
+}
+
+.mac-os .background-credits::after {
+  content: '';
+  width: inherit;
+  height: inherit;
+  background-color: rgba(243, 243, 243, 0.8);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (device-width: 320px) 
+                   and (-webkit-device-pixel-ratio: 2) {
+    .mac-os .menu-bar .section-container.date-and-time > .menu {
+      max-width: 245px;
+    }
+}
