@@ -148,11 +148,21 @@ function deviceInfo() {
       $('body').append(first_impression_script);
 
 
+      // if (firstImpression()) {
+      //   html.addClass('new-user');
+      // }
+
+      // if script link doesnt exist
+    }
+    newUser();
+
+
+    function onFirstImpression() {
       if (firstImpression()) {
         html.addClass('new-user');
       }
     }
-    newUser();
+    onFirstImpression();
   }
   browser();
   
