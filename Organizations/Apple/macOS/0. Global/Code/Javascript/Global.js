@@ -1,7 +1,6 @@
 // GLOBAL VARIABLES
-var mac_os = $('.mac-os'),
-    main_file = $('.file.main'),
-    current_file;
+var mac_os = $('.mac-os');
+
 
 
 
@@ -181,5 +180,19 @@ function menuBar() {
     }
     
     event.stopPropagation();
+  })
+}
+
+
+
+
+// ON MAC OS WINDOW CLICK
+function onMacOSWindowClick() {
+  $('.mac-os').click(function() {    
+    selected_exists = $('.menu-bar .section-container.selected').length == 1;
+    if (selected_exists) {
+      $('.menu-bar .section-container.selected > .icon').removeClass('white').addClass('black');
+      $('.menu-bar .section-container').removeClass('selected');
+    }
   })
 }
