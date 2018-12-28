@@ -184,6 +184,46 @@ function menuBar() {
 }
 
 
+ 
+ 
+// ON DESKTOP FILE CLICK
+function onDesktopFileClick() {
+  $('.mac-os .files-row .file')  
+    .mutate('top left', function(el, info) {
+    setTimeout(function() {
+      repositionDraggable();
+    }, 1000);
+  })
+  
+    .on('click', function() {
+    if ($(this).hasClass('selected')) {
+      return;
+    }
+
+    if (!$(this).hasClass('selected')) {
+      if ($(this).hasClass('primary')) {
+        primary_desktop_file.addClass('selected');
+        application.removeClass('hide');
+        background_credits.removeClass('show');
+        
+        if ($('.application').hasClass('video-player')) {
+          mac_os.addClass('dim');
+        }
+      }
+    }
+  })
+
+    .on('contextmenu', function() {
+    return false;
+  })
+  
+    .draggable({
+      cancel: false,
+      cursor: 'move'
+    });
+}
+
+
 
 
 // ON MAC OS WINDOW CLICK
