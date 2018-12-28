@@ -1,3 +1,10 @@
+// GLOBAL VARIABLES
+var mac_os = $('.mac-os'),
+    main_file = $('.file.main'),
+    current_file;
+
+
+
 // MENU BAR 
 function menuBar() {
   $('.menu-bar .section-container > button').click(function(event) {
