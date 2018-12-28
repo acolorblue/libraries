@@ -147,26 +147,20 @@ function deviceInfo() {
           first_impression_script.src = "https://acolorblue.co/libraries/Code/Javascript/first-impression.js?15";
       $('body').append(first_impression_script);
 
-      // first_impression_script
 
-      if ($('script').attr('src', 'https://acolorblue.co/libraries/Code/Javascript/first-impression.js?15').length == 0) {
-        html.addClass('new-user');
-      }
+      /* ADD TO EACH LOCAL SCRIPT */
+      // ON FIRST IMPRESSION 
+      // function onFirstImpression() {
+      //   if (firstImpression()) {
+      //     html.addClass('new-user');
+      //   }
+      // }
+      // onFirstImpression();
     }
     newUser();
 
 
-    // function onFirstImpression() {
-    //   if (firstImpression()) {
-    //     html.addClass('new-user');
-    //   }
-    // }
-    // onFirstImpression();
-
-
-
-
-    // $('script').attr('src', 'https://acolorblue.co/libraries/Code/Javascript/first-impression.js?15')
+    
   }
   browser();
   
