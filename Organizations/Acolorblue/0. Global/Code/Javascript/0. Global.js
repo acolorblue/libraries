@@ -570,6 +570,31 @@ function repositionDraggable() {
 
 
 
+
+// DRAGGABLE ELEMENT
+function draggableElement(element, handle) {
+  $(element).draggable({
+    handle: handle,
+    cursor: 'move'
+  });
+} 
+
+
+
+
+// DRAGGABLE ELEMENT WITH BLUR
+function draggableElementWithBlur(container, element, handle, blur, source) {
+  $(element).draggable({
+    handle: handle,
+    cursor: 'move', 
+    drag: function(event, ui) {
+      imageBlur(container, element, blur, source);
+    }
+  });
+} 
+
+
+
          
 // ADD CLASSES 'scale-down hide' TO ELEMENT 
 function addScaleDownAndHide(targetElement) {
@@ -725,31 +750,6 @@ function imageBlurReposition(container, element, blur, source) {
     console.log("element moved" + element);
   });
 }
-
-
-
-
-// DRAGGABLE ELEMENT
-function draggableElement(element, handle) {
-  $(element).draggable({
-    handle: handle,
-    cursor: 'move'
-  });
-} 
-
-
-
-
-// DRAGGABLE ELEMENT WITH BLUR
-function draggableElementWithBlur(container, element, handle, blur, source) {
-  $(element).draggable({
-    handle: handle,
-    cursor: 'move', 
-    drag: function(event, ui) {
-      imageBlur(container, element, blur, source);
-    }
-  });
-} 
 
 
 
