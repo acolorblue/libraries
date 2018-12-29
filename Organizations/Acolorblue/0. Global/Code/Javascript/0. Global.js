@@ -144,26 +144,13 @@ function deviceInfo() {
       html.addClass('firefox');
     }
     
+    
     function newUser() {
-      var first_impression_script = document.createElement('script');
-          first_impression_script.type = 'text/javascript';
-          first_impression_script.src = "https://acolorblue.co/libraries/Code/Javascript/first-impression.js?15";
-      $('body').append(first_impression_script);
-
-
-      /* ADD TO EACH LOCAL SCRIPT */
-      // ON FIRST IMPRESSION 
-      // function onFirstImpression() {
-      //   if (firstImpression()) {
-      //     html.addClass('new-user');
-      //   }
-      // }
-      // onFirstImpression();
+      if (firstImpression()) {
+        html.addClass('new-user');
+      }
     }
     newUser();
-
-
-    
   }
   browser();
   
