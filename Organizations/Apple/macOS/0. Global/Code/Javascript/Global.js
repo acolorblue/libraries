@@ -182,6 +182,7 @@ function menuBar() {
     event.stopPropagation();
   })
 }
+menuBar();
 
 
  
@@ -222,6 +223,7 @@ function onDesktopFileClick() {
       cursor: 'move'
     });
 }
+onDesktopFileClick();
 
 
 
@@ -236,3 +238,4 @@ function onMacOSWindowClick() {
     }
   })
 }
+onMacOSWindowClick();
