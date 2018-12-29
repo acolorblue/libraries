@@ -1,5 +1,9 @@
 // GLOBAL VARIABLES
-var mac_os = $('.mac-os');
+var mac_os = $('.mac-os'),
+    desktop_file = $('.mac-os .files-row .file'),
+    primary_desktop_file = $('.mac-os .files-row .file.primary'),
+    newly_selected_desktop_file,
+    background_credits = $('.mac-os > .background-credits');
 
 
 
