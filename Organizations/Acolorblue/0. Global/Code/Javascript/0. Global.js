@@ -729,6 +729,31 @@ function imageBlurReposition(container, element, blur, source) {
 
 
 
+// DRAGGABLE ELEMENT
+function draggableElement(element, handle) {
+  $(element).draggable({
+    handle: handle,
+    cursor: 'move'
+  });
+} 
+
+
+
+
+// DRAGGABLE ELEMENT WITH BLUR
+function draggableElementWithBlur(container, element, handle, blur, source) {
+  $(element).draggable({
+    handle: handle,
+    cursor: 'move', 
+    drag: function(event, ui) {
+      imageBlur(container, element, blur, source);
+    }
+  });
+} 
+
+
+
+
 // COMPUTER IMAGE ZOOM
 function computerImageZoom(element) {
   $(element)
