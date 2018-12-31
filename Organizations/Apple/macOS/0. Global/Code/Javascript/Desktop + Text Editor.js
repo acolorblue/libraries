@@ -24,6 +24,68 @@ if (mobile) {
 }
 
 
+ 
+
+// DETECT MAC OS OR APPLICATION MOVEMENT
+function macOsOrApplicationMovement() {    
+  $('.mac-os, .application').mutate('width height top left', function(el, info) {
+    function deviceCurrentSize() {
+      checkDeviceLength();
+      if (device_width_longer) {
+        if ($('.application').hasClass('quick-look')) {
+          titleOverflow('.application.quick-look .title', '.application.quick-look .title-scroll');
+          return;
+        } 
+        
+        if ($('.application').hasClass('world-clock')) {
+          return;
+        }
+        
+        if ($('.application').hasClass('text-editor')) {
+          var unwatched_video_present = $('.primary-container .media.visible').length == 1;
+          if (unwatched_video_present) {
+            applicationRemove();
+            application.addClass('video-player');
+            applicationChange();
+          }
+        }
+      }  
+      
+      if (device_height_longer) {
+        if ($('.application').hasClass('quick-look')) {
+          setTimeout(function() {
+            titleOverflow('.application.quick-look .title', '.application.quick-look .title-scroll');
+            return;
+          }, 1000);
+        } 
+
+        if ($('.application').hasClass('video-player')) {
+          $(window).off('resize');
+          media = $('.primary-container .media.visible');
+          video = media.find('video');
+          mediaVariableAssignments();
+
+          applicationRemove();
+          application.addClass('text-editor');
+          applicationChange();
+          previous_block.after(media);
+        }
+      }
+    }
+    deviceCurrentSize();
+    
+    imageBlur('.mac-os', '.mac-os > .menu-bar', '.mac-os > .menu-bar > .blur-container .blur', 'background-image');
+    imageBlur('.mac-os', '.application', '.application > .blur', 'background-image');
+    automatedScrollAdjustment();
+    
+    if (desktop) {
+      repositionDraggable();
+    }
+  });
+}
+macOsOrApplicationMovement();
+
+
 
 
 // MENU BAR 
