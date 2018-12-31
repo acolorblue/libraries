@@ -8,6 +8,24 @@ var mac_os = $('.mac-os'),
 
 
 
+// DEVICE SPECIFICATIONS
+if (desktop) {
+  draggableElementWithBlur('.mac-os', '.application', '.header', '.application > .blur', 'background-image'); 
+}
+
+if (mobile) {
+  if (ios) {
+    enableInlineVideo($('.application .media video')[0]);
+  }
+
+  if (android) {
+    enableInlineVideoAndroid('.application .media video');
+  }
+}
+
+
+
+
 // MENU BAR 
 function menuBar() {
   $('.menu-bar .section-container > button').click(function(event) {
