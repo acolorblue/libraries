@@ -8,7 +8,7 @@ var user_agent_length = navigator.userAgent.length,
     blackberry = navigator.userAgent.match(/BlackBerry/i),
     webOS = navigator.userAgent.match(/webOS/i),
     mobile = ios || android || blackberry || webOS,
-    computer = !mobile,
+    desktop = !mobile,
     macintosh = navigator.userAgent.match(/Macintosh/i) || navigator.userAgent.match(/Mac OS/i),
     windows = navigator.userAgent.match(/Windows/i) || navigator.userAgent.match(/Win64/i) || navigator.userAgent.match(/Win32/i),
     device_height_longer,
@@ -85,9 +85,9 @@ var html = $('html'),
 // DEVICE INFO
 function deviceInfo() {  
   function device() {
-    // COMPUTER
-    if (computer) {
-      html.addClass('computer');
+    // DESKTOP
+    if (desktop) {
+      html.addClass('desktop');
     
       if (macintosh) {
         html.addClass('macintosh');
@@ -429,7 +429,7 @@ function clockConversions() {
     
     if (minute < 10) {
       minute = '0' + minute;
-    } 
+    }
   }
   minuteConversions();
   
@@ -741,8 +741,8 @@ function imageBlurReposition(container, element, blur, source) {
 
 
 
-// COMPUTER IMAGE ZOOM
-function computerImageZoom(element) {
+// DESKTOP IMAGE ZOOM
+function desktopImageZoom(element) {
   $(element)
     .on('mouseover', function() {
     this_element = $(this);
