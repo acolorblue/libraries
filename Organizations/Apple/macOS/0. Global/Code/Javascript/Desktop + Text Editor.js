@@ -9,22 +9,24 @@ var mac_os = $('.mac-os'),
 
 
 // DEVICE SPECIFICATIONS
-if (desktop) {
-  draggableElementWithBlur('.mac-os', '.application', '.header', '.application > .blur', 'background-image'); 
-}
-
-if (mobile) {
-  if (ios) {
-    enableInlineVideo($('.application .media video')[0]);
+function deviceSpecificationsOnMacOS() {
+  if (desktop) {
+    draggableElementWithBlur('.mac-os', '.application', '.header', '.application > .blur', 'background-image'); 
   }
 
-  if (android) {
-    enableInlineVideoAndroid('.application .media video');
+  if (mobile) {
+    if (ios) {
+      enableInlineVideo($('.application .media video')[0]);
+    }
+
+    if (android) {
+      enableInlineVideoAndroid('.application .media video');
+    }
   }
 }
-
 
  
+
 
 // DETECT MAC OS OR APPLICATION MOVEMENT
 function macOsOrApplicationMovement() {    
@@ -323,3 +325,14 @@ function onMacOSWindowClick() {
   })
 }
 onMacOSWindowClick();
+
+
+
+
+// CALL REMAINDER MAC OS FUNCTIONS
+function callRemainderMacOsFunctions() {
+  deviceSpecificationsOnMacOS();
+  clock();
+  imageBlur('.mac-os', '.mac-os > .menu-bar', '.mac-os > .menu-bar > .blur-container .blur', 'background-image');
+  imageBlur('.mac-os', '.application', '.application > .blur', 'background-image');
+}
