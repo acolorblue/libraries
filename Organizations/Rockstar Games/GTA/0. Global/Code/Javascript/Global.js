@@ -27,7 +27,7 @@ function loadingScreenGTA() {
       $('.open-in-different-browser').html($('.open-in-different-browser').html().replace("native browser", native_browser));
     }
 
-    if (desktop) {
+    if (computer) {
       if (windows) {
         if (firefox) {
           $('.gta .open-in-different-browser').addClass('firefox show').html("<span class='info white icon'></span>Please use Chrome or Safari. Firefox on Windows has ugly scrollbars.");
@@ -38,7 +38,7 @@ function loadingScreenGTA() {
   } 
   infoContainer();
   
-  if (desktop && windows && firefox || twitter_in_app || instagram_in_app) {
+  if (computer && windows && firefox || twitter_in_app || instagram_in_app) {
     setTimeout(function() {
       $('.gta .animations-container.first').addClass('show');
       moveLoop();
@@ -124,7 +124,7 @@ function loadingScreenGTA() {
       checkSkippedStatus();
       if (loader_hasnt_been_skipped) {
         $('.gta .animations-container.first').remove();
-        if (desktop) {
+        if (computer) {
           $('.gta div.fast-forward-automated-text').addClass('show');
         }
       }
@@ -163,7 +163,7 @@ function loadingScreenGTA() {
     setTimeout(function() {
       checkSkippedStatus();
       if (loader_hasnt_been_skipped) {
-        if (desktop) {
+        if (computer) {
           $('.gta div.fast-forward-automated-text').removeClass('show');
         }
         $('.gta .animations-container.third').addClass('show');
