@@ -8,7 +8,7 @@ var user_agent_length = navigator.userAgent.length,
     blackberry = navigator.userAgent.match(/BlackBerry/i),
     webOS = navigator.userAgent.match(/webOS/i),
     mobile = ios || android || blackberry || webOS,
-    desktop = !mobile,
+    computer = !mobile,
     macintosh = navigator.userAgent.match(/Macintosh/i) || navigator.userAgent.match(/Mac OS/i),
     windows = navigator.userAgent.match(/Windows/i) || navigator.userAgent.match(/Win64/i) || navigator.userAgent.match(/Win32/i),
     device_height_longer,
@@ -85,9 +85,9 @@ var html = $('html'),
 // DEVICE INFO
 function deviceInfo() {  
   function device() {
-    // DESKTOP
-    if (desktop) {
-      html.addClass('desktop');
+    // COMPUTER
+    if (computer) {
+      html.addClass('computer');
     
       if (macintosh) {
         html.addClass('macintosh');
@@ -260,7 +260,7 @@ function rotateToPortrait() {
 
 // USER ACTIVE STATUS
 function userActiveStatus() {    
-  $(window).focus(); 
+  $(window).focus();
   
   $(window).on('blur', function() {
     if (mobile) {
@@ -282,7 +282,7 @@ function repositionDraggable() {
   if (dragging) {
 //     if (first_drag) {
       $('.ui-draggable').addClass('dragged');
-//     }      
+//     }
   }
   
      
@@ -488,8 +488,8 @@ function imageBlurReposition(container, element, blur, source) {
 
 
 
-// DESKTOP IMAGE ZOOM
-function desktopImageZoom(element) {
+// COMPUTER IMAGE ZOOM
+function computerImageZoom(element) {
   $(element)
     .on('mouseover', function() {
     this_element = $(this);
