@@ -581,6 +581,88 @@ onDesktopFileClick();
 
 
 
+// APPLICATION REMOVE
+function applicationRemove() { 
+  function menuBar() {
+    selected_exists = $('.mac-os > .menu-bar .section-container.selected').length == 1;
+    if (selected_exists) {
+      $('.mac-os > .menu-bar .section-container').removeClass('selected');
+    }
+  }
+  menuBar();
+  
+  function file() {
+    primary_desktop_file.removeClass('show selected');
+  }
+  file();
+  
+  function hiden() {
+    if ($('.application').hasClass('hide')) {
+      $('.application').removeClass('hide');
+      background_credits.removeClass('show');
+    }
+  }
+  hiden();
+  
+  function title() {
+    title_scroll.empty();
+  }
+  title();
+  
+  function contentControls() {
+    $('.application > .header .content-controls .social-platforms').empty();
+    $('.application .content-controls button, .application .content-controls a').text('');
+    $('.application > .header .content-controls').empty();
+  }
+  contentControls();
+  
+  if ($('.application').hasClass('error')) {
+    return;
+  }
+  
+  if ($('.application').hasClass('text-editor')) {
+    pauseAnyVideosPlaying('.application');
+    
+    if ($('.text-editor > .header .content-controls').hasClass('search')) {
+      $('.text-editor > .header .content-controls').removeClass('search');
+    }
+    
+    if ($('.text-editor > .header .content-controls').hasClass('share')) {
+      $('.text-editor > .header .content-controls .social-platforms').empty();
+      $('.text-editor > .header .content-controls').removeClass('share');
+    }
+    
+    application.removeClass('text-editor');
+  }
+  
+  if ($('.application').hasClass('video-player')) {
+    pauseAnyVideosPlaying('.application');
+    thumbnail.css('height', '');
+    media.css('height', '');
+    application.css('height', '');
+    application.removeClass('video-player');
+    mac_os.removeClass('dim');
+  }
+
+  if ($('.application').hasClass('quick-look')) {
+    if ($('.quick-look > .header .title-scroll').hasClass('overflow')) {
+      $('.quick-look > .header .title-scroll')[1].remove();
+      $('.quick-look > .header .title-scroll').removeClass('overflow');
+    }
+    $('.quick-look > .header .content-controls .social-platforms').empty().remove(); 
+    $('.quick-look .primary-container .poster').remove();
+    application.removeClass('quick-look');
+  }
+
+  if ($('.application').hasClass('world-clock')) {
+    $('.mac-os .menu-bar .item.location-and-time-preferences').append($('.timezones'));
+    application.removeClass('world-clock')
+  }
+}
+
+
+
+
 // CALL REMAINDER MAC OS FUNCTIONS
 function callRemainderMacOsFunctions() {
   deviceSpecificationsOnMacOS();
