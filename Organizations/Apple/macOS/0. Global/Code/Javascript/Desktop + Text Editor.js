@@ -46,6 +46,54 @@ function deviceSpecificationsOnMacOS() {
 
 
 
+// MEDIA MANUAL PRELOADS
+function mediaManualPreloads() {
+  videosPreloadToAuto('.mac-os .application .scroll-container .media video');
+  
+  setTimeout(function() {
+    $('.mac-os > .menu-bar .section-container').addClass('selected');
+    $('.mac-os > .menu-bar .section-container > button.icon').removeClass('black').addClass('white');
+  }, 300);
+  
+  setTimeout(function() {
+    $('.mac-os .application .scroll-container .media .play-pause').each(function() {
+      if (!$(this).hasClass('play')) {
+        $(this).removeClass('pause reload').addClass('play');
+      }
+    })
+    $('.mac-os .application .scroll-container .media').each(function() {
+      if (!$(this).hasClass('hide')) {
+        $(this).addClass('hide');
+      }
+    })
+  }, 400);
+
+  setTimeout(function() {
+    applicationRemove();
+    application.addClass('world-clock');
+    applicationChange();
+  }, 600);
+  
+  setTimeout(function() {
+    $('.mac-os > .menu-bar .section-container').removeClass('selected');
+    $('.mac-os > .menu-bar .section-container > button.icon').removeClass('white').addClass('black');
+    $('.mac-os > .menu-bar .section-container .item.analog-clock.white').removeClass('checked white icon');
+  }, 1000);
+
+  setTimeout(function() {
+    applicationRemove();
+    application.addClass('text-editor');
+    applicationChange();
+  }, 1400);
+  
+  setTimeout(function() {
+    imageBlur('.mac-os', '.application', '.application > .blur', 'background-image');
+  }, 6000);
+}
+
+
+
+
 // ON MAC OS WINDOW CLICK
 function macOSWindowClick() {
   $('.mac-os').click(function() {    
