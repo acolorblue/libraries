@@ -6,6 +6,8 @@
 
 // GLOBAL VARIABLES
 var scroll_container_class = '.scroll-container',
+    uncompleted = !$('.scroll-container').hasClass('completed'),
+    completed = $('.scroll-container').hasClass('completed'),
     fast_forward,
     current_paragraph,
     next_block_class,
