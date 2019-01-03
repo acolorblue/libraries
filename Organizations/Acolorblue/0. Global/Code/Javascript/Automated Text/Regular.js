@@ -5,7 +5,8 @@
 
 
 // GLOBAL VARIABLES
-var fast_forward,
+var scroll_container_class = '.scroll-container',
+    fast_forward,
     current_paragraph,
     next_block_class,
     next_block_number,
@@ -76,7 +77,6 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
         let lengthClassSkip = elClassSkip.length;
 
         while (lengthClassSkip--) {
-//           $(elClassSkip[lengthClassSkip]).css('display', 'none');
         }
         return;
       }
