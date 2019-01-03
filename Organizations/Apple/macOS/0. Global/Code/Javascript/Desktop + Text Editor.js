@@ -1,5 +1,5 @@
 // GLOBAL VARIABLES
-var product_title = "A ***** **** Analysis",
+var product_title,
     mac_os = $('.mac-os'),
     desktop_file = $('.mac-os .files-row .file'),
     primary_desktop_file = $('.mac-os .files-row .file.primary'),
