@@ -602,15 +602,11 @@ onDesktopFileClick();
 // DESKTOP BACKGROUND CREDITS
 function desktopBackgroundCredits() {
   if ($('.application').hasClass('hide')) {
-    // setTimeout(function() {
-      background_credits.addClass('show');
-    // }, 100);
+      background_credits.addClass('show');  
   }
   
   if (!$('.application').hasClass('hide')) {
-    // setTimeout(function() {
-      background_credits.removeClass('show');
-    // }, 100);
+      background_credits.removeClass('show'); 
   }
   
   background_credits.mutate('right', function(el, info) {
@@ -891,6 +887,33 @@ function applicationChange() {
   }
 }
 
+
+
+
+// CLOSE APP
+function closeApp() {
+  $('.application .header .close').click(function() {
+    pauseAnyVideosPlaying('.application');
+    
+    if ($('.application').hasClass('error')) {
+      return;
+    }
+    
+    if ($('.application').hasClass('text-editor')) {
+      pauseAnyVideosPlaying();
+    }
+    
+    if ($('.application').hasClass('video-player')) {
+      pauseAnyVideosPlaying();
+      mac_os.removeClass('dim');
+    }  
+    
+    application.addClass('hide');
+    primary_desktop_file.removeClass('selected');
+    desktopBackgroundCredits();
+  })
+}
+closeApp();
 
 
 
