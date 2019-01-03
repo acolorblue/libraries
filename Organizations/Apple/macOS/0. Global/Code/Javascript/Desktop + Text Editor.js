@@ -576,7 +576,8 @@ function onDesktopFileClick() {
       if ($(this).hasClass('primary')) {
         primary_desktop_file.addClass('selected');
         application.removeClass('hide');
-        background_credits.removeClass('show');
+        // background_credits.removeClass('show');
+        desktopBackgroundCredits();
         
         if ($('.application').hasClass('video-player')) {
           mac_os.addClass('dim');
@@ -599,6 +600,28 @@ onDesktopFileClick();
 
 
 
+// DESKTOP BACKGROUND CREDITS
+function desktopBackgroundCredits() {
+  if ($('.application').hasClass('hide')) {
+    setTimeout(function() {
+      background_credits.addClass('show');
+    }, 100);
+  }
+  
+  if (!$('.application').hasClass('hide')) {
+    setTimeout(function() {
+      background_credits.removeClass('show');
+    }, 100);
+  }
+  
+  background_credits.mutate('right', function(el, info) {
+    imageBlur('.mac-os', '.mac-os > .background-credits', '.mac-os > .background-credits .blur', 'background-image');
+  })
+}
+
+
+
+
 // APPLICATION REMOVE
 function applicationRemove() { 
   function menuBar() {
@@ -614,13 +637,14 @@ function applicationRemove() {
   }
   file();
   
-  function hiden() {
+  function hidden() {
     if ($('.application').hasClass('hide')) {
       $('.application').removeClass('hide');
-      background_credits.removeClass('show');
+      // background_credits.removeClass('show');
+      desktopBackgroundCredits();
     }
   }
-  hiden();
+  hidden();
   
   function title() {
     title_scroll.empty();
