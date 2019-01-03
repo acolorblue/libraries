@@ -663,6 +663,38 @@ function applicationRemove() {
 
 
 
+// MEDIA VARIABLE ADJUSTMENTS
+function mediaVariableAssignments() {
+  covered = media.hasClass('covered');
+  unwatched = media.hasClass('unwatched');
+  clicked = !media.hasClass('unwatched');
+  watched = media.hasClass('watched');
+  header = media.find('.header');
+  top_bar = media.find('.top-bar');
+  top_bar_children = top_bar.children('div');
+  window_controls = media.find('.window-controls');
+  close = media.find('.close');
+  content_controls = media.find('.content-controls');
+  blur = media.find('.blur');
+  rewind = media.find('.rewind');
+  play_pause = media.find('.play-pause');
+  reload = media.find('.reload');
+  forward = media.find('.forward');  
+  time_adjustments = rewind || forward;
+  content = media.find('.content');
+  buffering_indicator = media.find('.buffering-indicator');
+  thumbnail = media.find('.thumbnail');
+  hidden = $(video).hasClass('hide');
+  paused =  video.paused;
+  playing = !video.paused;
+  media_current_time_mark = video.currentTime;
+  previous_block = $('p.read').last().parents('.block');
+  next_block = $('p.unread').first().parents('.block');
+}
+
+
+
+
 // CALL REMAINDER MAC OS FUNCTIONS
 function callRemainderMacOsFunctions() {
   deviceSpecificationsOnMacOS();
