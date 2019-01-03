@@ -713,6 +713,165 @@ function mediaVariableAssignments() {
 
 
 
+// APPLICATION CHANGE
+function applicationChange() {
+  if ($('.application').hasClass('text-editor')) { 
+    $('.mac-os .files-row .file.text-editor').addClass('show selected');
+
+    title_scroll.text(text_editor_title);
+    
+    function skip() {
+      if (!$('.scroll-container').hasClass('completed')) { 
+        button.className = 'fast-forward-automated-text forward white outline icon';
+        $('.application > .header .content-controls').append(button.cloneNode());
+      }
+    }
+    skip();
+
+    function credits() {
+      if ($('.scroll-container').hasClass('completed')) { 
+        media = $('.media.credits');
+
+        if (!media.hasClass('watched')) {
+          button.className = 'credits';
+          button.innerHTML = "Credits";
+          $('.application > .header .content-controls').append(button.cloneNode(true));
+        }
+      }
+    }
+    credits();
+    
+    function search() {
+      if ($('.scroll-container').hasClass('completed')) { 
+        button.className = 'search white icon';
+        $('.application > .header .content-controls').append(button.cloneNode());
+      }
+    }
+    search(); 
+
+    button.className = 'share white icon';
+    $('.application > .header .content-controls').append(button.cloneNode());
+    
+    automatedScrollAdjustment();
+  }
+
+  if ($('.application').hasClass('video-player')) {
+    media = $('.primary-container .media.visible');
+    video = media.find('video');
+    mediaVariableAssignments();
+    
+    media.removeClass('video-player');
+    primary_container.append(media);
+    heightFromWidthRatio(media, '.scroll-container', '0.563278');
+    setTimeout(function() {
+      heightFromWidthRatio(application, '.scroll-container', '0.563278');
+      primaryColor(thumbnail, top_bar_children, '0.6');
+    }, 600);
+    setTimeout(function() {
+      function fileChange() {
+        classRetriever(media, '0');
+        newly_selected_desktop_file = '.mac-os .files-row .file.' + class_retrieved;
+        $(newly_selected_desktop_file).addClass('show selected');
+      }
+      fileChange();
+      mac_os.addClass('dim');
+      imageBlur(thumbnail, content_controls, blur, 'image-tag'); 
+      imageBlurReposition(thumbnail, content_controls, blur, 'image-tag');
+      $(window).on('resize', function() {
+        heightFromWidthRatio(application, '.scroll-container', '0.563278');
+        heightFromWidthRatio(media, '.scroll-container', '0.563278');
+      });
+    }, 800);
+    setTimeout(function() {
+      heightFromWidthRatio(application, '.scroll-container', '0.563278');
+      heightFromWidthRatio(media, '.scroll-container', '0.563278');
+    }, 1100); 
+  }
+  
+  if ($('.application').hasClass('quick-look')) {
+    $('.mac-os .files-row .file.quick-look').addClass('show selected');
+
+    title_scroll.text(quick_look_title);
+
+    button.className = 'confirm'; 
+    button.innerHTML = "Confirm";  
+    $('.application > .header .content-controls').append(button.cloneNode(true));
+
+    button.className = 'cancel';
+    button.innerHTML = "Cancel";
+    $('.application > .header .content-controls').append(button.cloneNode(true));
+
+    image.className = 'poster';
+    image.src = poster;
+    primary_container.prepend(image);
+
+    function actions() {
+      $('.quick-look .content-controls .confirm').click(function() {
+        function windowLink() {
+          var window_link = 'instagram://camera';
+          if (mobile && android) {
+            window_link = 'https://www.instagram.com/_u/acolorblue';
+          }
+          window.location.href = window_link;
+        }
+        windowLink();
+
+        applicationRemove();
+        application.addClass('text-editor');
+        applicationChange();
+      });
+
+      $('.quick-look .content-controls .cancel').click(function() {
+        applicationRemove();
+        application.addClass('text-editor');
+        applicationChange();
+      });
+    }
+    actions();
+
+    setTimeout(function() {
+      titleOverflow('.application.quick-look .title', 'application.quick-look .title-scroll');
+    }, 1000);
+  }
+
+  if ($('.application').hasClass('world-clock')) {
+    $('.mac-os .files-row .file.world-clock').addClass('show selected');
+
+    title_scroll.text(world_clock_title);
+
+    link.className = 'sources';
+    link.href = "https://github.com/acolorblue/worldclock/tree/master/Africa";
+    link.innerHTML = "Sources";
+    $('.application > .header .content-controls').append(link);
+
+    button.className = 'exit';
+    button.innerHTML = "Exit";
+    $('.application > .header .content-controls').append(button);
+
+    primary_container.prepend($('.timezones'));
+    indicatorsContainer();
+
+    function actions() {
+      computerImageZoom('.computer .world-clock .timezones clock .border');
+      
+      function exit() {
+        $('.world-clock .content-controls .exit').click(function() {
+          window.clearInterval(indicators_interval);
+          applicationRemove();
+          application.addClass('text-editor');
+          applicationChange();
+          automatedScrollAdjustment();
+        });
+      }
+      exit();
+    }
+    actions();
+  }
+}
+
+
+
+
 // CALL REMAINDER MAC OS FUNCTIONS
 function callRemainderMacOsFunctions() {
   deviceSpecificationsOnMacOS();
