@@ -239,6 +239,18 @@ function removeLoader(element, hideType, hideTimer, removeTimer) {
 
 
 
+// VIDEOS PRELOAD TO AUTO
+function videosPreloadToAuto(element) {
+  $(element).each(function() {
+    if ($(this).attr('preload') != 'auto') {
+      $(this).attr('preload', 'auto');
+    }
+  })
+}
+
+
+
+
 // ROTATE TO LANDSCAPE
 function rotateToLandscape() {
   if ($('body .rotate-to-landscape').length == 0) {
