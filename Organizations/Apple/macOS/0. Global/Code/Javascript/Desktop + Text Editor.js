@@ -3,7 +3,24 @@ var mac_os = $('.mac-os'),
     desktop_file = $('.mac-os .files-row .file'),
     primary_desktop_file = $('.mac-os .files-row .file.primary'),
     newly_selected_desktop_file,
-    background_credits = $('.mac-os > .background-credits');
+    background_credits = $('.mac-os > .background-credits'),
+    application = $('.application'),
+    text_editor = $('.application.text-editor'),
+    video_player = $('.application.video-player'),
+    quick_look = $('.application.quick-look'),
+    world_clock = $('.application.world-clock'),
+    error = $('.application.error'),
+    window_controls,
+    close,
+    text_editor_title = product_title,
+    quick_look_title = "Save Image Then Confirm",
+    world_clock_title = "World Clock",
+    error_title = "An Error Has Occured",
+    top_bar = $('.application > .header .top-bar'),
+    top_bar_children,
+    title_scroll = $('.application > .header .title-scroll'),
+    primary_container = $('.application > .primary-container'),
+    scroll_container = $('.application > .primary-container .scroll-container');
 
 
 
