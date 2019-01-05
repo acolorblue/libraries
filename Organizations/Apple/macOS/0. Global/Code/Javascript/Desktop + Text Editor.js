@@ -794,7 +794,7 @@ function applicationChange() {
     }
     skip();
 
-    function credits() {
+    function creditsButton() {
       if ($('.scroll-container').hasClass('completed')) { 
         media = $('.media.credits');
 
@@ -805,15 +805,15 @@ function applicationChange() {
         }
       }
     }
-    credits();
+    creditsButton();
     
-    function search() {
+    function searchButton() {
       if ($('.scroll-container').hasClass('completed')) { 
         button.className = 'search white icon';
         $('.application > .header .content-controls').append(button.cloneNode());
       }
     }
-    search(); 
+    searchButton(); 
 
     button.className = 'share white icon';
     $('.application > .header .content-controls').append(button.cloneNode());
@@ -962,6 +962,44 @@ function closeApp() {
   })
 }
 closeApp();
+
+
+
+
+// SEARCH TEXT EDITOR
+function searchTextEditor() {
+  $(document).on('click', '.application.text-editor > .header .content-controls .search', function() {
+    function searchBarShown() {
+      if ($('.application.text-editor > .header .search-bar').length == 1) {
+        $('.application.text-editor > .header .search-bar').val("").keyup().addClass('hide');
+        $('.application.text-editor .scroll-container.completed p.read, .application.text-editor .scroll-container.completed .media.watched').removeClass('hide');
+        setTimeout(function() {
+          $('.application.text-editor > .header .search-bar').empty().remove(); 
+          $('.application.text-editor > .header .content-controls').removeClass('search');
+          $('.application.text-editor').removeClass('searching');
+        }, 200);  
+      }
+    }
+    searchBarShown();
+    
+    function searchBarHidden() {
+      if ($('.text-editor > .header .search-bar').length == 0) {
+        input.className = 'search-bar hide';
+        input.placeholder = "Search Essay";
+        $('.application > .header .content-controls').prepend(input).addClass('search');
+        setTimeout(function() {
+          $('.application.text-editor > .header .search-bar').removeClass('hide');
+          keyboardOut();
+        }, 200);
+      }
+    }
+    searchBarHidden();
+ 
+    search('.application.text-editor > .header .search-bar', '.application.text-editor', '.application.text-editor .scroll-container.completed p.read', '.application.text-editor .scroll-container.completed .media.watched');
+  })
+}
+searchTextEditor();
+
 
 
 
