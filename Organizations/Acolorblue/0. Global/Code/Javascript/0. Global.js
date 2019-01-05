@@ -643,3 +643,48 @@ function keyboardOut() {
   }
 }
 keyboardOut();
+
+
+
+
+// SEARCH
+function search(inputBar, viewpointContainer, text, media) {
+  $(inputBar).keyup(function() {
+    var entered_value = $(this).val(),
+        entered_value_regexp = new RegExp(entered_value, "gi"),
+        no_value = entered_value == "",
+        text_original;   
+    
+    console.log("g = " + entered_value_regexp.global);
+    console.log("i = " + entered_value_regexp.ignoreCase);
+    console.log("m = " + entered_value_regexp.multiLine);
+    console.log("source = " + entered_value_regexp.source);
+
+    $(viewpointContainer).addClass('searching');
+    $(text).each(function() { 
+      text_original = $(this).text();
+
+      if (!text_original.match(entered_value_regexp)) {
+        $(this).addClass('hide');
+      }
+
+      if (text_original.match(entered_value_regexp)) {
+        $(this).removeClass('hide');
+      }
+
+      if (no_value) {
+        $(text, media).removeClass('hide');
+      }
+    });
+
+    $(media).each(function() {
+      if (entered_value.length > 0) {
+        $(this).addClass('hide');
+      }
+
+      if (no_value) {
+        $(this).removeClass('hide');
+      }
+    });
+  })
+}
