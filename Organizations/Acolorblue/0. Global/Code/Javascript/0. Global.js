@@ -491,12 +491,10 @@ function imageBlur(container, element, blur, source) {
 function imageBlurReposition(container, element, blur, source) {
   $(container).mutate('width height', function(el, info) {
     imageBlur(container, element, blur, source);
-    console.log("container moved" + container);
   });
   
   $(element).mutate('width height', function(el, info) {
     imageBlur(container, element, blur, source);
-    console.log("element moved" + element);
   });
 }
 
@@ -558,7 +556,6 @@ function randomColorGeneratorContainer() {
   random_color_generator_interval = setInterval(randomColorGenerator, 400);
   function randomColorGenerator() {
     var color = Math.floor((Math.random() * 220) + 1);
-    console.log(color);
     $('.random-color').css("background-color", "rgb(" + color + ", " +  color + ", " +  color + ")");
   }
 }
@@ -654,11 +651,6 @@ function search(inputBar, viewpointContainer, text, media) {
         entered_value_regexp = new RegExp(entered_value, "gi"),
         no_value = entered_value == "",
         text_original;   
-    
-    console.log("g = " + entered_value_regexp.global);
-    console.log("i = " + entered_value_regexp.ignoreCase);
-    console.log("m = " + entered_value_regexp.multiLine);
-    console.log("source = " + entered_value_regexp.source);
 
     $(viewpointContainer).addClass('searching');
     $(text).each(function() { 
