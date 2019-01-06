@@ -66,7 +66,9 @@ var user_agent_length = navigator.userAgent.length,
     buffering_indicator,
     video,
     video_class,
-    source_link;
+    source_link,
+    line_break,
+    window_open_link;
 
 
 
