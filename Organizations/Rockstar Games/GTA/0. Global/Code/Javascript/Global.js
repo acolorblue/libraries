@@ -243,7 +243,7 @@ function loadingScreenGTA() {
       if ($('.gta .product-logo.text').text().includes(product_title)) {
         window.clearInterval(end_of_title_interval); 
         setTimeout(function() {
-          callRemainderFunctions();
+          callRemainderFunctionsLocal();
         }, 100); 
         setTimeout(function() {
           removeLoader(webpage_loader, 'slide-up', 0, 3000);
