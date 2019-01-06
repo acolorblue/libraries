@@ -685,3 +685,26 @@ function search(inputBar, viewpointContainer, text, media) {
     });
   })
 }
+
+
+
+
+// SHARE ON SOCIAL MEDIA
+function shareOnSocialMedia(buttons) {
+  $(buttons).click(function() {
+    twitter = $(this).hasClass('twitter');
+    instagram = $(this).hasClass('instagram');
+    tumblr = $(this).hasClass('tumblr');
+    
+    if (twitter) {
+      line_break = '%0A';
+      window_open_link = 'https://twitter.com/intent/tweet?source=webclient&text=' + webpage_url;
+      window.open(window_open_link);
+    }
+
+    if (tumblr) {
+      window_open_link = 'https://www.tumblr.com/widgets/share/tool?posttype=link' + '&canonicalUrl=' + webpage_url;
+      window.open(window_open_link);
+    }
+  })
+}
