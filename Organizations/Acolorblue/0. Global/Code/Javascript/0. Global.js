@@ -68,7 +68,9 @@ var user_agent_length = navigator.userAgent.length,
     video_class,
     source_link,
     line_break,
-    window_open_link;
+    window_open_link,
+    email_address,
+    subject;
 
 
 
