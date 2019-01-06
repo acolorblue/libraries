@@ -1050,6 +1050,22 @@ function shareButton() {
 }
 shareButton();
 
+  
+
+
+// CHECK LOADER COMPLETION
+function checkLoaderCompletion() {
+  var call_automated_text_interval = setInterval(callAutomatedText, 200);
+  function callAutomatedText() {
+    if ($('body > .loader').length == 0) {
+      window.clearInterval(call_automated_text_interval);
+      setTimeout(function() { 
+        automatedText('.scroll-container .first p', 2000, [''], 0, '-break-', 800);
+      }, 1800);
+    }
+  } 
+}
+
 
 
 
