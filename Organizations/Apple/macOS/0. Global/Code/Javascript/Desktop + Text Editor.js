@@ -966,8 +966,8 @@ closeApp();
 
 
 
-// SEARCH TEXT EDITOR
-function searchTextEditor() {
+// SEARCH BUTTON
+function searchButton() {
   $(document).on('click', '.application.text-editor > .header .content-controls .search', function() {
     function searchBarShown() {
       if ($('.application.text-editor > .header .search-bar').length == 1) {
@@ -998,7 +998,57 @@ function searchTextEditor() {
     search('.application.text-editor > .header .search-bar', '.application.text-editor', '.application.text-editor .scroll-container.completed p.read', '.application.text-editor .scroll-container.completed .media.watched');
   })
 }
-searchTextEditor();
+searchButton();
+
+
+
+
+// SHARE BUTTON
+function shareButton() {
+  $(document).on('click', '.text-editor > .header .content-controls .share', function() {
+    function socialMediaPlatformsShown() {
+      if ($('.text-editor > .header .social-media-platforms').length == 1) {
+        $('.text-editor > .header .social-media-platforms').addClass('hide');
+
+        setTimeout(function() {
+          $('.text-editor > .header .social-media-platforms').empty().remove(); 
+          $('.application > .header .content-controls').removeClass('share');
+        }, 200);
+      }
+    }
+    socialMediaPlatformsShown();
+
+    function socialMediaPlatformsHidden() {
+      if ($('.text-editor > .header .social-media-platforms').length == 0) {
+        button.className = 'twitter white icon';
+        div.append(button.cloneNode());
+
+        if (mobile) {
+          button.className = 'instagram white icon';
+          div.append(button.cloneNode());
+        }
+
+        button.className = 'tumblr white icon';
+        div.append(button.cloneNode());
+
+        div.className = 'social-media-platforms hide';
+        $('.application > .header .content-controls').prepend(div).addClass('share');
+        setTimeout(function() {
+          $('.application > .header .social-media-platforms').removeClass('hide');
+        }, 100);
+      }
+    }
+    socialMediaPlatformsHidden();
+
+    shareOnSocialMedia('.text-editor > .header .social-media-platforms button');
+    $('.text-editor > .header .social-media-platforms button.instagram').click(function() {  
+      applicationRemove();
+      application.addClass('quick-look');
+      applicationChange();
+    })
+  });
+}
+shareButton();
 
 
 
